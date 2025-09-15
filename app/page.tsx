@@ -9,10 +9,10 @@ export default function Home() {
       <main className="flex flex-col items-center text-center max-w-3xl px-8">
         <div className="mb-16">
           <Image
-            src="/Penn_CBC_Logo_background_better.png"
-            alt="Penn Claude Builder Club Logo"
-            width={600}
-            height={600}
+            src="/newCBClogo.png"
+            alt="Claude Builder Club at Penn Logo"
+            width={500}
+            height={500}
             priority
             className="opacity-100"
           />

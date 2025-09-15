@@ -16,7 +16,7 @@ const crimsonText = Crimson_Text({
 });
 
 export const metadata: Metadata = {
-  title: "Penn Claude Builder Club",
+  title: "Claude Builder Club at Penn",
   description: "Join the Claude Builder Club at the University of Pennsylvania - Building the future with AI",
 };
 
