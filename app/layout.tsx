@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Crimson_Text } from "next/font/google";
 import "./globals.css";
+import Navigation from "./components/Navigation";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${crimsonText.variable} antialiased`}
       >
+        <Navigation />
         {children}
       </body>
     </html>

@@ -24,19 +24,19 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1 text-white font-sans font-semibold py-4 px-8 rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl hover:opacity-90"
-            style={{ 
+            style={{
               backgroundColor: '#D97757'
             }}
           >
             Join Slack
           </a>
-          
+
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLScP9LuFwiHEx806tv9zczjCIEzqO1Zjb-FjB4XWoa6BS1NNKQ/viewform"
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1 bg-white hover:bg-gray-50 font-sans font-semibold py-4 px-8 rounded-xl border-2 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700"
-            style={{ 
+            style={{
               color: '#D97757',
               borderColor: '#D97757'
             }}
