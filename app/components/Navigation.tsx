@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 const routes = [
   { path: '/', name: 'Home' },
   { path: '/calendar', name: 'Calendar' },
+  { path: '/past-meetings', name: 'Past Meetings' },
 ];
 
 export default function Navigation() {
@@ -13,15 +14,7 @@ export default function Navigation() {
 
   return (
     <nav className="fixed top-8 right-8 z-50">
-      <div className="flex items-center gap-3">
-        {/* Menu label */}
-        <span
-          className="font-sans font-semibold text-sm mr-1"
-          style={{ color: '#D97757' }}
-        >
-          Menu
-        </span>
-
+      <div className="flex items-center gap-4">
         {routes.map((route) => {
           const isActive = pathname === route.path;
 
@@ -29,22 +22,27 @@ export default function Navigation() {
             <Link
               key={route.path}
               href={route.path}
-              className="group relative flex items-center justify-center transition-all duration-300"
-              aria-label={route.name}
+              className="group flex items-center gap-2 transition-all duration-300"
             >
               {/* Circle */}
               <div
                 className="rounded-full transition-all duration-300 hover:scale-110"
                 style={{
                   backgroundColor: '#D97757',
-                  width: isActive ? '20px' : '14px',
-                  height: isActive ? '20px' : '14px',
+                  width: isActive ? '16px' : '12px',
+                  height: isActive ? '16px' : '12px',
                   boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
                 }}
               />
 
-              {/* Tooltip */}
-              <span className="absolute top-full mt-2 px-3 py-1 text-sm font-sans font-medium text-white bg-gray-800 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none">
+              {/* Label */}
+              <span
+                className="font-sans font-semibold text-sm transition-all duration-300"
+                style={{
+                  color: '#D97757',
+                  opacity: isActive ? 1 : 0.7
+                }}
+              >
                 {route.name}
               </span>
             </Link>
