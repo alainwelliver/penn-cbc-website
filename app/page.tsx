@@ -20,7 +20,7 @@ export default function Home() {
         
         <div className="flex flex-col sm:flex-row gap-6 w-full max-w-lg">
           <a
-            href="https://join.slack.com/t/pennclaudebuilderclub/shared_invite/zt-3cp23uvmb-YNAM18JLw2aby~6CNtWOWg"
+            href="https://join.slack.com/t/penncbc/shared_invite/zt-3j3m5agvo-rteInQMuR54E0t6mUWuePw"
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1 text-white font-sans font-semibold py-4 px-8 rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl hover:opacity-90"
