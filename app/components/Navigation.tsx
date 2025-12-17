@@ -8,14 +8,14 @@ const routes = [
   { path: '/team', name: 'Team' },
   { path: '/gallery', name: 'Gallery' },
   { path: '/calendar', name: 'Calendar' },
-  { path: '/past-meetings', name: 'Past Meetings' },
+  { path: '/past-events', name: 'Past Events' },
 ];
 
 export default function Navigation() {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed top-8 right-8 z-50">
+    <nav className="absolute top-8 right-8 z-50">
       <div className="flex items-center gap-4">
         {routes.map((route) => {
           const isActive = pathname === route.path;

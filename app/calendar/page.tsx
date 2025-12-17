@@ -1,15 +1,15 @@
 export default function Calendar() {
   return (
     <div
-      className="min-h-screen flex flex-col items-center justify-center py-8 px-4"
+      className="min-h-screen flex flex-col items-center justify-center py-20 px-4"
       style={{ backgroundColor: '#FBF2E9' }}
     >
       <main className="flex flex-col items-center text-center w-full max-w-6xl">
         <h1
-          className="text-4xl font-bold font-serif mb-8"
+          className="text-4xl font-bold font-sans mb-8"
           style={{ color: '#D97757' }}
         >
-          Penn CBC Calendar
+          Our Club Calendar
         </h1>
 
         <div className="w-full bg-white rounded-lg shadow-xl p-4 overflow-hidden">

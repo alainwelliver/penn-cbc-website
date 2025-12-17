@@ -7,7 +7,6 @@ export default function Home() {
       style={{ backgroundColor: '#FBF2E9' }}
     >
       <main className="flex flex-col items-center text-center max-w-3xl px-8">
-        <div className="mb-16">
           <Image
             src="/newCBClogo.png"
             alt="Claude Builder Club at Penn Logo"
@@ -16,7 +15,6 @@ export default function Home() {
             priority
             className="opacity-100"
           />
-        </div>
         
         <div className="flex flex-col sm:flex-row gap-6 w-full max-w-lg">
           <a
@@ -41,7 +39,7 @@ export default function Home() {
               borderColor: '#D97757'
             }}
           >
-            Join Official Roster
+            Join the Mailing List
           </a>
         </div>
 
