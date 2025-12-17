@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Crimson_Text } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import Navigation from "./components/Navigation";
 
@@ -33,6 +34,7 @@ export default function RootLayout({
       >
         <Navigation />
         {children}
+        <Analytics />
       </body>
     </html>
   );
