@@ -6,7 +6,7 @@ import { useState } from 'react';
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  // 10 diverse photos from different events
+  // 25 diverse photos from different events
   const photos = [
     { src: '/gallery-photos/photo1.jpg', alt: 'CBC Meeting' },
     { src: '/gallery-photos/photo2.jpg', alt: 'Workshop Session' },
@@ -17,7 +17,22 @@ export default function Gallery() {
     { src: '/gallery-photos/photo7.jpg', alt: 'Networking' },
     { src: '/gallery-photos/photo8.jpg', alt: 'Builder Hours' },
     { src: '/gallery-photos/photo9.jpg', alt: 'Group Photo' },
-    { src: '/gallery-photos/photo10.jpg', alt: 'Workshop Activity' }
+    { src: '/gallery-photos/photo10.jpg', alt: 'Workshop Activity' },
+    { src: '/gallery-photos/photo11.jpg', alt: 'Hackathon Event' },
+    { src: '/gallery-photos/photo12.jpg', alt: 'Hackathon Collaboration' },
+    { src: '/gallery-photos/photo13.jpg', alt: 'Hackathon Team' },
+    { src: '/gallery-photos/photo14.jpg', alt: 'Hackathon Presentations' },
+    { src: '/gallery-photos/photo15.jpg', alt: 'Hackathon Builders' },
+    { src: '/gallery-photos/photo16.jpg', alt: 'Hackathon Demos' },
+    { src: '/gallery-photos/photo17.jpg', alt: 'Hackathon Projects' },
+    { src: '/gallery-photos/photo18.jpg', alt: 'Hackathon Innovation' },
+    { src: '/gallery-photos/photo19.jpg', alt: 'Hackathon Development' },
+    { src: '/gallery-photos/photo20.jpg', alt: 'Hackathon Coding' },
+    { src: '/gallery-photos/photo21.jpg', alt: 'Hackathon Participants' },
+    { src: '/gallery-photos/photo22.jpg', alt: 'Hackathon Activities' },
+    { src: '/gallery-photos/photo23.jpg', alt: 'Hackathon Showcase' },
+    { src: '/gallery-photos/photo24.jpg', alt: 'Hackathon Community' },
+    { src: '/gallery-photos/photo25.jpg', alt: 'Fireside Chat' }
   ];
 
   return (
