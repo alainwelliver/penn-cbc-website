@@ -38,6 +38,14 @@ export default function PastEvents() {
         {
           label: 'View Photos',
           url: '/masterclass3-gallery'
+        },
+        {
+          label: 'GitHub Repo',
+          url: 'https://github.com/Albinator3000/LLM-Interpretability-Dashboard-w-Ollama-HF-PyTorch-LangChain-CBC-PENN-'
+        },
+        {
+          label: 'Live Demo',
+          url: 'https://albert-opher-ai-interpretability.streamlit.app'
         }
       ]
     },
