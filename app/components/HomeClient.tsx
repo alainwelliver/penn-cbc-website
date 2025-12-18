@@ -203,7 +203,7 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
             </p>
           </div>
           <p className="text-right mt-6 text-lg font-serif italic" style={{ color: '#666' }}>
-            - Alain Welliver SEAS &apos;26, Albert Opher M&T&apos;25
+            - Alain Welliver SEAS &apos;26, Albert Opher M&T &apos;25
           </p>
         </section>
 
