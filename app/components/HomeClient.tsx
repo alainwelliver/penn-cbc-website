@@ -25,12 +25,12 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
 
   return (
     <div
-      className="min-h-screen flex flex-col items-center py-12 lg:py-20"
+      className="min-h-screen flex flex-col items-center py-12 lg:py-20 relative"
       style={{ backgroundColor: '#FBF2E9' }}
     >
       <main className="flex flex-col items-center w-full">
         {/* Photo Wall Section - Logo with photos on sides */}
-        <div className="mx-auto w-full max-w-7xl px-4 sm:px-8 mb-16 lg:mb-24">
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-8 mb-16 lg:mb-24 relative">
           {/* Desktop: left stack + (2 top photos, logo, 2 bottom photos) + right stack */}
           <div className="hidden lg:flex items-center justify-center gap-3">
             <div className="flex flex-col gap-3 w-52 shrink-0">
@@ -131,6 +131,29 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
                 </div>
               ))}
             </div>
+          </div>
+
+          {/* Scroll Indicator - Bottom Right of Photo Wall */}
+          <div className="absolute -bottom-12 right-4 lg:right-8 flex flex-col items-center animate-bounce">
+            <p className="text-sm lg:text-base font-sans font-semibold mb-1" style={{ color: '#D97757' }}>
+              Learn More
+            </p>
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              style={{ color: '#D97757' }}
+            >
+              <path
+                d="M12 4L12 20M12 20L18 14M12 20L6 14"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
           </div>
         </div>
 

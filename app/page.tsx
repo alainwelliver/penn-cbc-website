@@ -23,6 +23,17 @@ function getAllGalleryPhotos(): Photo[] {
 }
 
 export default function Home() {
-  const initialPhotos = shuffle(getAllGalleryPhotos()).slice(0, 12);
+  const allPhotos = getAllGalleryPhotos();
+
+  // Always include photo2.jpg
+  const photo2 = { src: '/gallery-photos/photo2.jpg', alt: 'CBC gallery photo 2' };
+
+  // Get other photos excluding photo2, shuffle them, and take 11
+  const otherPhotos = allPhotos.filter(p => p.src !== photo2.src);
+  const shuffledOthers = shuffle(otherPhotos).slice(0, 11);
+
+  // Combine photo2 with the shuffled others
+  const initialPhotos = [photo2, ...shuffledOthers];
+
   return <HomeClient initialPhotos={initialPhotos} />;
 }

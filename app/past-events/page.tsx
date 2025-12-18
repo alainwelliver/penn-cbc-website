@@ -27,13 +27,17 @@ export default function PastEvents() {
       ]
     },
     {
-      title: 'Building Agents Workshop',
-      date: 'October 1, 2025',
-      description: 'Workshop session on building with agents',
+      title: 'Penn CBC Agents Masterclass 3 (Builder\'s Version): LLM Interpretability Workshop',
+      date: 'Fall 2025',
+      description: 'Third masterclass focusing on LLM interpretability techniques and understanding how language models work',
       buttons: [
         {
-          label: 'Watch Recording',
-          url: 'https://teamwass.zoom.us/rec/play/4F-5erosyFauaH0aGeDlrArudPP5LNP7r-Ae8lIYthSpzUI-thXLGZzgrf3xsUHQaFTMm2xANno1pSVt.CBjygpR0e8KfX704?eagerLoadZvaPages=sidemenu.billing.plan_management&isReferralProgramEnabled=false&isReferralProgramAvailable=false&accessLevel=meeting&canPlayFromShare=true&from=share_recording_detail&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fteamwass.zoom.us%2Frec%2Fshare%2FZMiY-gjvVoCInXlyShrTAd0wR5sptHEdkCaQ8W2W0GT-71M3LNcXmF9DVMZBeY00.Acq9nVyXM87f0oFl'
+          label: 'View Slides',
+          url: '/Penn CBC LLM Interpretability Masterclass (Builder\'s Version).pdf'
+        },
+        {
+          label: 'View Photos',
+          url: '/masterclass3-gallery'
         }
       ]
     },
@@ -56,6 +60,17 @@ export default function PastEvents() {
         {
           label: 'View Slides',
           url: '/Penn CBC Agents Masterclass 2 (Builder\'s Version).pdf'
+        }
+      ]
+    },
+    {
+      title: 'Building Agents Workshop',
+      date: 'Fall 2025',
+      description: 'Workshop session on building with agents',
+      buttons: [
+        {
+          label: 'Watch Recording',
+          url: 'https://teamwass.zoom.us/rec/play/4F-5erosyFauaH0aGeDlrArudPP5LNP7r-Ae8lIYthSpzUI-thXLGZzgrf3xsUHQaFTMm2xANno1pSVt.CBjygpR0e8KfX704?eagerLoadZvaPages=sidemenu.billing.plan_management&isReferralProgramEnabled=false&isReferralProgramAvailable=false&accessLevel=meeting&canPlayFromShare=true&from=share_recording_detail&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fteamwass.zoom.us%2Frec%2Fshare%2FZMiY-gjvVoCInXlyShrTAd0wR5sptHEdkCaQ8W2W0GT-71M3LNcXmF9DVMZBeY00.Acq9nVyXM87f0oFl'
         }
       ]
     },

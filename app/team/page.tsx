@@ -4,17 +4,19 @@ export default function Team() {
   const founders = [
     {
       name: 'Albert Opher',
-      title: 'CBA | M&T \'25',
+      title: 'CBA | Wharton + SEAS \'25 (M&T \'25), JWS \'25',
       role: 'Co-President',
       image: '/team/albert.jpg',
-      bio: '<Albert\'s bio loading>'
+      bio: 'Focused on AI interpretability and infrastructure, agentic systems, and using emerging technologies to build tools that help teams ship faster.',
+      imagePosition: '100% -10%'
     },
     {
       name: 'Alain Welliver',
       title: 'CBA | SEAS \'26',
       role: 'Co-President',
       image: '/team/alain.jpg',
-      bio: 'Reimagining the way we learn new things, get around, and interact safely with AI.'
+      bio: 'Reimagining the way we learn new things, get around, and interact safely with AI.',
+      imagePosition: '50% 45%'
     }
   ];
 
@@ -62,6 +64,7 @@ export default function Team() {
                     alt={member.name}
                     fill
                     className="object-cover"
+                    style={{ objectPosition: member.imagePosition }}
                   />
                 </div>
                 <h4 className="text-xl font-bold text-center font-sans" style={{ color: '#000' }}>
