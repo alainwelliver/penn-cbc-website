@@ -5,7 +5,7 @@ export default function Team() {
     {
       name: 'Albert Opher',
       title: 'CBA | Wharton + SEAS \'25 (M&T \'25), JWS \'25',
-      subtitle: 'Club Administrator, Masterclasses Lead',
+      subtitle: 'Club Administrator, Masterclasses Instructor',
       role: 'Co-President',
       image: '/team/albert.jpg',
       bio: 'Building AI interpretability infrastructure, agentic systems, and tools with emerging technologies to help teams ship faster.',
@@ -16,7 +16,7 @@ export default function Team() {
     {
       name: 'Alain Welliver',
       title: 'CBA | SEAS \'26',
-      subtitle: 'External Specialist, Builder Hours Lead',
+      subtitle: 'External Relations Specialist, Builder Hours Lead',
       role: 'Co-President',
       image: '/team/alain.jpg',
       bio: 'Reimagining the way we learn new things, get around, and interact safely with AI.',
