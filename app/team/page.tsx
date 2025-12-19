@@ -8,7 +8,7 @@ export default function Team() {
       subtitle: 'Club Administrator, Masterclasses Lead',
       role: 'Co-President',
       image: '/team/albert.jpg',
-      bio: 'Implementing AI interpretability and infrastructure, agentic systems, and building tools with emerging technologies to help teams ship faster.',
+      bio: 'Building AI interpretability infrastructure, agentic systems, and tools with emerging technologies to help teams ship faster.',
       imagePosition: '100% -10%',
       linkedin: 'https://www.linkedin.com/in/albertopher/',
       github: 'https://github.com/Albinator3000'
@@ -19,7 +19,7 @@ export default function Team() {
       subtitle: 'External Specialist, Builder Hours Lead',
       role: 'Co-President',
       image: '/team/alain.jpg',
-      bio: 'Building AI interpretability infrastructure, agentic systems, and tools with emerging technologies to help teams ship faster.',
+      bio: 'Reimagining the way we learn new things, get around, and interact safely with AI.',
       imagePosition: '50% 45%',
       linkedin: 'https://www.linkedin.com/in/alain-welliver/',
       github: 'https://github.com/alainwelliver'
