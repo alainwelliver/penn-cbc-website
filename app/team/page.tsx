@@ -8,8 +8,10 @@ export default function Team() {
       subtitle: 'Club Administrator, Masterclasses Lead',
       role: 'Co-President',
       image: '/team/albert.jpg',
-      bio: 'Focused on AI interpretability and infrastructure, agentic systems, and using emerging technologies to build tools that help teams ship faster.',
-      imagePosition: '100% -10%'
+      bio: 'Implementing AI interpretability and infrastructure, agentic systems, and building tools with emerging technologies to help teams ship faster.',
+      imagePosition: '100% -10%',
+      linkedin: 'https://www.linkedin.com/in/albertopher/',
+      github: 'https://github.com/Albinator3000'
     },
     {
       name: 'Alain Welliver',
@@ -17,8 +19,10 @@ export default function Team() {
       subtitle: 'External Specialist, Builder Hours Lead',
       role: 'Co-President',
       image: '/team/alain.jpg',
-      bio: 'Reimagining the way we learn new things, get around, and interact safely with AI.',
-      imagePosition: '50% 45%'
+      bio: 'Building AI interpretability infrastructure, agentic systems, and tools with emerging technologies to help teams ship faster.',
+      imagePosition: '50% 45%',
+      linkedin: 'https://www.linkedin.com/in/alain-welliver/',
+      github: 'https://github.com/alainwelliver'
     }
   ];
 
@@ -99,6 +103,30 @@ export default function Team() {
                     <p className="text-sm text-center font-sans mt-3 max-w-xs" style={{ color: '#666' }}>
                       {member.bio}
                     </p>
+                    <div className="flex gap-4 mt-3">
+                      {member.linkedin && (
+                        <a
+                          href={member.linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm font-semibold font-sans hover:opacity-80 transition-opacity"
+                          style={{ color: '#D97757' }}
+                        >
+                          LinkedIn
+                        </a>
+                      )}
+                      {member.github && (
+                        <a
+                          href={member.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm font-semibold font-sans hover:opacity-80 transition-opacity"
+                          style={{ color: '#D97757' }}
+                        >
+                          GitHub
+                        </a>
+                      )}
+                    </div>
                   </div>
                 ))}
               </div>
