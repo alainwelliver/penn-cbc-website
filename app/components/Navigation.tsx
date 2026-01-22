@@ -8,7 +8,7 @@ const routes = [
   { path: '/team', name: 'Team' },
   { path: '/gallery', name: 'Gallery' },
   { path: '/calendar', name: 'Calendar' },
-  { path: '/past-events', name: 'Past Events' },
+  { path: '/events', name: 'Events' },
 ];
 
 export default function Navigation() {

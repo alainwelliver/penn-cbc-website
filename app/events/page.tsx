@@ -1,5 +1,5 @@
-export default function PastEvents() {
-  const events = [
+export default function Events() {
+  const pastEvents = [
     {
       title: 'AI & The Future of the Tech Industry: Fireside Chat with Anthropic Staff',
       date: 'Fall 2025',
@@ -113,56 +113,109 @@ export default function PastEvents() {
     >
       <main className="w-full max-w-4xl">
         <h1
-          className="text-4xl font-bold mb-8 text-center font-sans"
+          className="text-4xl font-bold mb-12 text-center font-sans"
           style={{ color: '#D97757' }}
         >
-          Past Event Slides, Photos, & Recordings
+          Events
         </h1>
 
-        {/* Fall 2025 Divider */}
-        <div className="mb-6">
-          <h2
-            className="text-2xl font-bold text-center font-sans"
-            style={{ color: '#D97757' }}
-          >
-            Fall 2025
-          </h2>
-          <div
-            className="h-0.5 mt-2 mx-auto"
-            style={{ backgroundColor: '#D97757', width: '150px' }}
-          />
-        </div>
-
-        <div className="grid gap-6 md:grid-cols-2">
-          {events.map((event, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-200 border-2"
-              style={{ borderColor: '#D97757' }}
+        {/* Future Events Section */}
+        <section className="mb-16">
+          <div className="mb-6">
+            <h2
+              className="text-3xl font-bold text-center font-sans"
+              style={{ color: '#D97757' }}
             >
-              <h2 className="text-xl font-bold mb-2 font-sans" style={{ color: '#D97757' }}>
-                {event.title}
-              </h2>
-              <p className="text-gray-600 text-sm mb-3 font-sans">{event.date}</p>
-              <p className="text-gray-700 mb-4 font-sans">{event.description}</p>
+              Upcoming Events
+            </h2>
+            <div
+              className="h-0.5 mt-2 mx-auto"
+              style={{ backgroundColor: '#D97757', width: '200px' }}
+            />
+          </div>
 
-              <div className="flex flex-wrap gap-3">
-                {event.buttons.map((button, buttonIndex) => (
-                  <a
-                    key={buttonIndex}
-                    href={button.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block text-white font-sans font-semibold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg hover:opacity-90"
-                    style={{ backgroundColor: '#D97757' }}
-                  >
-                    {button.label}
-                  </a>
-                ))}
+          {/* Spring 2026 Divider */}
+          <div className="mb-6 mt-8">
+            <h3
+              className="text-2xl font-bold text-center font-sans"
+              style={{ color: '#D97757' }}
+            >
+              Spring 2026
+            </h3>
+            <div
+              className="h-0.5 mt-2 mx-auto"
+              style={{ backgroundColor: '#D97757', width: '150px' }}
+            />
+          </div>
+          
+          {/* Placeholder for future events */}
+          <div className="bg-white rounded-xl p-8 shadow-lg border-2 text-center" style={{ borderColor: '#D97757' }}>
+            <p className="text-gray-600 font-sans text-lg">
+              Stay tuned for upcoming events!
+            </p>
+          </div>
+        </section>
+
+        {/* Past Events Section */}
+        <section>
+          <div className="mb-6">
+            <h2
+              className="text-3xl font-bold text-center font-sans"
+              style={{ color: '#D97757' }}
+            >
+              Past Events
+            </h2>
+            <div
+              className="h-0.5 mt-2 mx-auto"
+              style={{ backgroundColor: '#D97757', width: '200px' }}
+            />
+          </div>
+
+          {/* Fall 2025 Divider */}
+          <div className="mb-6 mt-8">
+            <h3
+              className="text-2xl font-bold text-center font-sans"
+              style={{ color: '#D97757' }}
+            >
+              Fall 2025
+            </h3>
+            <div
+              className="h-0.5 mt-2 mx-auto"
+              style={{ backgroundColor: '#D97757', width: '150px' }}
+            />
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2">
+            {pastEvents.map((event, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-200 border-2"
+                style={{ borderColor: '#D97757' }}
+              >
+                <h3 className="text-xl font-bold mb-2 font-sans" style={{ color: '#D97757' }}>
+                  {event.title}
+                </h3>
+                <p className="text-gray-600 text-sm mb-3 font-sans">{event.date}</p>
+                <p className="text-gray-700 mb-4 font-sans">{event.description}</p>
+
+                <div className="flex flex-wrap gap-3">
+                  {event.buttons.map((button, buttonIndex) => (
+                    <a
+                      key={buttonIndex}
+                      href={button.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block text-white font-sans font-semibold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg hover:opacity-90"
+                      style={{ backgroundColor: '#D97757' }}
+                    >
+                      {button.label}
+                    </a>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </section>
       </main>
     </div>
   );
