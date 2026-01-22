@@ -54,7 +54,6 @@ export default function Team() {
     {
       name: 'Anushka Sheoran',
       title: 'MSE CIS',
-      subtitle: 'AI in Healthcare and AI Safety',
       role: 'President',
       image: '/team/anushka.jpg',
       bio: '',
