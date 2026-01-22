@@ -208,30 +208,30 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
         </section>
 
         {/* Action Buttons */}
-        <div className="flex flex-col sm:flex-row gap-6 w-full max-w-lg px-8 mt-12">
+        <div className="flex flex-col items-center gap-6 w-full max-w-lg px-8 mt-12">
           <a
-            href="https://join.slack.com/t/penncbc/shared_invite/zt-3j3m5agvo-rteInQMuR54E0t6mUWuePw"
+            href="https://join.slack.com/t/penncbc/shared_invite/zt-3o3fc1uvq-4ow_Ayc6SAZaP38CXUifOg"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 text-white font-sans font-semibold py-4 px-8 rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl hover:opacity-90 text-center"
+            className="w-64 text-white font-sans font-semibold py-4 px-8 rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl hover:opacity-90 text-center"
             style={{
               backgroundColor: '#D97757'
             }}
           >
-            Join Slack
+            Sign Up Now!
           </a>
 
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLScP9LuFwiHEx806tv9zczjCIEzqO1Zjb-FjB4XWoa6BS1NNKQ/viewform"
+            href="https://join.slack.com/t/penncbc/shared_invite/zt-3j3m5agvo-rteInQMuR54E0t6mUWuePw"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 bg-white hover:bg-gray-50 font-sans font-semibold py-4 px-8 rounded-xl border-2 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 text-center"
+            className="w-64 bg-white hover:bg-gray-50 font-sans font-semibold py-4 px-8 rounded-xl border-2 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 text-center"
             style={{
               color: '#D97757',
               borderColor: '#D97757'
             }}
           >
-            Join Mailing List
+            Join Slack
           </a>
         </div>
 
