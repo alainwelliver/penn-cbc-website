@@ -1,7 +1,21 @@
 import Image from 'next/image';
 
 export default function Team() {
-  const founders = [
+  type TeamMember = {
+    name: string;
+    title: string;
+    subtitle?: string;
+    role: string;
+    image: string;
+    bio: string;
+    imagePosition: string;
+    imageScale?: number;
+    imageTranslateX?: string;
+    linkedin?: string;
+    github?: string;
+  };
+
+  const founders: TeamMember[] = [
     {
       name: 'Albert Opher',
       title: 'CBA | Wharton + SEAS \'25 (M&T \'25), JWS \'25',
@@ -36,7 +50,66 @@ export default function Team() {
     imagePosition: '50% 50%'
   };
 
-  const leadership: typeof founders = [];
+  const leadership: TeamMember[] = [
+    {
+      name: 'Anushka Sheoran',
+      title: 'MSE CIS',
+      subtitle: 'AI in Healthcare and AI Safety',
+      role: 'President',
+      image: '/team/anushka.jpg',
+      bio: '',
+      imagePosition: '50% 50%',
+      github: 'https://github.com/asheorann'
+    },
+    {
+      name: 'Kyle Zhang',
+      title: 'M&T \'27',
+      role: 'VP External',
+      image: '/team/kyle.jpg',
+      bio: '',
+      imagePosition: '50% 10%',
+      linkedin: 'https://www.linkedin.com/in/zhangkyle/',
+      github: 'https://github.com/RiptideStar'
+    },
+    {
+      name: 'Andrea Causio',
+      title: 'MCIT \'27',
+      role: 'VP of Internal Relations/Research',
+      image: '/team/andrea.jpeg',
+      bio: '',
+      imagePosition: '50% 50%',
+      linkedin: 'https://www.linkedin.com/in/causio',
+      github: 'https://github.com/causius0'
+    },
+    {
+      name: 'Cindy Zhu',
+      title: 'CIS & Finance \'26',
+      role: 'VP Internal',
+      image: '/team/cindy.jpg',
+      bio: '',
+      imagePosition: '50% 20%'
+    },
+    {
+      name: 'Mohit Shah',
+      title: 'CompE & Robotics \'27',
+      role: 'VP Internal',
+      image: '/team/mohit.png',
+      bio: '',
+      imagePosition: '50% 50%',
+      github: 'https://github.com/moshah122'
+    },
+    {
+      name: 'Ricky Pan',
+      title: 'MCIT \'27',
+      role: 'VP Internal',
+      image: '/team/ricky.jpeg',
+      bio: '',
+      imagePosition: '50% -15%',
+      imageScale: 1.3,
+      imageTranslateX: '3%',
+      linkedin: 'https://www.linkedin.com/in/ruiqipan/'
+    }
+  ];
 
   return (
     <div
@@ -83,7 +156,10 @@ export default function Team() {
                         alt={member.name}
                         fill
                         className="object-cover"
-                        style={{ objectPosition: member.imagePosition }}
+                        style={{
+                          objectPosition: member.imagePosition,
+                          transform: `${member.imageScale ? `scale(${member.imageScale})` : ''} ${member.imageTranslateX ? `translateX(${member.imageTranslateX})` : ''}`.trim() || undefined
+                        }}
                       />
                     </div>
                     <h4 className="text-xl font-bold text-center font-sans" style={{ color: '#000' }}>
@@ -214,6 +290,10 @@ export default function Team() {
                       alt={member.name}
                       fill
                       className="object-cover"
+                      style={{
+                        objectPosition: member.imagePosition,
+                        transform: `${member.imageScale ? `scale(${member.imageScale})` : ''} ${member.imageTranslateX ? `translateX(${member.imageTranslateX})` : ''}`.trim() || undefined
+                      }}
                     />
                   </div>
                   <h4 className="text-xl font-bold text-center font-sans" style={{ color: '#000' }}>
@@ -222,9 +302,38 @@ export default function Team() {
                   <p className="text-sm text-center font-sans" style={{ color: '#666' }}>
                     {member.title}
                   </p>
+                  {member.subtitle && (
+                    <p className="text-sm text-center font-sans" style={{ color: '#666' }}>
+                      {member.subtitle}
+                    </p>
+                  )}
                   <p className="text-base font-semibold text-center font-sans mt-1" style={{ color: '#D97757' }}>
                     {member.role}
                   </p>
+                  <div className="flex gap-4 mt-3">
+                    {member.linkedin && (
+                      <a
+                        href={member.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm font-semibold font-sans hover:opacity-80 transition-opacity"
+                        style={{ color: '#D97757' }}
+                      >
+                        LinkedIn
+                      </a>
+                    )}
+                    {member.github && (
+                      <a
+                        href={member.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm font-semibold font-sans hover:opacity-80 transition-opacity"
+                        style={{ color: '#D97757' }}
+                      >
+                        GitHub
+                      </a>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>
