@@ -1,4 +1,19 @@
 export default function Events() {
+  const futureEvents = [
+    {
+      title: 'Claude Builder Club Semester Kickoff Event',
+      date: 'January 27, 2026',
+      time: '7:00 PM - 8:00 PM',
+      description: 'Join us for our Spring 2026 semester kickoff event!',
+      buttons: [
+        {
+          label: 'Register on Luma',
+          url: 'https://luma.com/zo3ac37q'
+        }
+      ]
+    }
+  ];
+
   const pastEvents = [
     {
       title: 'AI & The Future of the Tech Industry: Fireside Chat with Anthropic Staff',
@@ -147,12 +162,37 @@ export default function Events() {
               style={{ backgroundColor: '#D97757', width: '150px' }}
             />
           </div>
-          
-          {/* Placeholder for future events */}
-          <div className="bg-white rounded-xl p-8 shadow-lg border-2 text-center" style={{ borderColor: '#D97757' }}>
-            <p className="text-gray-600 font-sans text-lg">
-              Stay tuned for upcoming events!
-            </p>
+
+          <div className="grid gap-6 md:grid-cols-2">
+            {futureEvents.map((event, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-200 border-2"
+                style={{ borderColor: '#D97757' }}
+              >
+                <h3 className="text-xl font-bold mb-2 font-sans" style={{ color: '#D97757' }}>
+                  {event.title}
+                </h3>
+                <p className="text-gray-600 text-sm mb-1 font-sans">{event.date}</p>
+                <p className="text-gray-600 text-sm mb-3 font-sans">{event.time}</p>
+                <p className="text-gray-700 mb-4 font-sans">{event.description}</p>
+
+                <div className="flex flex-wrap gap-3">
+                  {event.buttons.map((button, buttonIndex) => (
+                    <a
+                      key={buttonIndex}
+                      href={button.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block text-white font-sans font-semibold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg hover:opacity-90"
+                      style={{ backgroundColor: '#D97757' }}
+                    >
+                      {button.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </section>
 
