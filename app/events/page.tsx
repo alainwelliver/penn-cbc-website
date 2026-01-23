@@ -1,3 +1,5 @@
+'use client';
+
 export default function Events() {
   const futureEvents = [
     {
@@ -16,6 +18,21 @@ export default function Events() {
 
   const pastEvents = [
     {
+      title: 'CIS 2210 Recitation: Advanced Data Structures with Claude',
+      date: 'Spring 2026',
+      description: 'Special recitation session for CIS 2210 students exploring advanced data structures and AI-assisted programming',
+      buttons: [
+        {
+          label: 'View Slides',
+          url: '/cis2210-recitation/Claude Builder Club X CIS 2210.pdf'
+        },
+        {
+          label: 'GitHub Demo',
+          url: 'https://github.com/Albinator3000/CBC_at_Penn-X-CIS_2210'
+        }
+      ]
+    },
+    {
       title: 'AI & The Future of the Tech Industry: Fireside Chat with Anthropic Staff',
       date: 'Fall 2025',
       description: 'Our first live fireside chat with industry experts, featuring David Wu, a Member of Technical Staff at Anthropic in their public sector software development group. Moderated by Alain and Albert',
@@ -33,7 +50,7 @@ export default function Events() {
       buttons: [
         {
           label: 'View Slides',
-          url: '/Hackathon Intro Slides.pdf'
+          url: '/hackathon/Hackathon Intro Slides.pdf'
         },
         {
           label: 'View Photos',
@@ -48,7 +65,7 @@ export default function Events() {
       buttons: [
         {
           label: 'View Slides',
-          url: '/Penn CBC LLM Interpretability Masterclass (Builder\'s Version).pdf'
+          url: '/masterclass3/Penn CBC LLM Interpretability Masterclass (Builder\'s Version).pdf'
         },
         {
           label: 'View Photos',
@@ -71,7 +88,7 @@ export default function Events() {
       buttons: [
         {
           label: 'View Slides',
-          url: '/Mixer Slides.pdf'
+          url: '/mixer/Mixer Slides.pdf'
         }
       ]
     },
@@ -82,7 +99,7 @@ export default function Events() {
       buttons: [
         {
           label: 'View Slides',
-          url: '/Penn CBC Agents Masterclass 2 (Builder\'s Version).pdf'
+          url: '/masterclass2/Penn CBC Agents Masterclass 2 (Builder\'s Version).pdf'
         }
       ]
     },
@@ -104,7 +121,7 @@ export default function Events() {
       buttons: [
         {
           label: 'View Slides',
-          url: '/Penn CBC Agents Masterclass 1 (Builders Version).pdf'
+          url: '/masterclass1/Penn CBC Agents Masterclass 1 (Builders Version).pdf'
         }
       ]
     },
@@ -115,7 +132,7 @@ export default function Events() {
       buttons: [
         {
           label: 'View Slides',
-          url: '/CBC at Penn First Meeting Deck.pdf'
+          url: '/first-meeting/CBC at Penn First Meeting Deck.pdf'
         }
       ]
     }
@@ -149,6 +166,72 @@ export default function Events() {
             />
           </div>
 
+          <div className={futureEvents.length === 1 ? "flex justify-center" : ""}>
+            <div className={`grid gap-6 w-full ${futureEvents.length === 1 ? 'md:grid-cols-1 max-w-xl' : 'md:grid-cols-2'}`}>
+              {futureEvents.map((event, index) => (
+                <div
+                  key={index}
+                  className="bg-white rounded-xl p-6 shadow-lg transition-all duration-300 border-2"
+                  style={{
+                    borderColor: '#D97757',
+                    animation: `pulse-subtle 3s ease-in-out infinite`,
+                    animationDelay: `${index * 0.5}s`
+                  }}
+                >
+                  <h3 className="text-xl font-bold mb-2 font-sans" style={{ color: '#D97757' }}>
+                    {event.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-1 font-sans">{event.date}</p>
+                  <p className="text-gray-600 text-sm mb-3 font-sans">{event.time}</p>
+                  <p className="text-gray-700 mb-4 font-sans">{event.description}</p>
+
+                  <div className="flex flex-wrap gap-3">
+                    {event.buttons.map((button, buttonIndex) => (
+                      <a
+                        key={buttonIndex}
+                        href={button.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block text-white font-sans font-semibold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg hover:opacity-90"
+                        style={{ backgroundColor: '#D97757' }}
+                      >
+                        {button.label}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <style jsx>{`
+            @keyframes pulse-subtle {
+              0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+              }
+              50% {
+                transform: scale(1.02);
+                box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+              }
+            }
+          `}</style>
+        </section>
+
+        {/* Past Events Section */}
+        <section>
+          <div className="mb-6">
+            <h2
+              className="text-3xl font-bold text-center font-sans"
+              style={{ color: '#D97757' }}
+            >
+              Past Events
+            </h2>
+            <div
+              className="h-0.5 mt-2 mx-auto"
+              style={{ backgroundColor: '#D97757', width: '200px' }}
+            />
+          </div>
+
           {/* Spring 2026 Divider */}
           <div className="mb-6 mt-8">
             <h3
@@ -163,8 +246,8 @@ export default function Events() {
             />
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2">
-            {futureEvents.map((event, index) => (
+          <div className={`grid gap-6 mb-12 ${pastEvents.filter(event => event.date.includes('Spring 2026')).length === 1 ? 'md:grid-cols-1 max-w-2xl mx-auto' : 'md:grid-cols-2'}`}>
+            {pastEvents.filter(event => event.date.includes('Spring 2026')).map((event, index) => (
               <div
                 key={index}
                 className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-200 border-2"
@@ -173,8 +256,7 @@ export default function Events() {
                 <h3 className="text-xl font-bold mb-2 font-sans" style={{ color: '#D97757' }}>
                   {event.title}
                 </h3>
-                <p className="text-gray-600 text-sm mb-1 font-sans">{event.date}</p>
-                <p className="text-gray-600 text-sm mb-3 font-sans">{event.time}</p>
+                <p className="text-gray-600 text-sm mb-3 font-sans">{event.date}</p>
                 <p className="text-gray-700 mb-4 font-sans">{event.description}</p>
 
                 <div className="flex flex-wrap gap-3">
@@ -194,22 +276,6 @@ export default function Events() {
               </div>
             ))}
           </div>
-        </section>
-
-        {/* Past Events Section */}
-        <section>
-          <div className="mb-6">
-            <h2
-              className="text-3xl font-bold text-center font-sans"
-              style={{ color: '#D97757' }}
-            >
-              Past Events
-            </h2>
-            <div
-              className="h-0.5 mt-2 mx-auto"
-              style={{ backgroundColor: '#D97757', width: '200px' }}
-            />
-          </div>
 
           {/* Fall 2025 Divider */}
           <div className="mb-6 mt-8">
@@ -226,7 +292,7 @@ export default function Events() {
           </div>
 
           <div className="grid gap-6 md:grid-cols-2">
-            {pastEvents.map((event, index) => (
+            {pastEvents.filter(event => event.date.includes('Fall 2025')).map((event, index) => (
               <div
                 key={index}
                 className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-200 border-2"
