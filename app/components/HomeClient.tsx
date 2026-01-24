@@ -66,7 +66,7 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
               </div>
 
               <Image
-                src="/newCBClogo.png"
+                src="/marketing/newCBClogo.png"
                 alt="Claude Builder Club at Penn Logo"
                 width={428}
                 height={428}
@@ -111,7 +111,7 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
           <div className="lg:hidden">
             <div className="flex justify-center items-center px-4">
               <Image
-                src="/newCBClogo.png"
+                src="/marketing/newCBClogo.png"
                 alt="Claude Builder Club at Penn Logo"
                 width={500}
                 height={500}
