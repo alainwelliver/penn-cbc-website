@@ -29,6 +29,10 @@ export default function Events() {
         {
           label: 'GitHub Demo',
           url: 'https://github.com/Albinator3000/CBC_at_Penn-X-CIS_2210'
+        },
+        {
+          label: 'Event Recording',
+          url: 'https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f5941003-705e-479a-8857-b3db000c537a'
         }
       ]
     },
