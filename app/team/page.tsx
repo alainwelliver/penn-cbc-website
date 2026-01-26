@@ -23,7 +23,8 @@ export default function Team() {
       role: 'Co-Founder',
       image: '/team/albert.jpg',
       bio: 'Building AI interpretability infrastructure, agentic systems, and tools with emerging technologies to help teams ship faster.',
-      imagePosition: '100% -10%',
+      imagePosition: '100% -25%',
+      imageScale: 1.1,
       linkedin: 'https://www.linkedin.com/in/albertopher/',
       github: 'https://github.com/Albinator3000'
     },
@@ -125,6 +126,92 @@ export default function Team() {
         <h2 className="text-2xl font-semibold mb-16 text-center font-sans" style={{ color: '#D97757', opacity: 0.8 }}>
           Meet your Executive Board
         </h2>
+        
+        {/* Leadership Section */}
+        <section className="mb-16">
+          <h3
+            className="text-3xl font-bold mb-8 text-center font-sans"
+            style={{ color: '#D97757' }}
+          >
+            Leadership
+          </h3>
+
+          {leadership.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
+              {leadership.map((member, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col items-center w-full max-w-xs"
+                >
+                  <div
+                    className="relative w-full aspect-square mb-4 overflow-hidden rounded-lg shadow-xl"
+                    style={{
+                      backgroundColor: '#E8D5C4'
+                    }}
+                  >
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      fill
+                      className="object-cover"
+                      style={{
+                        objectPosition: member.imagePosition,
+                        transform: `${member.imageScale ? `scale(${member.imageScale})` : ''} ${member.imageTranslateX ? `translateX(${member.imageTranslateX})` : ''}`.trim() || undefined
+                      }}
+                    />
+                  </div>
+                  <h4 className="text-xl font-bold text-center font-sans" style={{ color: '#000' }}>
+                    {member.name}
+                  </h4>
+                  <p className="text-sm text-center font-sans" style={{ color: '#666' }}>
+                    {member.title}
+                  </p>
+                  {member.subtitle && (
+                    <p className="text-sm text-center font-sans" style={{ color: '#666' }}>
+                      {member.subtitle}
+                    </p>
+                  )}
+                  <p className="text-base font-semibold text-center font-sans mt-1" style={{ color: '#D97757' }}>
+                    {member.role}
+                  </p>
+                  <div className="flex gap-4 mt-3">
+                    {member.linkedin && (
+                      <a
+                        href={member.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm font-semibold font-sans hover:opacity-80 transition-opacity"
+                        style={{ color: '#D97757' }}
+                      >
+                        LinkedIn
+                      </a>
+                    )}
+                    {member.github && (
+                      <a
+                        href={member.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm font-semibold font-sans hover:opacity-80 transition-opacity"
+                        style={{ color: '#D97757' }}
+                      >
+                        GitHub
+                      </a>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="flex items-center justify-center py-12">
+              <p
+                className="text-2xl font-semibold font-sans text-center"
+                style={{ color: '#D97757', opacity: 0.7 }}
+              >
+                2026 Leadership loading...
+              </p>
+            </div>
+          )}
+        </section>
 
         {/* Founders and Faculty Advisor Section */}
         <section className="mb-16">
@@ -260,92 +347,6 @@ export default function Team() {
               </div>
             </div>
           </div>
-        </section>
-
-        {/* Leadership Section */}
-        <section className="mb-16">
-          <h3
-            className="text-3xl font-bold mb-8 text-center font-sans"
-            style={{ color: '#D97757' }}
-          >
-            Leadership
-          </h3>
-
-          {leadership.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
-              {leadership.map((member, index) => (
-                <div
-                  key={index}
-                  className="flex flex-col items-center w-full max-w-xs"
-                >
-                  <div
-                    className="relative w-full aspect-square mb-4 overflow-hidden rounded-lg shadow-xl"
-                    style={{
-                      backgroundColor: '#E8D5C4'
-                    }}
-                  >
-                    <Image
-                      src={member.image}
-                      alt={member.name}
-                      fill
-                      className="object-cover"
-                      style={{
-                        objectPosition: member.imagePosition,
-                        transform: `${member.imageScale ? `scale(${member.imageScale})` : ''} ${member.imageTranslateX ? `translateX(${member.imageTranslateX})` : ''}`.trim() || undefined
-                      }}
-                    />
-                  </div>
-                  <h4 className="text-xl font-bold text-center font-sans" style={{ color: '#000' }}>
-                    {member.name}
-                  </h4>
-                  <p className="text-sm text-center font-sans" style={{ color: '#666' }}>
-                    {member.title}
-                  </p>
-                  {member.subtitle && (
-                    <p className="text-sm text-center font-sans" style={{ color: '#666' }}>
-                      {member.subtitle}
-                    </p>
-                  )}
-                  <p className="text-base font-semibold text-center font-sans mt-1" style={{ color: '#D97757' }}>
-                    {member.role}
-                  </p>
-                  <div className="flex gap-4 mt-3">
-                    {member.linkedin && (
-                      <a
-                        href={member.linkedin}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-sm font-semibold font-sans hover:opacity-80 transition-opacity"
-                        style={{ color: '#D97757' }}
-                      >
-                        LinkedIn
-                      </a>
-                    )}
-                    {member.github && (
-                      <a
-                        href={member.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-sm font-semibold font-sans hover:opacity-80 transition-opacity"
-                        style={{ color: '#D97757' }}
-                      >
-                        GitHub
-                      </a>
-                    )}
-                  </div>
-                </div>
-              ))}
-            </div>
-          ) : (
-            <div className="flex items-center justify-center py-12">
-              <p
-                className="text-2xl font-semibold font-sans text-center"
-                style={{ color: '#D97757', opacity: 0.7 }}
-              >
-                2026 Leadership loading...
-              </p>
-            </div>
-          )}
         </section>
       </main>
     </div>
