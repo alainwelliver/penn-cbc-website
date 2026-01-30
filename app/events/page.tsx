@@ -29,7 +29,7 @@ export default function Events() {
     {
       title: 'Claude Code Workshop',
       date: 'February 6, 2026',
-      time: '4:00 PM - 6:30 PM',
+      time: '4:00 PM - 5:30 PM',
       description: 'Hands-on Claude code workshop at AGH 105A/B.',
       buttons: [
         {
