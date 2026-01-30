@@ -3,14 +3,38 @@
 export default function Events() {
   const futureEvents = [
     {
-      title: 'Claude Builder Club Semester Kickoff Event',
-      date: 'January 27, 2026',
-      time: '7:00 PM - 8:00 PM',
-      description: 'Join us for our Spring 2026 semester kickoff event!',
+      title: 'First Builder Hour',
+      date: 'February 1, 2026',
+      time: '5:00 PM - 7:00 PM',
+      description: 'Join us at AGH 216A for our first builder hour of the semester.',
       buttons: [
         {
           label: 'Register on Luma',
-          url: 'https://luma.com/zo3ac37q'
+          url: 'https://luma.com/4kp6bjt4'
+        }
+      ]
+    },
+    {
+      title: 'Claude Builder Club Semester Kickoff Event',
+      date: 'February 3, 2026',
+      time: '7:00 PM - 8:00 PM',
+      description: 'Join us for our Spring 2026 semester kickoff at AGH Lobby and Auditorium!',
+      buttons: [
+        {
+          label: 'Register on Luma',
+          url: 'https://luma.com/l83hman4'
+        }
+      ]
+    },
+    {
+      title: 'Claude Code Workshop',
+      date: 'February 6, 2026',
+      time: '4:00 PM - 6:30 PM',
+      description: 'Hands-on Claude code workshop at AGH 105A/B.',
+      buttons: [
+        {
+          label: 'Register on Luma',
+          url: 'https://luma.com/20vudovc'
         }
       ]
     }
