@@ -42,6 +42,21 @@ export default function Events() {
 
   const pastEvents = [
     {
+      title: 'CIS 5300 Recitation: NLP & Agentic Commerce with Claude',
+      date: 'Spring 2026',
+      description: 'Special recitation session for CIS 5300 students exploring natural language processing and agentic commerce with Claude',
+      buttons: [
+        {
+          label: 'View Slides',
+          url: 'https://docs.google.com/presentation/d/1jJK_ZgkjfU7I0PE7rLg89iGMHZULG6OtygNbG8Eg9UE/edit?usp=sharing'
+        },
+        {
+          label: 'GitHub Demo',
+          url: 'https://github.com/Albinator3000/CBC_at_Penn_X_CIS_5300'
+        }
+      ]
+    },
+    {
       title: 'CIS 2210 Recitation: Advanced Data Structures with Claude',
       date: 'Spring 2026',
       description: 'Special recitation session for CIS 2210 students exploring advanced data structures and AI-assisted programming',
@@ -53,6 +68,10 @@ export default function Events() {
         {
           label: 'GitHub Demo',
           url: 'https://github.com/Albinator3000/CBC_at_Penn-X-CIS_2210'
+        },
+        {
+          label: 'Event Recording',
+          url: 'https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f5941003-705e-479a-8857-b3db000c537a'
         }
       ]
     },
