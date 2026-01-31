@@ -57,11 +57,12 @@ export default function Team() {
   const leadership: TeamMember[] = [
     {
       name: 'Anushka Sheoran',
-      title: 'MSE CIS',
+      title: 'MSE CIS \'27',
       role: 'President',
       image: '/team/anushka.jpg',
       bio: '',
       imagePosition: '50% 50%',
+      linkedin: 'https://www.linkedin.com/in/anushka-sheoran/',
       github: 'https://github.com/asheorann'
     },
     {
