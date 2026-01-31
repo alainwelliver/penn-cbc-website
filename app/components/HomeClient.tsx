@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import DarkModeToggle from "./DarkModeToggle";
 import LoadingAnimation from "./LoadingAnimation";
-import CursorParticles from "./CursorParticles";
 
 type Photo = { src: string; alt: string };
 
@@ -30,7 +29,6 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
   return (
     <>
       <LoadingAnimation />
-      <CursorParticles />
       <div className="min-h-screen flex flex-col">
         <main className="flex flex-col items-center w-full">
           {/* Hero Grid Section */}
