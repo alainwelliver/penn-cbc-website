@@ -8,7 +8,6 @@ const routes = [
   { path: '/foundry', name: 'Foundry' },
   { path: '/team', name: 'Team' },
   { path: '/gallery', name: 'Gallery' },
-  { path: '/calendar', name: 'Calendar' },
   { path: '/events', name: 'Events' },
 ];
 

@@ -3,20 +3,59 @@
 export default function Events() {
   const futureEvents = [
     {
-      title: 'Claude Builder Club Semester Kickoff Event',
-      date: 'January 27, 2026',
-      time: '7:00 PM - 8:00 PM',
-      description: 'Join us for our Spring 2026 semester kickoff event!',
+      title: 'First Builder Hour',
+      date: 'February 1, 2026',
+      time: '5:00 PM - 7:00 PM',
+      description: 'Join us at AGH 216A for our first builder hour of the semester.',
       buttons: [
         {
           label: 'Register on Luma',
-          url: 'https://luma.com/zo3ac37q'
+          url: 'https://luma.com/4kp6bjt4'
+        }
+      ]
+    },
+    {
+      title: 'Claude Builder Club Semester Kickoff Event',
+      date: 'February 3, 2026',
+      time: '7:00 PM - 8:00 PM',
+      description: 'Join us for our Spring 2026 semester kickoff at AGH Lobby and Auditorium!',
+      buttons: [
+        {
+          label: 'Register on Luma',
+          url: 'https://luma.com/l83hman4'
+        }
+      ]
+    },
+    {
+      title: 'Claude Code Workshop',
+      date: 'February 6, 2026',
+      time: '4:00 PM - 5:30 PM',
+      description: 'Hands-on Claude code workshop at AGH 105A/B.',
+      buttons: [
+        {
+          label: 'Register on Luma',
+          url: 'https://luma.com/20vudovc'
         }
       ]
     }
   ];
 
   const pastEvents = [
+    {
+      title: 'CIS 5300 Recitation: NLP & Agentic Commerce with Claude',
+      date: 'Spring 2026',
+      description: 'Special recitation session for CIS 5300 students exploring natural language processing and agentic commerce with Claude',
+      buttons: [
+        {
+          label: 'View Slides',
+          url: 'https://docs.google.com/presentation/d/1jJK_ZgkjfU7I0PE7rLg89iGMHZULG6OtygNbG8Eg9UE/edit?usp=sharing'
+        },
+        {
+          label: 'GitHub Demo',
+          url: 'https://github.com/Albinator3000/CBC_at_Penn_X_CIS_5300'
+        }
+      ]
+    },
     {
       title: 'CIS 2210 Recitation: Advanced Data Structures with Claude',
       date: 'Spring 2026',
@@ -29,6 +68,10 @@ export default function Events() {
         {
           label: 'GitHub Demo',
           url: 'https://github.com/Albinator3000/CBC_at_Penn-X-CIS_2210'
+        },
+        {
+          label: 'Event Recording',
+          url: 'https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f5941003-705e-479a-8857-b3db000c537a'
         }
       ]
     },
@@ -198,6 +241,33 @@ export default function Events() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Calendar Section */}
+        <section className="mb-16">
+          <div className="mb-6">
+            <h2
+              className="text-3xl font-bold text-center font-sans"
+              style={{ color: '#D97757' }}
+            >
+              Our Club Calendar
+            </h2>
+            <div
+              className="h-0.5 mt-2 mx-auto"
+              style={{ backgroundColor: '#D97757', width: '200px' }}
+            />
+          </div>
+          <div className="w-full bg-white rounded-xl shadow-lg p-4 overflow-hidden border-2" style={{ borderColor: '#D97757' }}>
+            <iframe
+              src="https://calendar.google.com/calendar/embed?src=994e94a9b2b5c4e38c53eb412eb729362e86cd701169e17b6a0a4e70f0928f31%40group.calendar.google.com&ctz=America%2FNew_York"
+              style={{ border: 0 }}
+              width="100%"
+              height="600"
+              frameBorder="0"
+              scrolling="no"
+              title="Claude Builder Club Events Calendar"
+            />
           </div>
         </section>
 
