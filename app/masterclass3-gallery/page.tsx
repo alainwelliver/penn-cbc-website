@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 export default function Masterclass3Gallery() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -17,34 +18,51 @@ export default function Masterclass3Gallery() {
   return (
     <div
       className="min-h-screen flex flex-col items-center py-20 px-8"
-      style={{ backgroundColor: '#FBF2E9' }}
+      style={{
+        background: 'linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%)',
+        transition: 'background 0.3s ease'
+      }}
     >
       <main className="w-full max-w-7xl">
         <h1
           className="text-5xl font-bold mb-4 text-center font-sans"
-          style={{ color: '#D97757' }}
+          style={{
+            color: '#D97757',
+            fontSize: 'clamp(2rem, 5vw, 3rem)'
+          }}
         >
           Masterclass 3: LLM Interpretability Workshop
         </h1>
-        <h2 className="text-2xl font-semibold mb-12 text-center font-sans" style={{ color: '#D97757', opacity: 0.8 }}>
+        <h2 className="text-2xl font-semibold mb-12 text-center font-sans" style={{
+          color: '#D97757',
+          opacity: 0.8,
+          fontSize: 'clamp(1.25rem, 2.5vw, 1.5rem)'
+        }}>
           Photos from the Event
         </h2>
 
         {/* Gallery Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {photos.map((photo, index) => (
-            <div
+            <motion.div
               key={index}
-              className="relative aspect-square overflow-hidden rounded-lg shadow-lg cursor-pointer transition-transform duration-200 hover:scale-105"
+              className="relative aspect-square overflow-hidden rounded-xl cursor-pointer transition-all duration-300 hover:scale-105 hover:-translate-y-1"
+              style={{
+                boxShadow: 'var(--shadow-md)'
+              }}
               onClick={() => setSelectedImage(photo.src)}
+              initial={{ opacity: 0, y: 50, scale: 0.9 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
             >
               <Image
                 src={photo.src}
                 alt={photo.alt}
                 fill
-                className="object-cover"
+                className="object-cover transition-transform duration-300"
               />
-            </div>
+            </motion.div>
           ))}
         </div>
 

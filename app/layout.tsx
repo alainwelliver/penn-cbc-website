@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter, Crimson_Text } from "next/font/google";
+import { Plus_Jakarta_Sans, Crimson_Text } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import Navigation from "./components/Navigation";
 
-const inter = Inter({
+const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-sans",
   subsets: ["latin"],
   display: "swap",
@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${crimsonText.variable} antialiased`}
+        className={`${plusJakarta.variable} ${crimsonText.variable} antialiased`}
       >
         <Navigation />
         {children}

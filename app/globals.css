@@ -3,6 +3,38 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Design System - Light Mode */
+  --bg-primary: #FAFAF9;
+  --bg-secondary: #F5F5F4;
+  --bg-card: #ffffff;
+  --text-primary: #1a1a1a;
+  --text-secondary: #666;
+  --text-tertiary: #333;
+  --border-color: rgba(0,0,0,0.05);
+  --shadow-sm: 0 4px 16px rgba(0,0,0,0.08);
+  --shadow-md: 0 8px 32px rgba(0,0,0,0.06);
+  --nav-bg: rgba(250, 250, 249, 0.8);
+  --footer-bg: #ffffff;
+  --rust: #D97757;
+}
+
+[data-theme="dark"] {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+
+  /* Design System - Dark Mode */
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #1a1a1a;
+  --bg-card: #1f1f1f;
+  --text-primary: #ededed;
+  --text-secondary: #a0a0a0;
+  --text-tertiary: #d0d0d0;
+  --border-color: rgba(255,255,255,0.1);
+  --shadow-sm: 0 4px 16px rgba(0,0,0,0.3);
+  --shadow-md: 0 8px 32px rgba(0,0,0,0.4);
+  --nav-bg: rgba(26, 26, 26, 0.85);
+  --footer-bg: #1a1a1a;
 }
 
 @theme inline {
@@ -19,8 +51,51 @@
   }
 }
 
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better font rendering for crispness and readability */
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  color: var(--text-primary);
   font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  transition: background 0.3s ease, color 0.3s ease;
+  line-height: 1.6;
+}
+
+/* Professional selection color */
+::selection {
+  background: rgba(217, 119, 87, 0.2);
+  color: inherit;
+}
+
+::-moz-selection {
+  background: rgba(217, 119, 87, 0.2);
+  color: inherit;
+}
+
+/* Accessible focus states */
+*:focus-visible {
+  outline: 2px solid #D97757;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Remove default focus styles for mouse users */
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Custom cursor with Claude logo SVG */
+body {
+  cursor: url('/claude-cursor.svg') 12 12, auto;
+}
+
+a, button, [role="button"], input[type="submit"], input[type="button"] {
+  cursor: url('/claude-cursor.svg') 12 12, pointer;
 }

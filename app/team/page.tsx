@@ -1,4 +1,7 @@
+'use client';
+
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 export default function Team() {
   type TeamMember = {
@@ -114,16 +117,26 @@ export default function Team() {
   return (
     <div
       className="min-h-screen flex flex-col items-center py-20 px-8"
-      style={{ backgroundColor: '#FBF2E9' }}
+      style={{
+        background: 'linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%)',
+        transition: 'background 0.3s ease'
+      }}
     >
       <main className="w-full max-w-7xl">
         <h1
           className="text-5xl font-bold mb-4 text-center font-sans"
-          style={{ color: '#D97757' }}
+          style={{
+            color: '#D97757',
+            fontSize: 'clamp(2.5rem, 5vw, 3rem)'
+          }}
         >
           Welcome to the Builder Club
         </h1>
-        <h2 className="text-2xl font-semibold mb-16 text-center font-sans" style={{ color: '#D97757', opacity: 0.8 }}>
+        <h2 className="text-2xl font-semibold mb-16 text-center font-sans" style={{
+          color: '#D97757',
+          opacity: 0.8,
+          fontSize: 'clamp(1.25rem, 2.5vw, 1.5rem)'
+        }}>
           Meet your Executive Board
         </h2>
         
@@ -131,7 +144,10 @@ export default function Team() {
         <section className="mb-16">
           <h3
             className="text-3xl font-bold mb-8 text-center font-sans"
-            style={{ color: '#D97757' }}
+            style={{
+              color: '#D97757',
+              fontSize: 'clamp(1.75rem, 3vw, 2rem)'
+            }}
           >
             Leadership
           </h3>
@@ -139,35 +155,40 @@ export default function Team() {
           {leadership.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
               {leadership.map((member, index) => (
-                <div
+                <motion.div
                   key={index}
                   className="flex flex-col items-center w-full max-w-xs"
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
                 >
                   <div
-                    className="relative w-full aspect-square mb-4 overflow-hidden rounded-lg shadow-xl"
+                    className="relative w-full aspect-square mb-4 overflow-hidden rounded-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1"
                     style={{
-                      backgroundColor: '#E8D5C4'
+                      backgroundColor: 'var(--bg-card)',
+                      boxShadow: 'var(--shadow-md)'
                     }}
                   >
                     <Image
                       src={member.image}
                       alt={member.name}
                       fill
-                      className="object-cover"
+                      className="object-cover transition-transform duration-300"
                       style={{
                         objectPosition: member.imagePosition,
                         transform: `${member.imageScale ? `scale(${member.imageScale})` : ''} ${member.imageTranslateX ? `translateX(${member.imageTranslateX})` : ''}`.trim() || undefined
                       }}
                     />
                   </div>
-                  <h4 className="text-xl font-bold text-center font-sans" style={{ color: '#000' }}>
+                  <h4 className="text-xl font-bold text-center font-sans" style={{ color: 'var(--text-primary)' }}>
                     {member.name}
                   </h4>
-                  <p className="text-sm text-center font-sans" style={{ color: '#666' }}>
+                  <p className="text-sm text-center font-sans" style={{ color: 'var(--text-secondary)' }}>
                     {member.title}
                   </p>
                   {member.subtitle && (
-                    <p className="text-sm text-center font-sans" style={{ color: '#666' }}>
+                    <p className="text-sm text-center font-sans" style={{ color: 'var(--text-secondary)' }}>
                       {member.subtitle}
                     </p>
                   )}
@@ -180,7 +201,7 @@ export default function Team() {
                         href={member.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm font-semibold font-sans hover:opacity-80 transition-opacity"
+                        className="text-sm font-semibold font-sans transition-all duration-300 hover:opacity-80 hover:scale-105"
                         style={{ color: '#D97757' }}
                       >
                         LinkedIn
@@ -191,14 +212,14 @@ export default function Team() {
                         href={member.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm font-semibold font-sans hover:opacity-80 transition-opacity"
+                        className="text-sm font-semibold font-sans transition-all duration-300 hover:opacity-80 hover:scale-105"
                         style={{ color: '#D97757' }}
                       >
                         GitHub
                       </a>
                     )}
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
           ) : (
@@ -220,49 +241,57 @@ export default function Team() {
             <div>
               <h3
                 className="text-3xl font-bold mb-8 text-center font-sans"
-                style={{ color: '#D97757' }}
+                style={{
+                  color: '#D97757',
+                  fontSize: 'clamp(1.75rem, 3vw, 2rem)'
+                }}
               >
                 Founders
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {founders.map((member, index) => (
-                  <div
+                  <motion.div
                     key={index}
                     className="flex flex-col items-center"
+                    initial={{ opacity: 0, x: index === 0 ? -30 : 30 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
                   >
                     <div
-                      className="relative w-full aspect-square mb-4 overflow-hidden rounded-lg shadow-xl"
+                      className="relative w-full aspect-square mb-4 overflow-hidden rounded-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1"
                       style={{
                         maxWidth: '300px',
-                        backgroundColor: '#E8D5C4'
+                        backgroundColor: 'var(--bg-card)',
+                        boxShadow: 'var(--shadow-md)'
                       }}
                     >
                       <Image
                         src={member.image}
                         alt={member.name}
                         fill
-                        className="object-cover"
+                        className="object-cover transition-transform duration-300"
                         style={{
                           objectPosition: member.imagePosition,
                           transform: `${member.imageScale ? `scale(${member.imageScale})` : ''} ${member.imageTranslateX ? `translateX(${member.imageTranslateX})` : ''}`.trim() || undefined
                         }}
                       />
                     </div>
-                    <h4 className="text-xl font-bold text-center font-sans" style={{ color: '#000' }}>
+                    <h4 className="text-xl font-bold text-center font-sans" style={{ color: 'var(--text-primary)' }}>
                       {member.name}
                     </h4>
-                    <p className="text-sm text-center font-sans" style={{ color: '#666' }}>
+                    <p className="text-sm text-center font-sans" style={{ color: 'var(--text-secondary)' }}>
                       {member.title}
                     </p>
                     {member.subtitle && (
-                      <p className="text-sm text-center font-sans" style={{ color: '#666' }}>
+                      <p className="text-sm text-center font-sans" style={{ color: 'var(--text-secondary)' }}>
                         {member.subtitle}
                       </p>
                     )}
                     <p className="text-base font-semibold text-center font-sans mt-1" style={{ color: '#D97757' }}>
                       {member.role}
                     </p>
-                    <p className="text-sm text-center font-sans mt-3 max-w-xs" style={{ color: '#666' }}>
+                    <p className="text-sm text-center font-sans mt-3 max-w-xs" style={{ color: 'var(--text-tertiary)' }}>
                       {member.bio}
                     </p>
                     <div className="flex gap-4 mt-3">
@@ -271,7 +300,7 @@ export default function Team() {
                           href={member.linkedin}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-sm font-semibold font-sans hover:opacity-80 transition-opacity"
+                          className="text-sm font-semibold font-sans transition-all duration-300 hover:opacity-80 hover:scale-105"
                           style={{ color: '#D97757' }}
                         >
                           LinkedIn
@@ -282,14 +311,14 @@ export default function Team() {
                           href={member.github}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-sm font-semibold font-sans hover:opacity-80 transition-opacity"
+                          className="text-sm font-semibold font-sans transition-all duration-300 hover:opacity-80 hover:scale-105"
                           style={{ color: '#D97757' }}
                         >
                           GitHub
                         </a>
                       )}
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>
@@ -301,49 +330,59 @@ export default function Team() {
             <div>
               <h3
                 className="text-3xl font-bold mb-8 text-center font-sans"
-                style={{ color: '#D97757' }}
+                style={{
+                  color: '#D97757',
+                  fontSize: 'clamp(1.75rem, 3vw, 2rem)'
+                }}
               >
                 Faculty Advisor
               </h3>
               <div className="flex justify-center">
-                <div className="flex flex-col items-center max-w-md">
+                <motion.div
+                  className="flex flex-col items-center max-w-md"
+                  initial={{ opacity: 0, x: 30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: 0.4 }}
+                >
                   <div
-                    className="relative w-full aspect-square mb-4 overflow-hidden rounded-lg shadow-xl"
+                    className="relative w-full aspect-square mb-4 overflow-hidden rounded-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1"
                     style={{
                       maxWidth: '300px',
-                      backgroundColor: '#E8D5C4'
+                      backgroundColor: 'var(--bg-card)',
+                      boxShadow: 'var(--shadow-md)'
                     }}
                   >
                     <Image
                       src={facultyAdvisor.image}
                       alt={facultyAdvisor.name}
                       fill
-                      className="object-cover"
+                      className="object-cover transition-transform duration-300"
                       style={{ objectPosition: facultyAdvisor.imagePosition }}
                     />
                   </div>
-                  <h4 className="text-xl font-bold text-center font-sans" style={{ color: '#000' }}>
+                  <h4 className="text-xl font-bold text-center font-sans" style={{ color: 'var(--text-primary)' }}>
                     {facultyAdvisor.name}
                   </h4>
-                  <p className="text-sm text-center font-sans" style={{ color: '#666' }}>
+                  <p className="text-sm text-center font-sans" style={{ color: 'var(--text-secondary)' }}>
                     {facultyAdvisor.title}
                   </p>
                   <p className="text-base font-semibold text-center font-sans mt-1" style={{ color: '#D97757' }}>
                     {facultyAdvisor.role}
                   </p>
-                  <p className="text-sm text-center font-sans mt-3" style={{ color: '#666' }}>
+                  <p className="text-sm text-center font-sans mt-3" style={{ color: 'var(--text-tertiary)' }}>
                     {facultyAdvisor.bio}
                   </p>
                   <a
                     href={facultyAdvisor.bioLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm font-semibold text-center font-sans mt-2 inline-block hover:opacity-80 transition-opacity"
+                    className="text-sm font-semibold text-center font-sans mt-2 inline-block transition-all duration-300 hover:opacity-80 hover:scale-105"
                     style={{ color: '#D97757' }}
                   >
                     View Extended Bio →
                   </a>
-                </div>
+                </motion.div>
               </div>
             </div>
           </div>
