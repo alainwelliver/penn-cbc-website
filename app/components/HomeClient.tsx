@@ -210,7 +210,7 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
         {/* Action Buttons */}
         <div className="flex flex-col items-center gap-6 w-full max-w-lg px-8 mt-12">
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLScP9LuFwiHEx806tv9zczjCIEzqO1Zjb-FjB4XWoa6BS1NNKQ/viewform"
+            href="https://www.jotform.com/253555944387168"
             target="_blank"
             rel="noopener noreferrer"
             className="w-64 text-white font-sans font-semibold py-4 px-8 rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl hover:opacity-90 text-center"
