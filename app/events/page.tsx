@@ -3,59 +3,20 @@
 export default function Events() {
   const futureEvents = [
     {
-      title: 'First Builder Hour',
-      date: 'February 1, 2026',
-      time: '5:00 PM - 7:00 PM',
-      description: 'Join us at AGH 216A for our first builder hour of the semester.',
-      buttons: [
-        {
-          label: 'Register on Luma',
-          url: 'https://luma.com/4kp6bjt4'
-        }
-      ]
-    },
-    {
       title: 'Claude Builder Club Semester Kickoff Event',
-      date: 'February 3, 2026',
+      date: 'January 27, 2026',
       time: '7:00 PM - 8:00 PM',
-      description: 'Join us for our Spring 2026 semester kickoff at AGH Lobby and Auditorium!',
+      description: 'Join us for our Spring 2026 semester kickoff event!',
       buttons: [
         {
           label: 'Register on Luma',
-          url: 'https://luma.com/l83hman4'
-        }
-      ]
-    },
-    {
-      title: 'Claude Code Workshop',
-      date: 'February 6, 2026',
-      time: '4:00 PM - 5:30 PM',
-      description: 'Hands-on Claude code workshop at AGH 105A/B.',
-      buttons: [
-        {
-          label: 'Register on Luma',
-          url: 'https://luma.com/20vudovc'
+          url: 'https://luma.com/zo3ac37q'
         }
       ]
     }
   ];
 
   const pastEvents = [
-    {
-      title: 'CIS 5300 Recitation: NLP & Agentic Commerce with Claude',
-      date: 'Spring 2026',
-      description: 'Special recitation session for CIS 5300 students exploring natural language processing and agentic commerce with Claude',
-      buttons: [
-        {
-          label: 'View Slides',
-          url: 'https://docs.google.com/presentation/d/1jJK_ZgkjfU7I0PE7rLg89iGMHZULG6OtygNbG8Eg9UE/edit?usp=sharing'
-        },
-        {
-          label: 'GitHub Demo',
-          url: 'https://github.com/Albinator3000/CBC_at_Penn_X_CIS_5300'
-        }
-      ]
-    },
     {
       title: 'CIS 2210 Recitation: Advanced Data Structures with Claude',
       date: 'Spring 2026',
@@ -68,10 +29,6 @@ export default function Events() {
         {
           label: 'GitHub Demo',
           url: 'https://github.com/Albinator3000/CBC_at_Penn-X-CIS_2210'
-        },
-        {
-          label: 'Event Recording',
-          url: 'https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f5941003-705e-479a-8857-b3db000c537a'
         }
       ]
     },
@@ -214,12 +171,8 @@ export default function Events() {
               {futureEvents.map((event, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-xl p-6 shadow-lg transition-all duration-300 border-2"
-                  style={{
-                    borderColor: '#D97757',
-                    animation: `pulse-subtle 3s ease-in-out infinite`,
-                    animationDelay: `${index * 0.5}s`
-                  }}
+                  className="bg-white rounded-xl p-6 shadow-lg transition-all duration-200 border-2 hover:scale-[1.03] hover:shadow-xl"
+                  style={{ borderColor: '#D97757' }}
                 >
                   <h3 className="text-xl font-bold mb-2 font-sans" style={{ color: '#D97757' }}>
                     {event.title}
@@ -246,18 +199,6 @@ export default function Events() {
               ))}
             </div>
           </div>
-          <style jsx>{`
-            @keyframes pulse-subtle {
-              0%, 100% {
-                transform: scale(1);
-                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-              }
-              50% {
-                transform: scale(1.02);
-                box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-              }
-            }
-          `}</style>
         </section>
 
         {/* Past Events Section */}
@@ -293,7 +234,7 @@ export default function Events() {
             {pastEvents.filter(event => event.date.includes('Spring 2026')).map((event, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-200 border-2"
+                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-200 border-2 hover:scale-[1.03]"
                 style={{ borderColor: '#D97757' }}
               >
                 <h3 className="text-xl font-bold mb-2 font-sans" style={{ color: '#D97757' }}>
@@ -338,7 +279,7 @@ export default function Events() {
             {pastEvents.filter(event => event.date.includes('Fall 2025')).map((event, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-200 border-2"
+                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-200 border-2 hover:scale-[1.03]"
                 style={{ borderColor: '#D97757' }}
               >
                 <h3 className="text-xl font-bold mb-2 font-sans" style={{ color: '#D97757' }}>
