@@ -5,18 +5,6 @@ import { motion } from 'framer-motion';
 export default function Events() {
   const futureEvents = [
     {
-      title: 'First Builder Hour',
-      date: 'February 1, 2026',
-      time: '5:00 PM - 7:00 PM',
-      description: 'Join us at AGH 216A for our first builder hour of the semester.',
-      buttons: [
-        {
-          label: 'Register on Luma',
-          url: 'https://luma.com/4kp6bjt4'
-        }
-      ]
-    },
-    {
       title: 'Claude Builder Club Semester Kickoff Event',
       date: 'February 3, 2026',
       time: '7:00 PM - 8:00 PM',
@@ -43,6 +31,17 @@ export default function Events() {
   ];
 
   const pastEvents = [
+    {
+      title: 'First Builder Hour',
+      date: 'Spring 2026',
+      description: 'Join us at AGH 216A for our first builder hour of the semester.',
+      buttons: [
+        {
+          label: 'Register on Luma',
+          url: 'https://luma.com/4kp6bjt4'
+        }
+      ]
+    },
     {
       title: 'CIS 5300 Recitation: NLP & Agentic Commerce with Claude',
       date: 'Spring 2026',
