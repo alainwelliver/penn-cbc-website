@@ -3,11 +3,12 @@
 import { motion } from 'framer-motion';
 
 export default function Events() {
-  const futureEvents = [
+  const futureEvents: { title: string; date: string; time: string; description: string; buttons: { label: string; url: string }[] }[] = [];
+
+  const pastEvents = [
     {
       title: 'Claude Code Workshop',
-      date: 'February 6, 2026',
-      time: '4:00 PM - 5:30 PM',
+      date: 'February 6, 2026 (Spring 2026)',
       description: 'Hands-on Claude code workshop at AGH 105A/B.',
       buttons: [
         {
@@ -15,10 +16,7 @@ export default function Events() {
           url: 'https://luma.com/20vudovc'
         }
       ]
-    }
-  ];
-
-  const pastEvents = [
+    },
     {
       title: 'Claude Builder Club Semester Kickoff Event',
       date: 'Spring 2026',
@@ -209,6 +207,11 @@ export default function Events() {
           </div>
 
           <div className={futureEvents.length === 1 ? "flex justify-center" : ""}>
+            {futureEvents.length === 0 ? (
+              <p className="text-center py-8 font-sans" style={{ color: 'var(--text-secondary)' }}>
+                No upcoming events at the moment. Check back soon!
+              </p>
+            ) : (
             <div className={`grid gap-6 w-full ${futureEvents.length === 1 ? 'md:grid-cols-1 max-w-xl' : 'md:grid-cols-2'}`}>
               {futureEvents.map((event, index) => (
                 <motion.div
@@ -249,6 +252,7 @@ export default function Events() {
                 </motion.div>
               ))}
             </div>
+            )}
           </div>
         </section>
 

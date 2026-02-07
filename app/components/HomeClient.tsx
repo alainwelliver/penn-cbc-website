@@ -259,31 +259,16 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
                 </div>
 
                 <div className="space-y-3">
-                  <a
-                    href="/events"
-                    className="block p-4 rounded-xl transition-all duration-300 cursor-pointer"
+                  <p
+                    className="p-4 rounded-xl"
                     style={{
                       background: 'var(--bg-secondary)',
-                      borderLeft: '3px solid #D97757'
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.transform = 'translateX(4px)';
-                      e.currentTarget.style.background = 'var(--bg-card)';
-                      e.currentTarget.style.boxShadow = '0 4px 12px rgba(217, 119, 87, 0.2)';
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.transform = 'translateX(0)';
-                      e.currentTarget.style.background = 'var(--bg-secondary)';
-                      e.currentTarget.style.boxShadow = 'none';
+                      color: 'var(--text-secondary)',
+                      fontSize: '0.95rem'
                     }}
                   >
-                    <div style={{ fontSize: '0.85rem', color: '#D97757', fontWeight: 600, marginBottom: '0.25rem' }}>
-                      Feb 6, 2026 • 4:00 PM
-                    </div>
-                    <div style={{ fontWeight: 600, color: 'var(--text-primary)' }}>
-                      Claude Code Workshop
-                    </div>
-                  </a>
+                    No upcoming events at the moment.
+                  </p>
                 </div>
 
                 <a
