@@ -3,19 +3,29 @@
 import { motion } from 'framer-motion';
 
 export default function Events() {
-  const futureEvents: { title: string; date: string; time: string; description: string; buttons: { label: string; url: string }[] }[] = [];
+  const futureEvents: { title: string; date: string; time: string; description: string; buttons: { label: string; url: string }[] }[] = [
+    {
+      title: 'Entrepreneurship 101',
+      date: 'Feb 13, 2026',
+      time: '4:30 - 5:30 PM at AGH 105',
+      description: 'Everyone has ideas, but few have the right problem. Learn how to validate your idea, define your user, and leave with a one-page problem-solution brief you can actually build from.',
+      buttons: [{ label: 'Register on Luma', url: 'https://luma.com/odqhow3k' }]
+    },
+    {
+      title: 'Board Game Mixer',
+      date: 'Feb 22, 2026',
+      time: '3 - 5 PM at AGH 216A',
+      description: 'Come play some board games with us and meet other club members!',
+      buttons: [{ label: 'Register on Luma', url: 'https://luma.com/rbpazilw' }]
+    }
+  ];
 
   const pastEvents = [
     {
       title: 'Claude Code Workshop',
       date: 'February 6, 2026 (Spring 2026)',
       description: 'Hands-on Claude code workshop at AGH 105A/B.',
-      buttons: [
-        {
-          label: 'Register on Luma',
-          url: 'https://luma.com/20vudovc'
-        }
-      ]
+      buttons: []
     },
     {
       title: 'Claude Builder Club Semester Kickoff Event',
@@ -253,6 +263,31 @@ export default function Events() {
               ))}
             </div>
             )}
+          </div>
+        </section>
+
+        {/* Interest Survey Section */}
+        <section className="mb-16">
+          <div
+            className="w-full rounded-xl p-6 text-center transition-all duration-300 border-2"
+            style={{
+              backgroundColor: 'var(--bg-card)',
+              borderColor: '#D97757',
+              boxShadow: 'var(--shadow-sm)'
+            }}
+          >
+            <p className="font-sans mb-4" style={{ color: 'var(--text-primary)', fontSize: '1.1rem' }}>
+              Share your interests and help us tailor our events to what you want to build and learn. Tell us what topics, formats, and activities you&apos;d like to see this semester.
+            </p>
+            <a
+              href="https://forms.gle/DahS8694gtXrAicU9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-white font-sans font-semibold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg hover:opacity-90"
+              style={{ backgroundColor: '#D97757' }}
+            >
+              CBC Spring 2026 Interest Survey
+            </a>
           </div>
         </section>
 

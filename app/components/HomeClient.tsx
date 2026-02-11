@@ -259,16 +259,61 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
                 </div>
 
                 <div className="space-y-3">
-                  <p
-                    className="p-4 rounded-xl"
+                  <a
+                    href="https://luma.com/odqhow3k"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block p-4 rounded-xl transition-all duration-300 cursor-pointer"
                     style={{
                       background: 'var(--bg-secondary)',
-                      color: 'var(--text-secondary)',
-                      fontSize: '0.95rem'
+                      borderLeft: '3px solid #D97757'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = 'translateX(4px)';
+                      e.currentTarget.style.background = 'var(--bg-card)';
+                      e.currentTarget.style.boxShadow = '0 4px 12px rgba(217, 119, 87, 0.2)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = 'translateX(0)';
+                      e.currentTarget.style.background = 'var(--bg-secondary)';
+                      e.currentTarget.style.boxShadow = 'none';
                     }}
                   >
-                    No upcoming events at the moment.
-                  </p>
+                    <div style={{ fontSize: '0.85rem', color: '#D97757', fontWeight: 600, marginBottom: '0.25rem' }}>
+                      Feb 13, 2026 • 4:30 PM
+                    </div>
+                    <div style={{ fontWeight: 600, color: 'var(--text-primary)' }}>
+                      Entrepreneurship 101
+                    </div>
+                  </a>
+
+                  <a
+                    href="https://luma.com/rbpazilw"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block p-4 rounded-xl transition-all duration-300 cursor-pointer"
+                    style={{
+                      background: 'var(--bg-secondary)',
+                      borderLeft: '3px solid #D97757'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = 'translateX(4px)';
+                      e.currentTarget.style.background = 'var(--bg-card)';
+                      e.currentTarget.style.boxShadow = '0 4px 12px rgba(217, 119, 87, 0.2)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = 'translateX(0)';
+                      e.currentTarget.style.background = 'var(--bg-secondary)';
+                      e.currentTarget.style.boxShadow = 'none';
+                    }}
+                  >
+                    <div style={{ fontSize: '0.85rem', color: '#D97757', fontWeight: 600, marginBottom: '0.25rem' }}>
+                      Feb 22, 2026 • 3:00 PM
+                    </div>
+                    <div style={{ fontWeight: 600, color: 'var(--text-primary)' }}>
+                      Board Game Mixer
+                    </div>
+                  </a>
                 </div>
 
                 <a
@@ -599,6 +644,26 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
                     <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                  </svg>
+                </a>
+
+                <a
+                  href="mailto:penncbc@gmail.com"
+                  className="w-11 h-11 rounded-xl flex items-center justify-center transition-all duration-300"
+                  style={{ background: 'var(--bg-secondary)' }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = '#D97757';
+                    e.currentTarget.style.transform = 'translateY(-3px)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = 'var(--bg-secondary)';
+                    e.currentTarget.style.transform = 'translateY(0)';
+                  }}
+                  title="Email"
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ color: 'var(--text-primary)' }}>
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,13 2,6" />
                   </svg>
                 </a>
               </div>
