@@ -26,7 +26,7 @@ export const products: Product[] = [
     id: 'student-calendar',
     name: 'Kushal Garg',
     email: 'kushalx@seas.upenn.edu',
-    title: 'Student Calendar (Name TBD)',
+    title: 'Student Calendar',
     shortDescription: 'One stop shop for all deadlines',
     description: 'Student life consists of lots of aspects - assignments, exams, clubs, projects, events etc. It becomes very difficult to keep track of everything. The project would automatically read emails, pick up events and deadlines and put it on calendar + connect with canvas and ed to pull any deadlines and put on calendar so students are always upto date about what\'s happening and do not miss anything.',
     teamMembers: [],
