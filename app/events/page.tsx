@@ -5,22 +5,42 @@ import { motion } from 'framer-motion';
 export default function Events() {
   const futureEvents: { title: string; date: string; time: string; description: string; buttons: { label: string; url: string }[] }[] = [
     {
-      title: 'Entrepreneurship 101',
-      date: 'Feb 13, 2026',
+      title: 'CBC Technical Workshop #2: MCP',
+      date: 'Feb 20, 2026',
       time: '4:30 - 5:30 PM at AGH 105',
-      description: 'Everyone has ideas, but few have the right problem. Learn how to validate your idea, define your user, and leave with a one-page problem-solution brief you can actually build from.',
-      buttons: [{ label: 'Register on Luma', url: 'https://luma.com/odqhow3k' }]
+      description: 'Learn how to connect models to tools and data with MCP!',
+      buttons: [{ label: 'Register on Luma', url: 'https://luma.com/2elmybdj' }]
     },
     {
-      title: 'Board Game Mixer',
+      title: 'CBC Board Game Mixer',
       date: 'Feb 22, 2026',
       time: '3 - 5 PM at AGH 216A',
       description: 'Come play some board games with us and meet other club members!',
       buttons: [{ label: 'Register on Luma', url: 'https://luma.com/rbpazilw' }]
+    },
+    {
+      title: 'AI in Education—Where Are We Now? (Co-hosted with AIED @ Penn)',
+      date: 'Feb 23, 2026',
+      time: '3 - 4 PM (Location TBD)',
+      description: 'AI in Education—Where Are We Now? Join us for an engaging exploration of the evolving landscape of Artificial Intelligence within the Graduate School of Education (GSE).',
+      buttons: []
+    },
+    {
+      title: 'CBC Gen AI for Biotech',
+      date: 'Feb 27, 2026',
+      time: '3 - 4 PM at AGH 414',
+      description: 'AI is changing how we research new molecules and drugs! Come learn about applications of Generative AI in biotechnology.',
+      buttons: []
     }
   ];
 
   const pastEvents = [
+    {
+      title: 'Entrepreneurship 101',
+      date: 'February 13, 2026 (Spring 2026)',
+      description: 'Everyone has ideas, but few have the right problem. Learn how to validate your idea, define your user, and leave with a one-page problem-solution brief you can actually build from.',
+      buttons: []
+    },
     {
       title: 'Claude Code Workshop',
       date: 'February 6, 2026 (Spring 2026)',
