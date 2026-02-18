@@ -21,7 +21,7 @@ export default function Events() {
     {
       title: 'AI in Education—Where Are We Now? (Co-hosted with AIED @ Penn)',
       date: 'Feb 23, 2026',
-      time: '3 - 4 PM (Location TBD)',
+      time: '3 - 4 PM at Stiteler 263',
       description: 'AI in Education—Where Are We Now? Join us for an engaging exploration of the evolving landscape of Artificial Intelligence within the Graduate School of Education (GSE).',
       buttons: []
     },
