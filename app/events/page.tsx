@@ -22,8 +22,8 @@ export default function Events() {
       title: 'AI in Education—Where Are We Now? (Co-hosted with AIED @ Penn)',
       date: 'Feb 23, 2026',
       time: '3 - 4 PM at Stiteler 263',
-      description: 'AI in Education—Where Are We Now? Join us for an engaging exploration of the evolving landscape of Artificial Intelligence within the Graduate School of Education (GSE).',
-      buttons: []
+      description: 'Join us for an engaging exploration of AI\'s impact on equity in education and its evolving role across the field. Discover how you can apply AI in your own research or classroom settings. Co-hosted by Claude Builder Club and AIED @ Penn.',
+      buttons: [{ label: 'Register on Luma', url: 'https://luma.com/uf1ht8mz' }]
     },
     {
       title: 'CBC Gen AI for Biotech',
