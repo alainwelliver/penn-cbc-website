@@ -8,6 +8,7 @@ export interface Product {
   teamMembers: { name: string; email: string }[];
   stage: 'Live' | 'MVP' | 'Beta' | 'Ideation';
   repoLink: string;
+  isBoardProject?: boolean;
 }
 
 export const products: Product[] = [
@@ -252,5 +253,28 @@ export const products: Product[] = [
     teamMembers: [],
     stage: 'Ideation',
     repoLink: 'https://github.com/tonysui88/articulAIte'
+  },
+  {
+    id: 'attendance-location-for-groups',
+    name: 'CBC Board',
+    email: 'penncbc@gmail.com',
+    title: 'Attendance Location for Groups',
+    shortDescription: 'Internal attendance tracking + targeted email blasts for CBC.',
+    description: 'CBC uses this internal tool to track attendance, segment attendee lists, and send targeted email blasts for benefits like Claude Pro and important announcements such as Foundry.',
+    teamMembers: [],
+    stage: 'Live',
+    repoLink: 'https://attendance-location-for-groups.vercel.app/'
+  },
+  {
+    id: 'anchor-dating-first',
+    name: 'Kyle Zhang',
+    email: 'kyle100@wharton.upenn.edu',
+    title: 'Anchor - Dating First',
+    shortDescription: 'Curate the perfect date first, then match with someone who wants the same experience.',
+    description: 'In real life, you do not meet people by staring at their profile. The context creates the connection. Anchor flips the script by letting you curate the date first, then match with someone who wants the same experience. Anchor AI recommends venues and events it predicts you will enjoy and matches you with another attendee based on an AI-determined compatibility fit.',
+    teamMembers: [{ name: 'Antony Tran', email: 'antonyltran@gmail.com' }],
+    stage: 'Beta',
+    repoLink: 'https://anchor.dating',
+    isBoardProject: true
   }
 ];
