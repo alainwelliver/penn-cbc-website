@@ -316,7 +316,9 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
                   </a>
 
                   <a
-                    href="/events"
+                    href="https://luma.com/uf1ht8mz"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="block p-4 rounded-xl transition-all duration-300 cursor-pointer"
                     style={{
                       background: 'var(--bg-secondary)',
