@@ -53,7 +53,7 @@ export const products: Product[] = [
     description: 'Clarify is an AI-driven detection and authentication platform designed to restore trust in digital media. As synthetic images, videos, and voices become increasingly indistinguishable from reality, individuals and institutions lack reliable tools to verify what they see and hear online. Clarify addresses this by scanning content across social platforms and the web to detect visual and audio deepfakes in real time. In addition, Clarify provides an invisible authenticity stamp that creators, journalists, and organizations can embed in legitimate media, allowing downstream viewers to confirm its origin and integrity. The platform is designed for both consumers and enterprises, offering a mobile app, browser extension, and enterprise verification tools. By combining detection with cryptographic-style verification, Clarify creates a shared infrastructure for digital trust, helping users, media organizations, and brands navigate the AI era with confidence.',
     teamMembers: [],
     stage: 'MVP',
-    repoLink: ''
+    repoLink: 'https://www.clarifytechnologies.org/'
   },
   {
     id: 'avdah',
