@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  // 25 diverse photos from different events
+  // 32 diverse photos from different events
   const photos = [
     { src: '/gallery-photos/photo1.jpg', alt: 'CBC Meeting' },
     { src: '/gallery-photos/photo2.jpg', alt: 'Workshop Session' },
@@ -33,7 +33,14 @@ export default function Gallery() {
     { src: '/gallery-photos/photo22.jpg', alt: 'Hackathon Activities' },
     { src: '/gallery-photos/photo23.jpg', alt: 'Hackathon Showcase' },
     { src: '/gallery-photos/photo24.jpg', alt: 'Hackathon Community' },
-    { src: '/gallery-photos/photo25.jpg', alt: 'Fireside Chat' }
+    { src: '/gallery-photos/photo25.jpg', alt: 'Fireside Chat' },
+    { src: '/gallery-photos/photo26.jpg', alt: 'IPD 7990 Guest Lecture' },
+    { src: '/gallery-photos/photo27.jpg', alt: 'IPD Classroom Session' },
+    { src: '/gallery-photos/photo28.jpg', alt: 'IPD Lecture Presentation' },
+    { src: '/gallery-photos/photo29.jpg', alt: 'LLM Interpretability Workshop' },
+    { src: '/gallery-photos/photo30.jpg', alt: 'Masterclass Dashboard Demo' },
+    { src: '/gallery-photos/photo31.jpg', alt: 'Interpretability Token Analysis' },
+    { src: '/gallery-photos/photo32.jpg', alt: 'CIS 5300 Office Hours' }
   ];
 
   return (

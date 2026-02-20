@@ -36,6 +36,25 @@ export default function Events() {
 
   const pastEvents = [
     {
+      title: 'IPD 7990 Guest Lecture: Building with Claude',
+      date: 'Spring 2026',
+      description: 'Special guest lecture for IPD 7990 students exploring AI-assisted product development and building with Claude',
+      buttons: [
+        {
+          label: 'View Slides',
+          url: 'https://docs.google.com/presentation/d/1BfjMl-q_RoPtoeb70pP8m3pJExGVVBwsSKQ-yfeo2P4/edit?usp=sharing'
+        },
+        {
+          label: 'GitHub Demo',
+          url: 'https://github.com/Albinator3000/CBC_at_Penn_X_IPD_7990'
+        },
+        {
+          label: 'View Photos',
+          url: '/ipd7990-gallery'
+        }
+      ]
+    },
+    {
       title: 'Entrepreneurship 101',
       date: 'February 13, 2026 (Spring 2026)',
       description: 'Everyone has ideas, but few have the right problem. Learn how to validate your idea, define your user, and leave with a one-page problem-solution brief you can actually build from.',

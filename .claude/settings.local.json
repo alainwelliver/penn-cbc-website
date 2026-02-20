@@ -6,7 +6,12 @@
       "Bash(npm run build:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(npm install framer-motion)",
+      "mcp__ide__getDiagnostics",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:docs.google.com)",
+      "Read(//Users/albertwopheriv/Library/**)"
     ]
   }
 }
