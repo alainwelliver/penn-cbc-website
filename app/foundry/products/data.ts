@@ -312,7 +312,8 @@ export const products: Product[] = [
     description: 'CBC uses this internal tool to track attendance, segment attendee lists, and send targeted email blasts for benefits like Claude Pro and important announcements such as Foundry.',
     teamMembers: [],
     stage: 'Live',
-    repoLink: 'https://attendance-location-for-groups.vercel.app/'
+    repoLink: 'https://attendance-location-for-groups.vercel.app/',
+    isBoardProject: true
   },
   {
     id: 'anchor-dating-first',
