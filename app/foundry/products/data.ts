@@ -255,6 +255,54 @@ export const products: Product[] = [
     repoLink: 'https://github.com/tonysui88/articulAIte'
   },
   {
+    id: 'ping',
+    name: 'Suosi He',
+    email: 'suosihe@gmail.com',
+    title: 'Ping',
+    shortDescription: 'A real-time location-based socializing app',
+    description: 'Ping is a real-time, location-based platform that helps campus students and young professionals find people nearby to do things with.',
+    teamMembers: [],
+    stage: 'MVP',
+    repoLink: 'https://devpost.com/software/ping-odv52w'
+  },
+  {
+    id: 'verirag',
+    name: 'Juno Kim',
+    email: 'junokim@seas.upenn.edu',
+    title: 'VeriRAG',
+    shortDescription: 'Enterprise-focused audit trails for RAG systems',
+    description: 'This project is a verifiable audit layer for enterprise RAG systems. For every AI answer, it records which document chunks were retrieved, what the model actually saw as context, and the output it produced, then commits that evidence into a tamper-evident structure (hashes and Merkle trees, optionally anchored on-chain). Later, auditors can reconstruct and verify why a specific decision was made and confirm that no disallowed documents were used.',
+    teamMembers: [],
+    stage: 'Ideation',
+    repoLink: ''
+  },
+  {
+    id: 'monolith',
+    name: 'Andrea Causio',
+    email: 'causius@seas.upenn.edu',
+    title: 'Monolith: AI-powered Academic Publishing Platform',
+    shortDescription: 'AI agents for medical research review and editorial backoffice',
+    description: 'Monolith is a high-performance multi-agent ecosystem designed to revolutionize the medical editorial backoffice by replacing fragmented manual workflows with a unified, autonomous digital nervous system for research review. The Monolith framework orchestrates specialized agents to handle everything from rigorous technical screening and p-value verification to conflict-of-interest mapping and automated JATS XML production, ensuring that scientific integrity is maintained at a speed human-only teams cannot match.',
+    teamMembers: [
+      { name: 'Ruiqui Pan', email: 'ruiquipan@seas.upenn.edu' },
+      { name: 'Melissa Sawaya', email: 'melissa.sawaya2@gmail.com' },
+      { name: 'Nicola Chiandetti', email: 'chiande7@seas.upenn.edu' }
+    ],
+    stage: 'MVP',
+    repoLink: 'https://www.monolith.pizza'
+  },
+  {
+    id: 'monk',
+    name: 'Olisa Nwogugu',
+    email: 'olisanw@seas.upenn.edu',
+    title: 'Monk',
+    shortDescription: 'Tracks your progress on general well being',
+    description: 'Monk is an app that tracks progress on mental and physical health along with other goals. The home page is a live progress report presented as a monk avatar whose stance changes as the user does better. It supports multiple channels of information collection for tracking.',
+    teamMembers: [],
+    stage: 'Ideation',
+    repoLink: ''
+  },
+  {
     id: 'attendance-location-for-groups',
     name: 'CBC Board',
     email: 'penncbc@gmail.com',
