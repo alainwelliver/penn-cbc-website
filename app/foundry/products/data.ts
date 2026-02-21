@@ -289,7 +289,8 @@ export const products: Product[] = [
       { name: 'Nicola Chiandetti', email: 'chiande7@seas.upenn.edu' }
     ],
     stage: 'MVP',
-    repoLink: 'https://www.monolith.pizza'
+    repoLink: 'https://www.monolith.pizza',
+    isBoardProject: true
   },
   {
     id: 'monk',
