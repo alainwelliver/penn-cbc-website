@@ -65,6 +65,13 @@ export default function FoundryProducts() {
     setExpandedCard(prev => prev === id ? null : id);
   };
 
+  const ordinal = (n: number) => {
+    const s = ['th', 'st', 'nd', 'rd'];
+    const v = n % 100;
+    if (v >= 11 && v <= 13) return n + 'th';
+    return n + (s[v % 10] ?? 'th');
+  };
+
   const getStageColor = (stage: string) => {
     switch (stage) {
       case 'Live':
@@ -117,19 +124,6 @@ export default function FoundryProducts() {
           >
             See what CBC Foundry founders are building. Get in touch for partnerships, pilots, or collaborations
           </motion.p>
-          <motion.div
-            className="mx-auto w-fit rounded-full px-5 py-2 text-sm font-semibold tracking-wide"
-            style={{
-              background: 'rgba(217, 119, 87, 0.12)',
-              color: '#D97757',
-              border: '1px solid rgba(217, 119, 87, 0.35)'
-            }}
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.55 }}
-          >
-            {visitorCount === null ? 'Loading visitor count…' : `Visitor count: ${visitorCount}`}
-          </motion.div>
         </motion.section>
 
         {/* Search and Filter Section */}
@@ -436,6 +430,15 @@ export default function FoundryProducts() {
           )}
         </motion.section>
       </main>
+
+      {/* Lowkey visitor count in corner */}
+      <div
+        className="fixed bottom-6 left-6 z-40 text-xs font-sans"
+        style={{ color: 'var(--text-tertiary)', opacity: 0.7 }}
+        aria-label="Visitor count"
+      >
+        {visitorCount === null ? '…' : `You are the ${ordinal(visitorCount)} visitor`}
+      </div>
 
       {showBoardBubble && (
         <motion.aside
