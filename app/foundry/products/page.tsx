@@ -9,10 +9,31 @@ export default function FoundryProducts() {
   const [selectedStages, setSelectedStages] = useState<string[]>([]);
   const [expandedCard, setExpandedCard] = useState<string | null>(null);
   const [showBoardBubble, setShowBoardBubble] = useState(true);
+  const [visitorCount, setVisitorCount] = useState<number | null>(null);
 
   useEffect(() => {
     const timeout = setTimeout(() => setShowBoardBubble(false), 7000);
     return () => clearTimeout(timeout);
+  }, []);
+
+  useEffect(() => {
+    let isMounted = true;
+    const incrementCount = async () => {
+      try {
+        const res = await fetch('/api/visitor-count', { method: 'POST' });
+        if (!res.ok) return;
+        const data = await res.json();
+        if (isMounted && typeof data?.count === 'number') {
+          setVisitorCount(data.count);
+        }
+      } catch {
+        // Ignore count failures to avoid blocking the page.
+      }
+    };
+    incrementCount();
+    return () => {
+      isMounted = false;
+    };
   }, []);
 
   // Filter products based on search and stage
@@ -96,6 +117,19 @@ export default function FoundryProducts() {
           >
             See what CBC Foundry founders are building. Get in touch for partnerships, pilots, or collaborations
           </motion.p>
+          <motion.div
+            className="mx-auto w-fit rounded-full px-5 py-2 text-sm font-semibold tracking-wide"
+            style={{
+              background: 'rgba(217, 119, 87, 0.12)',
+              color: '#D97757',
+              border: '1px solid rgba(217, 119, 87, 0.35)'
+            }}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.55 }}
+          >
+            {visitorCount === null ? 'Loading visitor count…' : `Visitor count: ${visitorCount}`}
+          </motion.div>
         </motion.section>
 
         {/* Search and Filter Section */}
