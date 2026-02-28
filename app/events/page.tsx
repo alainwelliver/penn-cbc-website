@@ -5,36 +5,39 @@ import { motion } from 'framer-motion';
 export default function Events() {
   const futureEvents: { title: string; date: string; time: string; description: string; buttons: { label: string; url: string }[] }[] = [
     {
-      title: 'CBC Technical Workshop #2: MCP',
-      date: 'Feb 20, 2026',
-      time: '4:30 - 5:30 PM at AGH 105',
-      description: 'Learn how to connect models to tools and data with MCP!',
-      buttons: [{ label: 'Register on Luma', url: 'https://luma.com/2elmybdj' }]
-    },
-    {
-      title: 'CBC Board Game Mixer',
-      date: 'Feb 22, 2026',
-      time: '3 - 5 PM at AGH 216A',
-      description: 'Come play some board games with us and meet other club members!',
-      buttons: [{ label: 'Register on Luma', url: 'https://luma.com/rbpazilw' }]
-    },
-    {
-      title: 'AI in Education—Where Are We Now? (Co-hosted with AIED @ Penn)',
-      date: 'Feb 23, 2026',
-      time: '3 - 4 PM at Stiteler 263',
-      description: 'AI in Education—Where Are We Now? Join us for an engaging exploration of the evolving landscape of Artificial Intelligence within the Graduate School of Education (GSE).',
-      buttons: []
-    },
-    {
-      title: 'CBC Gen AI for Biotech',
-      date: 'Feb 27, 2026',
-      time: '3 - 4 PM at AGH 414',
-      description: 'AI is changing how we research new molecules and drugs! Come learn about applications of Generative AI in biotechnology.',
+      title: 'CBC Technical Master Class #4: MCP Deep Dive',
+      date: 'Mar 3, 2026',
+      time: '7:00 PM ET (Virtual Event)',
+      description: 'Deep dive into the Model Context Protocol (MCP) - explore advanced techniques for connecting AI models to tools and data sources.',
       buttons: []
     }
   ];
 
   const pastEvents = [
+    {
+      title: 'CBC Gen AI for Biotech',
+      date: 'February 27, 2026 (Spring 2026)',
+      description: 'AI is changing how we research new molecules and drugs! Come learn about applications of Generative AI in biotechnology.',
+      buttons: []
+    },
+    {
+      title: 'AI in Education—Where Are We Now? (Co-hosted with AIED @ Penn)',
+      date: 'February 23, 2026 (Spring 2026)',
+      description: 'AI in Education—Where Are We Now? Join us for an engaging exploration of the evolving landscape of Artificial Intelligence within the Graduate School of Education (GSE).',
+      buttons: []
+    },
+    {
+      title: 'CBC Board Game Mixer',
+      date: 'February 22, 2026 (Spring 2026)',
+      description: 'Come play some board games with us and meet other club members!',
+      buttons: []
+    },
+    {
+      title: 'CBC Technical Workshop #2: MCP',
+      date: 'February 20, 2026 (Spring 2026)',
+      description: 'Learn how to connect models to tools and data with MCP!',
+      buttons: []
+    },
     {
       title: 'IPD 7990 Guest Lecture: Building with Claude',
       date: 'Spring 2026',
