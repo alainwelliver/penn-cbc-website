@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 export default function Events() {
   const futureEvents: { title: string; date: string; time: string; description: string; buttons: { label: string; url: string }[] }[] = [
     {
-      title: 'Masterclass #4: MCP Deep Dive',
+      title: 'MCP Deep Dive',
       date: 'Mar 3, 2026',
       time: '7:00 PM ET (Virtual Event)',
       description: 'Deep dive into the Model Context Protocol (MCP) - explore advanced techniques for connecting AI models to tools and data sources.',
