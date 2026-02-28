@@ -260,7 +260,7 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
 
                 <div className="space-y-3">
                   <a
-                    href="https://luma.com/2elmybdj"
+                    href="https://luma.com/9e7v3gc6"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block p-4 rounded-xl transition-all duration-300 cursor-pointer"
@@ -280,69 +280,17 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
                     }}
                   >
                     <div style={{ fontSize: '0.85rem', color: '#D97757', fontWeight: 600, marginBottom: '0.25rem' }}>
-                      Feb 20, 2026 • 4:30 PM
+                      Feb 25, 2026 • 5:00–7:00 PM
                     </div>
                     <div style={{ fontWeight: 600, color: 'var(--text-primary)' }}>
-                      CBC Technical Workshop #2: MCP
+                      Pareto x Claude Builder Club @ Penn
                     </div>
                   </a>
 
                   <a
-                    href="https://luma.com/rbpazilw"
+                    href="https://luma.com/sk4jhl4i"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block p-4 rounded-xl transition-all duration-300 cursor-pointer"
-                    style={{
-                      background: 'var(--bg-secondary)',
-                      borderLeft: '3px solid #D97757'
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.transform = 'translateX(4px)';
-                      e.currentTarget.style.background = 'var(--bg-card)';
-                      e.currentTarget.style.boxShadow = '0 4px 12px rgba(217, 119, 87, 0.2)';
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.transform = 'translateX(0)';
-                      e.currentTarget.style.background = 'var(--bg-secondary)';
-                      e.currentTarget.style.boxShadow = 'none';
-                    }}
-                  >
-                    <div style={{ fontSize: '0.85rem', color: '#D97757', fontWeight: 600, marginBottom: '0.25rem' }}>
-                      Feb 22, 2026 • 3:00 PM
-                    </div>
-                    <div style={{ fontWeight: 600, color: 'var(--text-primary)' }}>
-                      CBC Board Game Mixer
-                    </div>
-                  </a>
-
-                  <a
-                    href="/events"
-                    className="block p-4 rounded-xl transition-all duration-300 cursor-pointer"
-                    style={{
-                      background: 'var(--bg-secondary)',
-                      borderLeft: '3px solid #D97757'
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.transform = 'translateX(4px)';
-                      e.currentTarget.style.background = 'var(--bg-card)';
-                      e.currentTarget.style.boxShadow = '0 4px 12px rgba(217, 119, 87, 0.2)';
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.transform = 'translateX(0)';
-                      e.currentTarget.style.background = 'var(--bg-secondary)';
-                      e.currentTarget.style.boxShadow = 'none';
-                    }}
-                  >
-                    <div style={{ fontSize: '0.85rem', color: '#D97757', fontWeight: 600, marginBottom: '0.25rem' }}>
-                      Feb 23, 2026 • 3:00 PM
-                    </div>
-                    <div style={{ fontWeight: 600, color: 'var(--text-primary)' }}>
-                      AI in Education—Where Are We Now? (Co-hosted with AIED @ Penn)
-                    </div>
-                  </a>
-
-                  <a
-                    href="/events"
                     className="block p-4 rounded-xl transition-all duration-300 cursor-pointer"
                     style={{
                       background: 'var(--bg-secondary)',

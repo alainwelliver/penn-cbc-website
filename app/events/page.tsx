@@ -18,25 +18,36 @@ export default function Events() {
       title: 'CBC Gen AI for Biotech',
       date: 'February 27, 2026 (Spring 2026)',
       description: 'AI is changing how we research new molecules and drugs! Come learn about applications of Generative AI in biotechnology.',
-      buttons: []
+      buttons: [],
+      sortKey: '2026-02-27'
+    },
+    {
+      title: 'Pareto x Claude Builder Club @ Penn',
+      date: 'February 25, 2026 (Spring 2026)',
+      description: 'Casual mixer with Pareto VC to meet students who are building, ideating, or startup-curious—get advice, talk through ideas, and learn what investors look for.',
+      buttons: [],
+      sortKey: '2026-02-25'
     },
     {
       title: 'AI in Education—Where Are We Now? (Co-hosted with AIED @ Penn)',
       date: 'February 23, 2026 (Spring 2026)',
       description: 'AI in Education—Where Are We Now? Join us for an engaging exploration of the evolving landscape of Artificial Intelligence within the Graduate School of Education (GSE).',
-      buttons: []
+      buttons: [],
+      sortKey: '2026-02-23'
     },
     {
       title: 'CBC Board Game Mixer',
       date: 'February 22, 2026 (Spring 2026)',
-      description: 'Come play some board games with us and meet other club members!',
-      buttons: []
+      description: 'Board game mixer at AGH 216A where members met and connected over games.',
+      buttons: [],
+      sortKey: '2026-02-22'
     },
     {
       title: 'CBC Technical Workshop #2: MCP',
       date: 'February 20, 2026 (Spring 2026)',
-      description: 'Learn how to connect models to tools and data with MCP!',
-      buttons: []
+      description: 'Learned how to connect models to tools and data with MCP, held 4:30 - 5:30 PM at AGH 105.',
+      buttons: [],
+      sortKey: '2026-02-20'
     },
     {
       title: 'IPD 7990 Guest Lecture: Building with Claude',
@@ -55,31 +66,36 @@ export default function Events() {
           label: 'View Photos',
           url: '/ipd7990-gallery'
         }
-      ]
+      ],
+      sortKey: '2026-02-15'
     },
     {
       title: 'Entrepreneurship 101',
       date: 'February 13, 2026 (Spring 2026)',
       description: 'Everyone has ideas, but few have the right problem. Learn how to validate your idea, define your user, and leave with a one-page problem-solution brief you can actually build from.',
-      buttons: []
+      buttons: [],
+      sortKey: '2026-02-13'
     },
     {
       title: 'Claude Code Workshop',
       date: 'February 6, 2026 (Spring 2026)',
       description: 'Hands-on Claude code workshop at AGH 105A/B.',
-      buttons: []
+      buttons: [],
+      sortKey: '2026-02-06'
     },
     {
       title: 'Claude Builder Club Semester Kickoff Event',
       date: 'Spring 2026',
       description: 'Join us for our Spring 2026 semester kickoff at AGH Lobby and Auditorium!',
-      buttons: []
+      buttons: [],
+      sortKey: '2026-01-12'
     },
     {
       title: 'First Builder Hour',
       date: 'Spring 2026',
       description: 'Join us at AGH 216A for our first builder hour of the semester.',
-      buttons: []
+      buttons: [],
+      sortKey: '2026-01-19'
     },
     {
       title: 'CIS 5300 Recitation: NLP & Agentic Commerce with Claude',
@@ -94,7 +110,8 @@ export default function Events() {
           label: 'GitHub Demo',
           url: 'https://github.com/Albinator3000/CBC_at_Penn_X_CIS_5300'
         }
-      ]
+      ],
+      sortKey: '2026-02-01'
     },
     {
       title: 'CIS 2210 Recitation: Advanced Data Structures with Claude',
@@ -113,7 +130,8 @@ export default function Events() {
           label: 'Event Recording',
           url: 'https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f5941003-705e-479a-8857-b3db000c537a'
         }
-      ]
+      ],
+      sortKey: '2026-01-26'
     },
     {
       title: 'AI & The Future of the Tech Industry: Fireside Chat with Anthropic Staff',
@@ -124,7 +142,8 @@ export default function Events() {
           label: 'View Photos',
           url: 'https://drive.google.com/drive/folders/1Grd0YGPtQ6wsABpUZb9waUOV6_qvTD0Z?usp=sharing'
         }
-      ]
+      ],
+      sortKey: '2025-11-15'
     },
     {
       title: 'Penn x Anthropic Hackathon',
@@ -139,7 +158,8 @@ export default function Events() {
           label: 'View Photos',
           url: 'https://drive.google.com/drive/folders/1KCm8-qV4SwG_v3EP2eq0rdbGikqF3TdA?usp=sharing'
         }
-      ]
+      ],
+      sortKey: '2025-10-25'
     },
     {
       title: 'Penn CBC Agents Masterclass 3 (Builder\'s Version): LLM Interpretability Workshop',
@@ -162,7 +182,8 @@ export default function Events() {
           label: 'Live Demo',
           url: 'https://albert-opher-ai-interpretability.streamlit.app'
         }
-      ]
+      ],
+      sortKey: '2025-11-01'
     },
     {
       title: 'Founder + Builder Mixer',
@@ -173,7 +194,8 @@ export default function Events() {
           label: 'View Slides',
           url: '/mixer/Mixer Slides.pdf'
         }
-      ]
+      ],
+      sortKey: '2025-10-15'
     },
     {
       title: 'Penn CBC Agents Masterclass 2 (Builder\'s Version)',
@@ -184,7 +206,8 @@ export default function Events() {
           label: 'View Slides',
           url: '/masterclass2/Penn CBC Agents Masterclass 2 (Builder\'s Version).pdf'
         }
-      ]
+      ],
+      sortKey: '2025-10-10'
     },
     {
       title: 'Building Agents Workshop',
@@ -195,7 +218,8 @@ export default function Events() {
           label: 'Watch Recording',
           url: 'https://teamwass.zoom.us/rec/play/4F-5erosyFauaH0aGeDlrArudPP5LNP7r-Ae8lIYthSpzUI-thXLGZzgrf3xsUHQaFTMm2xANno1pSVt.CBjygpR0e8KfX704?eagerLoadZvaPages=sidemenu.billing.plan_management&isReferralProgramEnabled=false&isReferralProgramAvailable=false&accessLevel=meeting&canPlayFromShare=true&from=share_recording_detail&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fteamwass.zoom.us%2Frec%2Fshare%2FZMiY-gjvVoCInXlyShrTAd0wR5sptHEdkCaQ8W2W0GT-71M3LNcXmF9DVMZBeY00.Acq9nVyXM87f0oFl'
         }
-      ]
+      ],
+      sortKey: '2025-10-05'
     },
     {
       title: 'Penn CBC Agents Masterclass 1 (Builders Version)',
@@ -206,7 +230,8 @@ export default function Events() {
           label: 'View Slides',
           url: '/masterclass1/Penn CBC Agents Masterclass 1 (Builders Version).pdf'
         }
-      ]
+      ],
+      sortKey: '2025-09-25'
     },
     {
       title: 'CBC at Penn First Meeting',
@@ -217,9 +242,10 @@ export default function Events() {
           label: 'View Slides',
           url: '/first-meeting/CBC at Penn First Meeting Deck.pdf'
         }
-      ]
+      ],
+      sortKey: '2025-09-15'
     }
-  ];
+  ].sort((a, b) => (b.sortKey ?? '0000').localeCompare(a.sortKey ?? '0000'));
 
   return (
     <div

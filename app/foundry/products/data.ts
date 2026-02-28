@@ -8,6 +8,7 @@ export interface Product {
   teamMembers: { name: string; email: string }[];
   stage: 'Live' | 'MVP' | 'Beta' | 'Ideation';
   repoLink: string;
+  isBoardProject?: boolean;
 }
 
 export const products: Product[] = [
@@ -53,7 +54,7 @@ export const products: Product[] = [
     description: 'Clarify is an AI-driven detection and authentication platform designed to restore trust in digital media. As synthetic images, videos, and voices become increasingly indistinguishable from reality, individuals and institutions lack reliable tools to verify what they see and hear online. Clarify addresses this by scanning content across social platforms and the web to detect visual and audio deepfakes in real time. In addition, Clarify provides an invisible authenticity stamp that creators, journalists, and organizations can embed in legitimate media, allowing downstream viewers to confirm its origin and integrity. The platform is designed for both consumers and enterprises, offering a mobile app, browser extension, and enterprise verification tools. By combining detection with cryptographic-style verification, Clarify creates a shared infrastructure for digital trust, helping users, media organizations, and brands navigate the AI era with confidence.',
     teamMembers: [],
     stage: 'MVP',
-    repoLink: ''
+    repoLink: 'https://www.clarifytechnologies.org/'
   },
   {
     id: 'avdah',
@@ -252,5 +253,78 @@ export const products: Product[] = [
     teamMembers: [],
     stage: 'Ideation',
     repoLink: 'https://github.com/tonysui88/articulAIte'
+  },
+  {
+    id: 'ping',
+    name: 'Suosi He',
+    email: 'suosihe@gmail.com',
+    title: 'Ping',
+    shortDescription: 'A real-time location-based socializing app',
+    description: 'Ping is a real-time, location-based platform that helps campus students and young professionals find people nearby to do things with.',
+    teamMembers: [],
+    stage: 'MVP',
+    repoLink: 'https://devpost.com/software/ping-odv52w'
+  },
+  {
+    id: 'verirag',
+    name: 'Juno Kim',
+    email: 'junokim@seas.upenn.edu',
+    title: 'VeriRAG',
+    shortDescription: 'Enterprise-focused audit trails for RAG systems',
+    description: 'This project is a verifiable audit layer for enterprise RAG systems. For every AI answer, it records which document chunks were retrieved, what the model actually saw as context, and the output it produced, then commits that evidence into a tamper-evident structure (hashes and Merkle trees, optionally anchored on-chain). Later, auditors can reconstruct and verify why a specific decision was made and confirm that no disallowed documents were used.',
+    teamMembers: [],
+    stage: 'Ideation',
+    repoLink: ''
+  },
+  {
+    id: 'monolith',
+    name: 'Andrea Causio',
+    email: 'causius@seas.upenn.edu',
+    title: 'Monolith: AI-powered Academic Publishing Platform',
+    shortDescription: 'AI agents for medical research review and editorial backoffice',
+    description: 'Monolith is a high-performance multi-agent ecosystem designed to revolutionize the medical editorial backoffice by replacing fragmented manual workflows with a unified, autonomous digital nervous system for research review. The Monolith framework orchestrates specialized agents to handle everything from rigorous technical screening and p-value verification to conflict-of-interest mapping and automated JATS XML production, ensuring that scientific integrity is maintained at a speed human-only teams cannot match.',
+    teamMembers: [
+      { name: 'Ruiqui Pan', email: 'ruiquipan@seas.upenn.edu' },
+      { name: 'Melissa Sawaya', email: 'melissa.sawaya2@gmail.com' },
+      { name: 'Nicola Chiandetti', email: 'chiande7@seas.upenn.edu' }
+    ],
+    stage: 'MVP',
+    repoLink: 'https://www.monolith.pizza',
+    isBoardProject: true
+  },
+  {
+    id: 'monk',
+    name: 'Olisa Nwogugu',
+    email: 'olisanw@seas.upenn.edu',
+    title: 'Monk',
+    shortDescription: 'Tracks your progress on general well being',
+    description: 'Monk is an app that tracks progress on mental and physical health along with other goals. The home page is a live progress report presented as a monk avatar whose stance changes as the user does better. It supports multiple channels of information collection for tracking.',
+    teamMembers: [],
+    stage: 'Ideation',
+    repoLink: ''
+  },
+  {
+    id: 'attendance-location-for-groups',
+    name: 'CBC Board',
+    email: 'penncbc@gmail.com',
+    title: 'Attendance Location for Groups',
+    shortDescription: 'Internal attendance tracking + targeted email blasts for CBC.',
+    description: 'CBC uses this internal tool to track attendance, segment attendee lists, and send targeted email blasts for benefits like Claude Pro and important announcements such as Foundry.',
+    teamMembers: [],
+    stage: 'Live',
+    repoLink: 'https://attendance-location-for-groups.vercel.app/',
+    isBoardProject: true
+  },
+  {
+    id: 'anchor-dating-first',
+    name: 'Kyle Zhang',
+    email: 'kyle100@wharton.upenn.edu',
+    title: 'Anchor - Dating First',
+    shortDescription: 'Curate the perfect date first, then match with someone who wants the same experience.',
+    description: 'In real life, you do not meet people by staring at their profile. The context creates the connection. Anchor flips the script by letting you curate the date first, then match with someone who wants the same experience. Anchor AI recommends venues and events it predicts you will enjoy and matches you with another attendee based on an AI-determined compatibility fit.',
+    teamMembers: [{ name: 'Antony Tran', email: 'antonyltran@gmail.com' }],
+    stage: 'Beta',
+    repoLink: 'https://anchor.dating',
+    isBoardProject: true
   }
 ];

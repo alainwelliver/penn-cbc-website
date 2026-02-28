@@ -1,13 +1,40 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useState, useMemo } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { products } from './data';
 
 export default function FoundryProducts() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedStages, setSelectedStages] = useState<string[]>([]);
   const [expandedCard, setExpandedCard] = useState<string | null>(null);
+  const [showBoardBubble, setShowBoardBubble] = useState(true);
+  const [visitorCount, setVisitorCount] = useState<number | null>(null);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => setShowBoardBubble(false), 7000);
+    return () => clearTimeout(timeout);
+  }, []);
+
+  useEffect(() => {
+    let isMounted = true;
+    const incrementCount = async () => {
+      try {
+        const res = await fetch('/api/visitor-count', { method: 'POST' });
+        if (!res.ok) return;
+        const data = await res.json();
+        if (isMounted && typeof data?.count === 'number') {
+          setVisitorCount(data.count);
+        }
+      } catch {
+        // Ignore count failures to avoid blocking the page.
+      }
+    };
+    incrementCount();
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   // Filter products based on search and stage
   const filteredProducts = useMemo(() => {
@@ -36,6 +63,13 @@ export default function FoundryProducts() {
 
   const toggleCard = (id: string) => {
     setExpandedCard(prev => prev === id ? null : id);
+  };
+
+  const ordinal = (n: number) => {
+    const s = ['th', 'st', 'nd', 'rd'];
+    const v = n % 100;
+    if (v >= 11 && v <= 13) return n + 'th';
+    return n + (s[v % 10] ?? 'th');
   };
 
   const getStageColor = (stage: string) => {
@@ -210,15 +244,28 @@ export default function FoundryProducts() {
                           )}
                         </p>
                       </div>
-                      <span
-                        className="px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide shrink-0"
-                        style={{
-                          backgroundColor: colors.bg,
-                          color: colors.text
-                        }}
-                      >
-                        {product.stage}
-                      </span>
+                      <div className="flex flex-col items-end gap-2 shrink-0">
+                        {product.isBoardProject && (
+                          <span
+                            className="px-3 py-1 rounded-full text-[0.65rem] font-semibold uppercase tracking-wide"
+                            style={{
+                              backgroundColor: 'rgba(217, 119, 87, 0.18)',
+                              color: '#9A3412'
+                            }}
+                          >
+                            CBC Board Builder
+                          </span>
+                        )}
+                        <span
+                          className="px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide"
+                          style={{
+                            backgroundColor: colors.bg,
+                            color: colors.text
+                          }}
+                        >
+                          {product.stage}
+                        </span>
+                      </div>
                     </div>
 
                     <p className="text-sm font-sans mb-4" style={{ color: 'var(--text-tertiary)' }}>
@@ -383,6 +430,64 @@ export default function FoundryProducts() {
           )}
         </motion.section>
       </main>
+
+      {/* Lowkey visitor count in corner */}
+      <div
+        className="fixed bottom-6 left-6 z-40 text-xs font-sans"
+        style={{ color: 'var(--text-tertiary)', opacity: 0.7 }}
+        aria-label="Visitor count"
+      >
+        {visitorCount === null ? '…' : `You are the ${ordinal(visitorCount)} visitor`}
+      </div>
+
+      {showBoardBubble && (
+        <motion.aside
+          className="fixed bottom-6 right-6 z-50 w-[min(90vw,360px)]"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.9 }}
+          aria-label="CBC board builders callout"
+        >
+          <div
+            className="rounded-2xl p-4 shadow-lg border"
+            style={{
+              backgroundColor: 'rgba(255, 255, 255, 0.95)',
+              borderColor: 'var(--border-color)',
+              backdropFilter: 'blur(8px)'
+            }}
+          >
+            <p className="text-sm font-semibold font-sans mb-2" style={{ color: '#D97757' }}>
+              CBC board is also comprised of builders!
+            </p>
+            <p className="text-xs font-sans mb-3" style={{ color: 'var(--text-secondary)' }}>
+              We are building Attendance Location for Groups to track attendance and email blast attendees about Claude Pro
+              and important announcements, such as Foundry.
+            </p>
+            <a
+              href="https://attendance-location-for-groups.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-3 py-2 rounded-lg text-xs font-semibold font-sans transition-all duration-200"
+              style={{
+                backgroundColor: '#D97757',
+                color: 'white'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = '#c76644';
+                e.currentTarget.style.transform = 'translateY(-1px)';
+                e.currentTarget.style.boxShadow = '0 4px 10px rgba(217, 119, 87, 0.25)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = '#D97757';
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = 'none';
+              }}
+            >
+              Visit Site
+            </a>
+          </div>
+        </motion.aside>
+      )}
     </div>
   );
 }
