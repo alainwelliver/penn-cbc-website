@@ -260,7 +260,7 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
 
                 <div className="space-y-3">
                   <a
-                    href="https://luma.com/9e7v3gc6"
+                    href="https://luma.com/t1d6o1hv"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block p-4 rounded-xl transition-all duration-300 cursor-pointer"
@@ -280,17 +280,15 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
                     }}
                   >
                     <div style={{ fontSize: '0.85rem', color: '#D97757', fontWeight: 600, marginBottom: '0.25rem' }}>
-                      Feb 25, 2026 • 5:00–7:00 PM
+                      Mar 2, 2026 • 3:00 PM ET
                     </div>
                     <div style={{ fontWeight: 600, color: 'var(--text-primary)' }}>
-                      Pareto x Claude Builder Club @ Penn
+                      Build the Future of Learning
                     </div>
                   </a>
 
                   <a
-                    href="https://luma.com/sk4jhl4i"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="/events"
                     className="block p-4 rounded-xl transition-all duration-300 cursor-pointer"
                     style={{
                       background: 'var(--bg-secondary)',
@@ -308,10 +306,10 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
                     }}
                   >
                     <div style={{ fontSize: '0.85rem', color: '#D97757', fontWeight: 600, marginBottom: '0.25rem' }}>
-                      Feb 27, 2026 • 3:00 PM
+                      Mar 3, 2026 • 7:00 PM ET
                     </div>
                     <div style={{ fontWeight: 600, color: 'var(--text-primary)' }}>
-                      CBC Gen AI for Biotech
+                      MCP Deep Dive
                     </div>
                   </a>
                 </div>

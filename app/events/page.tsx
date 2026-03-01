@@ -5,6 +5,13 @@ import { motion } from 'framer-motion';
 export default function Events() {
   const futureEvents: { title: string; date: string; time: string; description: string; buttons: { label: string; url: string }[] }[] = [
     {
+      title: 'Build the Future of Learning',
+      date: 'Mar 2, 2026',
+      time: '3:00 PM ET',
+      description: 'Curious about AI in education? Join us to explore essential AI fundamentals, discuss the latest trends shaping equitable learning, and put those ideas into practice by building a real education tool together in minutes using Claude Code. Co-hosted with AIED @ Penn.',
+      buttons: [{ label: 'Register on Luma', url: 'https://luma.com/t1d6o1hv' }]
+    },
+    {
       title: 'MCP Deep Dive',
       date: 'Mar 3, 2026',
       time: '7:00 PM ET (Virtual Event)',
@@ -27,13 +34,6 @@ export default function Events() {
       description: 'Casual mixer with Pareto VC to meet students who are building, ideating, or startup-curious—get advice, talk through ideas, and learn what investors look for.',
       buttons: [],
       sortKey: '2026-02-25'
-    },
-    {
-      title: 'AI in Education—Where Are We Now? (Co-hosted with AIED @ Penn)',
-      date: 'February 23, 2026 (Spring 2026)',
-      description: 'AI in Education—Where Are We Now? Join us for an engaging exploration of the evolving landscape of Artificial Intelligence within the Graduate School of Education (GSE).',
-      buttons: [],
-      sortKey: '2026-02-23'
     },
     {
       title: 'CBC Board Game Mixer',
