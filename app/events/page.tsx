@@ -6,8 +6,8 @@ export default function Events() {
   const futureEvents: { title: string; date: string; time: string; description: string; buttons: { label: string; url: string }[] }[] = [
     {
       title: 'Build the Future of Learning',
-      date: 'Mar 2, 2026',
-      time: '3:00 PM ET',
+      date: 'Mar 23, 2026',
+      time: '2:00 PM',
       description: 'Curious about AI in education? Join us to explore essential AI fundamentals, discuss the latest trends shaping equitable learning, and put those ideas into practice by building a real education tool together in minutes using Claude Code. Co-hosted with AIED @ Penn.',
       buttons: [{ label: 'Register on Luma', url: 'https://luma.com/t1d6o1hv' }]
     },

@@ -280,7 +280,7 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
                     }}
                   >
                     <div style={{ fontSize: '0.85rem', color: '#D97757', fontWeight: 600, marginBottom: '0.25rem' }}>
-                      Mar 2, 2026 • 3:00 PM ET
+                      Mar 23, 2026 • 2:00 PM
                     </div>
                     <div style={{ fontWeight: 600, color: 'var(--text-primary)' }}>
                       Build the Future of Learning
