@@ -11,7 +11,8 @@
       "mcp__ide__getDiagnostics",
       "WebFetch(domain:github.com)",
       "WebFetch(domain:docs.google.com)",
-      "Read(//Users/albertwopheriv/Library/**)"
+      "Read(//Users/albertwopheriv/Library/**)",
+      "Bash(cp \"CBC VIRTUAL/MCP/cbcvirtualmcp.png\" public/mcp-deep-dive-group.png)"
     ]
   }
 }

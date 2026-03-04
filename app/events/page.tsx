@@ -3,17 +3,33 @@
 import { motion } from 'framer-motion';
 
 export default function Events() {
-  const futureEvents: { title: string; date: string; time: string; description: string; buttons: { label: string; url: string }[] }[] = [
-    {
-      title: 'MCP Deep Dive',
-      date: 'Mar 3, 2026',
-      time: '7:00 PM ET (Virtual Event)',
-      description: 'Deep dive into the Model Context Protocol (MCP) - explore advanced techniques for connecting AI models to tools and data sources.',
-      buttons: []
-    }
-  ];
+  const futureEvents: { title: string; date: string; time: string; description: string; buttons: { label: string; url: string }[] }[] = [];
 
   const pastEvents = [
+    {
+      title: 'MCP Deep Dive',
+      date: 'March 3, 2026 (Spring 2026)',
+      description: 'Deep dive into the Model Context Protocol (MCP) - explore advanced techniques for connecting AI models to tools and data sources.',
+      buttons: [
+        {
+          label: 'View Slides',
+          url: 'https://docs.google.com/presentation/d/1tEf6GgcFDaBc7v00dlKuXz42N9Bqu9wq3xc_ltJgg_8/edit?usp=sharing'
+        },
+        {
+          label: 'View Group Photo',
+          url: '/mcp-deep-dive-group.png'
+        },
+        {
+          label: 'Recording 1',
+          url: '/mcp-deep-dive-recording1.mp4'
+        },
+        {
+          label: 'Recording 2',
+          url: '/mcp-deep-dive-recording2.mp4'
+        }
+      ],
+      sortKey: '2026-03-03'
+    },
     {
       title: 'CBC Gen AI for Biotech',
       date: 'February 27, 2026 (Spring 2026)',
