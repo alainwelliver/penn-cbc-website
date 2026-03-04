@@ -29,11 +29,11 @@ export default function Events() {
         },
         {
           label: 'Recording 1',
-          url: '/mcp-deep-dive-recording1.mp4'
+          url: 'https://drive.google.com/file/d/1feUC7-u3Lhi3hGNuHRUHruNmtqtIYEQb/view?usp=share_link'
         },
         {
           label: 'Recording 2',
-          url: '/mcp-deep-dive-recording2.mp4'
+          url: 'https://drive.google.com/file/d/1isIYD3sZNzrmyFfClTjd3kMPM6VbHs7u/view?usp=share_link'
         }
       ],
       sortKey: '2026-03-03'
