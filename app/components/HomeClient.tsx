@@ -305,11 +305,8 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
                       e.currentTarget.style.boxShadow = 'none';
                     }}
                   >
-                    <div style={{ fontSize: '0.85rem', color: '#D97757', fontWeight: 600, marginBottom: '0.25rem' }}>
-                      Mar 3, 2026 • 7:00 PM ET
-                    </div>
                     <div style={{ fontWeight: 600, color: 'var(--text-primary)' }}>
-                      MCP Deep Dive
+                      View All Events
                     </div>
                   </a>
                 </div>

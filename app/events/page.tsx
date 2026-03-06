@@ -63,7 +63,12 @@ export default function Events() {
       title: 'CBC Technical Workshop #2: MCP',
       date: 'February 20, 2026 (Spring 2026)',
       description: 'Learned how to connect models to tools and data with MCP, held 4:30 - 5:30 PM at AGH 105.',
-      buttons: [],
+      buttons: [
+        {
+          label: 'View Slides',
+          url: 'https://docs.google.com/presentation/d/1IO76VRQdclsKVin2b3aLCv95vkWVgfpbemmgz47dsL8/edit?usp=sharing'
+        }
+      ],
       sortKey: '2026-02-20'
     },
     {
@@ -90,21 +95,36 @@ export default function Events() {
       title: 'Entrepreneurship 101',
       date: 'February 13, 2026 (Spring 2026)',
       description: 'Everyone has ideas, but few have the right problem. Learn how to validate your idea, define your user, and leave with a one-page problem-solution brief you can actually build from.',
-      buttons: [],
+      buttons: [
+        {
+          label: 'View Slides',
+          url: 'https://docs.google.com/presentation/d/1S5hP7uGSgR7NzrfF48avIm2YsTWuXHwRnMG8rH2J-DI/edit?usp=sharing'
+        }
+      ],
       sortKey: '2026-02-13'
     },
     {
       title: 'Claude Code Workshop',
       date: 'February 6, 2026 (Spring 2026)',
       description: 'Hands-on Claude code workshop at AGH 105A/B.',
-      buttons: [],
+      buttons: [
+        {
+          label: 'View Slides',
+          url: 'https://docs.google.com/presentation/d/187hnhzkoQTTZOfkPFAf0OfFfiL56HJQOL3hqB2h-wuU/edit?usp=sharing'
+        }
+      ],
       sortKey: '2026-02-06'
     },
     {
       title: 'Claude Builder Club Semester Kickoff Event',
       date: 'Spring 2026',
       description: 'Join us for our Spring 2026 semester kickoff at AGH Lobby and Auditorium!',
-      buttons: [],
+      buttons: [
+        {
+          label: 'View Slides',
+          url: 'https://docs.google.com/presentation/d/1pgqkEegJXE3oIHvG7obZ-REh-vjB5x6eEiF4G-50hzo/edit?usp=sharing'
+        }
+      ],
       sortKey: '2026-01-12'
     },
     {
