@@ -2,18 +2,53 @@
 
 import { motion } from 'framer-motion';
 
+type EventButton = { label: string; url: string };
+
+type Event = {
+  title: string;
+  date: string;
+  description: string;
+  buttons: EventButton[];
+  sortKey: string; // machine-readable start datetime for sorting/comparison (YYYY-MM-DD or ISO)
+  time?: string;
+  location?: string;
+  semester: 'Spring 2026' | 'Fall 2025';
+};
+
 export default function Events() {
-  const futureEvents: { title: string; date: string; time: string; description: string; buttons: { label: string; url: string }[] }[] = [
+  const futureEvents: Event[] = [
+    {
+      title: 'Anthropic × Penn Hackathon Mixer',
+      date: 'Mar 18, 2026',
+      time: '8–9:30 PM',
+      location: 'G60 Jon M. Huntsman Hall',
+      description: 'Our Hackathon is on April 12th (more info soon). Meet other builders, find teammates, share ideas, and kick things off. Snacks provided.',
+      buttons: [{ label: 'RSVP on Luma', url: 'https://luma.com/dq4wu2zr?tk=Fvvgtm' }],
+      sortKey: '2026-03-18T20:00:00-04:00',
+      semester: 'Spring 2026'
+    },
+    {
+      title: 'Meet Slow Ventures',
+      date: 'Mar 19, 2026',
+      time: '5:30–6:30 PM',
+      location: 'Levine Hall 307',
+      description: 'A session on how to build ideas that actually get funded — from what makes a startup compelling to how investors think about early ideas. Whether you\'re already building something or just curious about startups and product, this is a valuable opportunity to learn how strong ideas turn into real momentum. Pizza provided. Please RSVP so we have an accurate head count.',
+      buttons: [{ label: 'RSVP on Luma', url: 'https://luma.com/dndrjrkj' }],
+      sortKey: '2026-03-19T17:30:00-04:00',
+      semester: 'Spring 2026'
+    },
     {
       title: 'Build the Future of Learning',
       date: 'Mar 23, 2026',
       time: '2:00 PM',
       description: 'Curious about AI in education? Join us to explore essential AI fundamentals, discuss the latest trends shaping equitable learning, and put those ideas into practice by building a real education tool together in minutes using Claude Code. Co-hosted with AIED @ Penn.',
-      buttons: [{ label: 'Register on Luma', url: 'https://luma.com/t1d6o1hv' }]
+      buttons: [{ label: 'Register on Luma', url: 'https://luma.com/t1d6o1hv' }],
+      sortKey: '2026-03-23T14:00:00-04:00',
+      semester: 'Spring 2026'
     }
   ];
 
-  const pastEvents = [
+  const staticPastEvents: Event[] = [
     {
       title: 'MCP Deep Dive',
       date: 'March 3, 2026 (Spring 2026)',
@@ -36,28 +71,32 @@ export default function Events() {
           url: 'https://drive.google.com/file/d/1isIYD3sZNzrmyFfClTjd3kMPM6VbHs7u/view?usp=share_link'
         }
       ],
-      sortKey: '2026-03-03'
+      sortKey: '2026-03-03',
+      semester: 'Spring 2026'
     },
     {
       title: 'CBC Gen AI for Biotech',
       date: 'February 27, 2026 (Spring 2026)',
       description: 'AI is changing how we research new molecules and drugs! Come learn about applications of Generative AI in biotechnology.',
       buttons: [],
-      sortKey: '2026-02-27'
+      sortKey: '2026-02-27',
+      semester: 'Spring 2026'
     },
     {
       title: 'Pareto x Claude Builder Club @ Penn',
       date: 'February 25, 2026 (Spring 2026)',
       description: 'Casual mixer with Pareto VC to meet students who are building, ideating, or startup-curious—get advice, talk through ideas, and learn what investors look for.',
       buttons: [],
-      sortKey: '2026-02-25'
+      sortKey: '2026-02-25',
+      semester: 'Spring 2026'
     },
     {
       title: 'CBC Board Game Mixer',
       date: 'February 22, 2026 (Spring 2026)',
       description: 'Board game mixer at AGH 216A where members met and connected over games.',
       buttons: [],
-      sortKey: '2026-02-22'
+      sortKey: '2026-02-22',
+      semester: 'Spring 2026'
     },
     {
       title: 'CBC Technical Workshop #2: MCP',
@@ -69,7 +108,8 @@ export default function Events() {
           url: 'https://docs.google.com/presentation/d/1IO76VRQdclsKVin2b3aLCv95vkWVgfpbemmgz47dsL8/edit?usp=sharing'
         }
       ],
-      sortKey: '2026-02-20'
+      sortKey: '2026-02-20',
+      semester: 'Spring 2026'
     },
     {
       title: 'IPD 7990 Guest Lecture: Building with Claude',
@@ -89,7 +129,8 @@ export default function Events() {
           url: '/ipd7990-gallery'
         }
       ],
-      sortKey: '2026-02-15'
+      sortKey: '2026-02-15',
+      semester: 'Spring 2026'
     },
     {
       title: 'Entrepreneurship 101',
@@ -101,7 +142,8 @@ export default function Events() {
           url: 'https://docs.google.com/presentation/d/1S5hP7uGSgR7NzrfF48avIm2YsTWuXHwRnMG8rH2J-DI/edit?usp=sharing'
         }
       ],
-      sortKey: '2026-02-13'
+      sortKey: '2026-02-13',
+      semester: 'Spring 2026'
     },
     {
       title: 'Claude Code Workshop',
@@ -113,7 +155,8 @@ export default function Events() {
           url: 'https://docs.google.com/presentation/d/187hnhzkoQTTZOfkPFAf0OfFfiL56HJQOL3hqB2h-wuU/edit?usp=sharing'
         }
       ],
-      sortKey: '2026-02-06'
+      sortKey: '2026-02-06',
+      semester: 'Spring 2026'
     },
     {
       title: 'Claude Builder Club Semester Kickoff Event',
@@ -125,14 +168,16 @@ export default function Events() {
           url: 'https://docs.google.com/presentation/d/1pgqkEegJXE3oIHvG7obZ-REh-vjB5x6eEiF4G-50hzo/edit?usp=sharing'
         }
       ],
-      sortKey: '2026-01-12'
+      sortKey: '2026-01-12',
+      semester: 'Spring 2026'
     },
     {
       title: 'First Builder Hour',
       date: 'Spring 2026',
       description: 'Join us at AGH 216A for our first builder hour of the semester.',
       buttons: [],
-      sortKey: '2026-01-19'
+      sortKey: '2026-01-19',
+      semester: 'Spring 2026'
     },
     {
       title: 'CIS 5300 Recitation: NLP & Agentic Commerce with Claude',
@@ -148,7 +193,8 @@ export default function Events() {
           url: 'https://github.com/Albinator3000/CBC_at_Penn_X_CIS_5300'
         }
       ],
-      sortKey: '2026-02-01'
+      sortKey: '2026-02-01',
+      semester: 'Spring 2026'
     },
     {
       title: 'CIS 2210 Recitation: Advanced Data Structures with Claude',
@@ -168,7 +214,8 @@ export default function Events() {
           url: 'https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f5941003-705e-479a-8857-b3db000c537a'
         }
       ],
-      sortKey: '2026-01-26'
+      sortKey: '2026-01-26',
+      semester: 'Spring 2026'
     },
     {
       title: 'AI & The Future of the Tech Industry: Fireside Chat with Anthropic Staff',
@@ -180,7 +227,8 @@ export default function Events() {
           url: 'https://drive.google.com/drive/folders/1Grd0YGPtQ6wsABpUZb9waUOV6_qvTD0Z?usp=sharing'
         }
       ],
-      sortKey: '2025-11-15'
+      sortKey: '2025-11-15',
+      semester: 'Fall 2025'
     },
     {
       title: 'Penn x Anthropic Hackathon',
@@ -196,7 +244,8 @@ export default function Events() {
           url: 'https://drive.google.com/drive/folders/1KCm8-qV4SwG_v3EP2eq0rdbGikqF3TdA?usp=sharing'
         }
       ],
-      sortKey: '2025-10-25'
+      sortKey: '2025-10-25',
+      semester: 'Fall 2025'
     },
     {
       title: 'Penn CBC Agents Masterclass 3 (Builder\'s Version): LLM Interpretability Workshop',
@@ -220,7 +269,8 @@ export default function Events() {
           url: 'https://albert-opher-ai-interpretability.streamlit.app'
         }
       ],
-      sortKey: '2025-11-01'
+      sortKey: '2025-11-01',
+      semester: 'Fall 2025'
     },
     {
       title: 'Founder + Builder Mixer',
@@ -232,7 +282,8 @@ export default function Events() {
           url: '/mixer/Mixer Slides.pdf'
         }
       ],
-      sortKey: '2025-10-15'
+      sortKey: '2025-10-15',
+      semester: 'Fall 2025'
     },
     {
       title: 'Penn CBC Agents Masterclass 2 (Builder\'s Version)',
@@ -244,7 +295,8 @@ export default function Events() {
           url: '/masterclass2/Penn CBC Agents Masterclass 2 (Builder\'s Version).pdf'
         }
       ],
-      sortKey: '2025-10-10'
+      sortKey: '2025-10-10',
+      semester: 'Fall 2025'
     },
     {
       title: 'Building Agents Workshop',
@@ -256,7 +308,8 @@ export default function Events() {
           url: 'https://teamwass.zoom.us/rec/play/4F-5erosyFauaH0aGeDlrArudPP5LNP7r-Ae8lIYthSpzUI-thXLGZzgrf3xsUHQaFTMm2xANno1pSVt.CBjygpR0e8KfX704?eagerLoadZvaPages=sidemenu.billing.plan_management&isReferralProgramEnabled=false&isReferralProgramAvailable=false&accessLevel=meeting&canPlayFromShare=true&from=share_recording_detail&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fteamwass.zoom.us%2Frec%2Fshare%2FZMiY-gjvVoCInXlyShrTAd0wR5sptHEdkCaQ8W2W0GT-71M3LNcXmF9DVMZBeY00.Acq9nVyXM87f0oFl'
         }
       ],
-      sortKey: '2025-10-05'
+      sortKey: '2025-10-05',
+      semester: 'Fall 2025'
     },
     {
       title: 'Penn CBC Agents Masterclass 1 (Builders Version)',
@@ -268,7 +321,8 @@ export default function Events() {
           url: '/masterclass1/Penn CBC Agents Masterclass 1 (Builders Version).pdf'
         }
       ],
-      sortKey: '2025-09-25'
+      sortKey: '2025-09-25',
+      semester: 'Fall 2025'
     },
     {
       title: 'CBC at Penn First Meeting',
@@ -280,9 +334,28 @@ export default function Events() {
           url: '/first-meeting/CBC at Penn First Meeting Deck.pdf'
         }
       ],
-      sortKey: '2025-09-15'
+      sortKey: '2025-09-15',
+      semester: 'Fall 2025'
     }
-  ].sort((a, b) => (b.sortKey ?? '0000').localeCompare(a.sortKey ?? '0000'));
+  ];
+
+  const now = new Date();
+
+  const upcomingEvents = futureEvents
+    .filter((event) => {
+      const eventDate = new Date(event.sortKey);
+      return !isNaN(eventDate.getTime()) && eventDate >= now;
+    })
+    .sort((a, b) => (a.sortKey ?? '9999').localeCompare(b.sortKey ?? '9999'));
+
+  const newlyPastEvents = futureEvents.filter((event) => {
+    const eventDate = new Date(event.sortKey);
+    return !isNaN(eventDate.getTime()) && eventDate < now;
+  });
+
+  const pastEvents = [...staticPastEvents, ...newlyPastEvents].sort((a, b) =>
+    (b.sortKey ?? '0000').localeCompare(a.sortKey ?? '0000')
+  );
 
   return (
     <div
@@ -321,14 +394,14 @@ export default function Events() {
             />
           </div>
 
-          <div className={futureEvents.length === 1 ? "flex justify-center" : ""}>
-            {futureEvents.length === 0 ? (
+          <div className={upcomingEvents.length === 1 ? "flex justify-center" : ""}>
+            {upcomingEvents.length === 0 ? (
               <p className="text-center py-8 font-sans" style={{ color: 'var(--text-secondary)' }}>
                 No upcoming events at the moment. Check back soon!
               </p>
             ) : (
-            <div className={`grid gap-6 w-full ${futureEvents.length === 1 ? 'md:grid-cols-1 max-w-xl' : 'md:grid-cols-2'}`}>
-              {futureEvents.map((event, index) => (
+            <div className={`grid gap-6 w-full ${upcomingEvents.length === 1 ? 'md:grid-cols-1 max-w-xl' : 'md:grid-cols-2'}`}>
+              {upcomingEvents.map((event, index) => (
                 <motion.div
                   key={index}
                   className="rounded-xl p-6 transition-all duration-300 border-2 hover:scale-[1.03] hover:-translate-y-1"
@@ -347,7 +420,10 @@ export default function Events() {
                     {event.title}
                   </h3>
                   <p className="text-sm mb-1 font-sans" style={{ color: 'var(--text-secondary)' }}>{event.date}</p>
-                  <p className="text-sm mb-3 font-sans" style={{ color: 'var(--text-secondary)' }}>{event.time}</p>
+                  <p className={`text-sm font-sans ${event.location ? 'mb-1' : 'mb-3'}`} style={{ color: 'var(--text-secondary)' }}>{event.time}</p>
+                  {event.location && (
+                    <p className="text-sm mb-3 font-sans" style={{ color: 'var(--text-secondary)' }}>{event.location}</p>
+                  )}
                   <p className="mb-4 font-sans" style={{ color: 'var(--text-tertiary)' }}>{event.description}</p>
 
                   <div className="flex flex-wrap gap-3">
@@ -468,8 +544,8 @@ export default function Events() {
             />
           </div>
 
-          <div className={`grid gap-6 mb-12 ${pastEvents.filter(event => event.date.includes('Spring 2026')).length === 1 ? 'md:grid-cols-1 max-w-2xl mx-auto' : 'md:grid-cols-2'}`}>
-            {pastEvents.filter(event => event.date.includes('Spring 2026')).map((event, index) => (
+          <div className={`grid gap-6 mb-12 ${pastEvents.filter(event => event.semester === 'Spring 2026').length === 1 ? 'md:grid-cols-1 max-w-2xl mx-auto' : 'md:grid-cols-2'}`}>
+            {pastEvents.filter(event => event.semester === 'Spring 2026').map((event, index) => (
               <motion.div
                 key={index}
                 className="rounded-xl p-6 transition-all duration-300 border-2 hover:scale-[1.03] hover:-translate-y-1"
@@ -526,7 +602,7 @@ export default function Events() {
           </div>
 
           <div className="grid gap-6 md:grid-cols-2">
-            {pastEvents.filter(event => event.date.includes('Fall 2025')).map((event, index) => (
+            {pastEvents.filter(event => event.semester === 'Fall 2025').map((event, index) => (
               <motion.div
                 key={index}
                 className="rounded-xl p-6 transition-all duration-300 border-2 hover:scale-[1.03] hover:-translate-y-1"

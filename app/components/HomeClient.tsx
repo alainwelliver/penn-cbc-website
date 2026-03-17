@@ -260,6 +260,62 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
 
                 <div className="space-y-3">
                   <a
+                    href="https://luma.com/dq4wu2zr?tk=Fvvgtm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block p-4 rounded-xl transition-all duration-300 cursor-pointer"
+                    style={{
+                      background: 'var(--bg-secondary)',
+                      borderLeft: '3px solid #D97757'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = 'translateX(4px)';
+                      e.currentTarget.style.background = 'var(--bg-card)';
+                      e.currentTarget.style.boxShadow = '0 4px 12px rgba(217, 119, 87, 0.2)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = 'translateX(0)';
+                      e.currentTarget.style.background = 'var(--bg-secondary)';
+                      e.currentTarget.style.boxShadow = 'none';
+                    }}
+                  >
+                    <div style={{ fontSize: '0.85rem', color: '#D97757', fontWeight: 600, marginBottom: '0.25rem' }}>
+                      Mar 18, 2026 • 8–9:30 PM
+                    </div>
+                    <div style={{ fontWeight: 600, color: 'var(--text-primary)' }}>
+                      Anthropic × Penn Hackathon Mixer
+                    </div>
+                  </a>
+
+                  <a
+                    href="https://luma.com/dndrjrkj"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block p-4 rounded-xl transition-all duration-300 cursor-pointer"
+                    style={{
+                      background: 'var(--bg-secondary)',
+                      borderLeft: '3px solid #D97757'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = 'translateX(4px)';
+                      e.currentTarget.style.background = 'var(--bg-card)';
+                      e.currentTarget.style.boxShadow = '0 4px 12px rgba(217, 119, 87, 0.2)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = 'translateX(0)';
+                      e.currentTarget.style.background = 'var(--bg-secondary)';
+                      e.currentTarget.style.boxShadow = 'none';
+                    }}
+                  >
+                    <div style={{ fontSize: '0.85rem', color: '#D97757', fontWeight: 600, marginBottom: '0.25rem' }}>
+                      Mar 19, 2026 • 5:30–6:30 PM
+                    </div>
+                    <div style={{ fontWeight: 600, color: 'var(--text-primary)' }}>
+                      Meet Slow Ventures
+                    </div>
+                  </a>
+
+                  <a
                     href="https://luma.com/t1d6o1hv"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -284,29 +340,6 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
                     </div>
                     <div style={{ fontWeight: 600, color: 'var(--text-primary)' }}>
                       Build the Future of Learning
-                    </div>
-                  </a>
-
-                  <a
-                    href="/events"
-                    className="block p-4 rounded-xl transition-all duration-300 cursor-pointer"
-                    style={{
-                      background: 'var(--bg-secondary)',
-                      borderLeft: '3px solid #D97757'
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.transform = 'translateX(4px)';
-                      e.currentTarget.style.background = 'var(--bg-card)';
-                      e.currentTarget.style.boxShadow = '0 4px 12px rgba(217, 119, 87, 0.2)';
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.transform = 'translateX(0)';
-                      e.currentTarget.style.background = 'var(--bg-secondary)';
-                      e.currentTarget.style.boxShadow = 'none';
-                    }}
-                  >
-                    <div style={{ fontWeight: 600, color: 'var(--text-primary)' }}>
-                      View All Events
                     </div>
                   </a>
                 </div>
