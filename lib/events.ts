@@ -34,7 +34,13 @@ export const UPCOMING_EVENTS_SOURCE: Event[] = [
     time: '5:30–6:30 PM',
     location: 'Levine Hall 307',
     description: "A session on how to build ideas that actually get funded — from what makes a startup compelling to how investors think about early ideas. Whether you're already building something or just curious about startups and product, this is a valuable opportunity to learn how strong ideas turn into real momentum. Pizza provided. Please RSVP so we have an accurate head count.",
-    buttons: [{ label: 'RSVP on Luma', url: 'https://luma.com/dndrjrkj' }],
+    buttons: [
+      { label: 'RSVP on Luma', url: 'https://luma.com/dndrjrkj' },
+      {
+        label: 'View Photos',
+        url: 'https://drive.google.com/drive/folders/1GXpiWQ0JRISH4mvMuKpaAe1DhNuOtUgT?usp=sharing',
+      },
+    ],
     sortKey: '2026-03-19T17:30:00-04:00',
     semester: 'Spring 2026',
   },
