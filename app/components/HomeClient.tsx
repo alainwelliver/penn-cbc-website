@@ -222,7 +222,7 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
                   </motion.a>
 
                   <motion.a
-                    href="https://join.slack.com/t/penncbc/shared_invite/zt-3o3fc1uvq-4ow_Ayc6SAZaP38CXUifOg"
+                    href="https://join.slack.com/t/penncbc/shared_invite/zt-3t1xgaghv-ajvfnvf_~mtqufP_4Ri2FQ"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-8 py-4 rounded-xl font-semibold transition-all duration-300 ease-out border-2"
@@ -624,7 +624,7 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
                 </a>
 
                 <a
-                  href="https://join.slack.com/t/penncbc/shared_invite/zt-3o3fc1uvq-4ow_Ayc6SAZaP38CXUifOg"
+                  href="https://join.slack.com/t/penncbc/shared_invite/zt-3t1xgaghv-ajvfnvf_~mtqufP_4Ri2FQ"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-11 h-11 rounded-xl flex items-center justify-center transition-all duration-300"
