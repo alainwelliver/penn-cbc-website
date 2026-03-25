@@ -12,7 +12,12 @@
       "WebFetch(domain:github.com)",
       "WebFetch(domain:docs.google.com)",
       "Read(//Users/albertwopheriv/Library/**)",
-      "Bash(cp \"CBC VIRTUAL/MCP/cbcvirtualmcp.png\" public/mcp-deep-dive-group.png)"
+      "Bash(cp \"CBC VIRTUAL/MCP/cbcvirtualmcp.png\" public/mcp-deep-dive-group.png)",
+      "Bash(mkdir -p public/agent-orchestration)",
+      "Bash(cp \"CBC VIRTUAL/Agent Orchestration/CBC Agent Orchestration VIRTUAL.pdf\" public/agent-orchestration/)",
+      "Bash(cp \"CBC VIRTUAL/Agent Orchestration/Screenshot 2026-03-24 at 5.42.48 PM.png\" public/agent-orchestration/screenshot.png)",
+      "Bash(cp \"CBC VIRTUAL/Agent Orchestration/Screenshot 2026-03-24 at 5.42.48 PM.png\" \"public/agent-orchestration/screenshot.png\")",
+      "Bash(cp \"CBC VIRTUAL/Agent Orchestration/Screenshot\"* \"public/agent-orchestration/screenshot.png\")"
     ]
   }
 }
