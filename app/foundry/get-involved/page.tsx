@@ -207,58 +207,6 @@ export default function Foundry() {
           </motion.p>
         </motion.section>
 
-        {/* Projects Showcase Section */}
-        <motion.section
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-        >
-          <motion.div
-            className="mb-6"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <h2
-              className="text-3xl font-bold text-center font-sans"
-              style={{
-                color: '#D97757',
-                fontSize: 'clamp(1.75rem, 3vw, 2rem)'
-              }}
-            >
-              Foundry Projects
-            </h2>
-            <div
-              className="h-0.5 mt-2 mx-auto transition-all duration-300"
-              style={{ backgroundColor: '#D97757', width: '200px' }}
-            />
-          </motion.div>
-          <motion.div
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 min-h-[200px]"
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-          >
-            {/* Placeholder state - grid structure ready for future project cards */}
-            <div
-              className="col-span-full flex flex-col items-center justify-center py-16 px-6 rounded-xl border-2 border-dashed transition-all duration-300"
-              style={{
-                backgroundColor: 'var(--bg-card)',
-                borderColor: '#D97757'
-              }}
-            >
-              <h3 className="text-2xl font-bold mb-2 font-sans" style={{ color: '#D97757' }}>
-                Coming Soon
-              </h3>
-              <p className="font-sans text-center" style={{ color: 'var(--text-secondary)' }}>
-                Apply to be among our first cohort!
-              </p>
-            </div>
-          </motion.div>
-        </motion.section>
       </main>
     </div>
   );
