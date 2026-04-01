@@ -64,6 +64,37 @@ export const UPCOMING_EVENTS_SOURCE: Event[] = [
     sortKey: '2026-03-23T14:00:00-04:00',
     semester: 'Spring 2026',
   },
+  {
+    title: 'Technical Workshop 3: AI Agents',
+    date: 'Apr 3, 2026',
+    description:
+      'Join us for a hands-on workshop on AI agents and how they are changing the way we build and interact with technology. We will cover core concepts, explore real-world applications, and give you the tools to start building your own.',
+    buttons: [],
+    sortKey: '2026-04-03T23:59:00-04:00',
+    semester: 'Spring 2026',
+  },
+  {
+    title: 'Penn X Khosla Ventures',
+    date: 'Apr 9, 2026',
+    time: '6:45–8:45 PM',
+    location: 'AGH First Floor Auditorium',
+    description:
+      "Join us for an evening with engineers and builders from Distyl, Pathway, and other companies. Learn about software, AI, and product roles, get a firsthand look at what it's like to build at fast-growing early-stage startups, and connect with teams working on real-world problems at the frontier of technology.",
+    buttons: [{ label: 'Register on Luma', url: 'https://luma.com/0hrqf6ix' }],
+    sortKey: '2026-04-09T18:45:00-04:00',
+    semester: 'Spring 2026',
+  },
+  {
+    title: 'Anthropic x Penn AI Hackathon',
+    date: 'Apr 12, 2026',
+    time: '12:00–7:30 PM',
+    location: 'Amy Gutmann Hall',
+    description:
+      "CBC and Wharton AI & Analytics are partnering with Anthropic for our second annual hackathon, themed around Machines of Loving Grace: the idea that AI, built thoughtfully, can genuinely improve human life. This is not just another demo day. We are looking for impact-heavy projects that are ambitious, meaningful, and grounded in real problems people face.",
+    buttons: [{ label: 'Register on Luma', url: 'https://luma.com/wz5u68yq?tk=kHnFWN' }],
+    sortKey: '2026-04-12T12:00:00-04:00',
+    semester: 'Spring 2026',
+  },
 ];
 
 /** Past events (manually curated). Events that pass from UPCOMING_EVENTS_SOURCE are merged in at runtime. */
