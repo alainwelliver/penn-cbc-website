@@ -7,6 +7,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import DarkModeToggle from "./DarkModeToggle";
 import LoadingAnimation from "./LoadingAnimation";
 import { getUpcomingEvents, type Event } from "@/lib/events";
+import { PENN_CBC_LINKS } from "@/lib/linktree-data";
 
 type Photo = { src: string; alt: string };
 
@@ -222,7 +223,7 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
                   </motion.a>
 
                   <motion.a
-                    href="https://join.slack.com/t/penncbc/shared_invite/zt-3t1xgaghv-ajvfnvf_~mtqufP_4Ri2FQ"
+                    href={PENN_CBC_LINKS.joinSlack}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-8 py-4 rounded-xl font-semibold transition-all duration-300 ease-out border-2"
@@ -603,7 +604,7 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
               </h3>
               <div className="flex gap-4">
                 <a
-                  href="https://www.linkedin.com/company/cbcatpenn"
+                  href={PENN_CBC_LINKS.linkedIn}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-11 h-11 rounded-xl flex items-center justify-center transition-all duration-300"
@@ -624,7 +625,7 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
                 </a>
 
                 <a
-                  href="https://join.slack.com/t/penncbc/shared_invite/zt-3t1xgaghv-ajvfnvf_~mtqufP_4Ri2FQ"
+                  href={PENN_CBC_LINKS.joinSlack}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-11 h-11 rounded-xl flex items-center justify-center transition-all duration-300"
@@ -645,7 +646,7 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
                 </a>
 
                 <a
-                  href="https://www.instagram.com/penncbc/"
+                  href={PENN_CBC_LINKS.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-11 h-11 rounded-xl flex items-center justify-center transition-all duration-300"
@@ -668,7 +669,7 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
                 </a>
 
                 <a
-                  href="mailto:penncbc@gmail.com"
+                  href={PENN_CBC_LINKS.email}
                   className="w-11 h-11 rounded-xl flex items-center justify-center transition-all duration-300"
                   style={{ background: 'var(--bg-secondary)' }}
                   onMouseEnter={(e) => {
@@ -702,7 +703,7 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
                 Stay Updated
               </h3>
               <a
-                href="https://magic.beehiiv.com/v1/38c57aa9-08ce-4517-9e3b-0e043bee3279?email=%7B%7Bemail%7D%7D"
+                href={PENN_CBC_LINKS.newsletter}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-10 py-3.5 rounded-xl font-semibold transition-all duration-300"
