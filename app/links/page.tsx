@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export const dynamic = 'force-dynamic';
 
 export default function LinksPage() {
-  const initialUpcomingEvents = getUpcomingEvents(new Date()).slice(0, 4);
+  const initialUpcomingEvents = getUpcomingEvents(new Date());
 
   return <LinktreePage initialUpcomingEvents={initialUpcomingEvents} />;
 }

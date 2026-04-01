@@ -1,18 +1,18 @@
 'use client';
 
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { track } from '@vercel/analytics';
 
-import { getUpcomingEvents, type Event } from '@/lib/events';
-import { PENN_CBC_LINKS, PENN_CBC_LINKTREE_COPY } from '@/lib/linktree-data';
-
-type LinkConfig = {
-  href: string;
-  label: string;
-  eventName: string;
-  kind?: 'primary' | 'secondary' | 'social';
-};
+import { type Event } from '@/lib/events';
+import {
+  PENN_CBC_LINKS,
+  PENN_CBC_LINKTREE_COPY,
+  PENN_CBC_PRIMARY_LINKS,
+  PENN_CBC_SOCIAL_LINKS,
+} from '@/lib/linktree-data';
+import useUpcomingEvents from './useUpcomingEvents';
+import styles from './LinktreePage.module.css';
 
 function trackClick(eventName: string, meta?: Record<string, string>) {
   track(eventName, meta ?? {});
@@ -23,100 +23,42 @@ export default function LinktreePage({
 }: {
   initialUpcomingEvents: Event[];
 }) {
-  const [upcomingEvents, setUpcomingEvents] = useState(initialUpcomingEvents);
+  const upcomingEvents = useUpcomingEvents(initialUpcomingEvents);
 
   useEffect(() => {
     track('page_view', { page: 'linktree' });
-    const refreshEvents = () => {
-      setUpcomingEvents(getUpcomingEvents(new Date()).slice(0, 4));
-    };
-
-    const intervalId = window.setInterval(refreshEvents, 60_000);
-
-    return () => window.clearInterval(intervalId);
   }, []);
 
-  const primaryLinks: LinkConfig[] = [
-    {
-      href: PENN_CBC_LINKS.signUp,
-      label: 'Sign Up',
-      eventName: 'cta_sign_up_click',
-      kind: 'primary',
-    },
-    {
-      href: PENN_CBC_LINKS.joinSlack,
-      label: 'Join Slack',
-      eventName: 'cta_join_slack_click',
-      kind: 'secondary',
-    },
-    {
-      href: PENN_CBC_LINKS.joinFoundry,
-      label: 'Join Foundry',
-      eventName: 'cta_join_foundry_click',
-      kind: 'secondary',
-    },
-    {
-      href: PENN_CBC_LINKS.newsletter,
-      label: 'Subscribe to Newsletter',
-      eventName: 'cta_newsletter_click',
-      kind: 'secondary',
-    },
-    {
-      href: PENN_CBC_LINKS.website,
-      label: 'Visit Our Website',
-      eventName: 'cta_website_click',
-      kind: 'secondary',
-    },
-  ];
-
-  const socialLinks: LinkConfig[] = [
-    {
-      href: PENN_CBC_LINKS.instagram,
-      label: 'Instagram',
-      eventName: 'social_instagram_click',
-      kind: 'social',
-    },
-    {
-      href: PENN_CBC_LINKS.linkedIn,
-      label: 'LinkedIn',
-      eventName: 'social_linkedin_click',
-      kind: 'social',
-    },
-    {
-      href: PENN_CBC_LINKS.email,
-      label: 'Email',
-      eventName: 'social_email_click',
-      kind: 'social',
-    },
-  ];
-
   return (
-    <main className="linktree-shell">
-      <div className="linktree-frame">
-        <section className="profile-block">
-          <div className="profile-mark">
+    <main className={styles.shell}>
+      <div className={styles.frame}>
+        <section className={styles.profileBlock}>
+          <div className={styles.profileMark}>
             <Image
               src="/cbc-logo.png"
               alt="Claude Builder Club at Penn logo"
               fill
               sizes="84px"
-              className="profile-image"
+              className={styles.profileImage}
             />
           </div>
-          <p className="profile-kicker">University of Pennsylvania</p>
+          <p className={styles.profileKicker}>University of Pennsylvania</p>
           <h1>{PENN_CBC_LINKTREE_COPY.title}</h1>
-          <p className="profile-subtitle">{PENN_CBC_LINKTREE_COPY.subtitle}</p>
+          <p className={styles.profileSubtitle}>{PENN_CBC_LINKTREE_COPY.subtitle}</p>
         </section>
 
-        <section className="links-stack">
-          <div className="link-grid">
-            {primaryLinks.map((link) => (
+        <section className={styles.linksStack}>
+          <div className={styles.linkGrid}>
+            {PENN_CBC_PRIMARY_LINKS.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`link-button link-button-${link.kind ?? 'secondary'}`}
+                className={[
+                  styles.linkButton,
+                  link.kind === 'primary' ? styles.linkButtonPrimary : '',
+                ].join(' ')}
                 onClick={() => trackClick(link.eventName)}
               >
                 <span>{link.label}</span>
@@ -125,41 +67,41 @@ export default function LinktreePage({
           </div>
         </section>
 
-        <section className="events-panel">
-          <div className="panel-heading">
+        <section className={styles.eventsPanel}>
+          <div className={styles.panelHeading}>
             <div>
-              <p className="panel-kicker">Upcoming Events</p>
+              <p className={styles.panelKicker}>Upcoming Events</p>
               <h2>Current events</h2>
             </div>
           </div>
 
           {upcomingEvents.length === 0 ? (
-            <div className="empty-state">
+            <div className={styles.emptyState}>
               No current events right now. Check back soon.
             </div>
           ) : (
-            <div className="event-list">
+            <div className={styles.eventList}>
               {upcomingEvents.map((event) => {
                 const primaryButton = event.buttons[0];
 
                 return (
-                  <article key={event.sortKey} className="event-card">
-                    <div className="event-meta-row">
-                      <div className="event-date">
+                  <article key={event.sortKey} className={styles.eventCard}>
+                    <div className={styles.eventMetaRow}>
+                      <div className={styles.eventDate}>
                         {event.time ? `${event.date} • ${event.time}` : event.date}
                       </div>
                       {event.location ? (
-                        <div className="event-location">{event.location}</div>
+                        <div className={styles.eventLocation}>{event.location}</div>
                       ) : null}
                     </div>
                     <h3>{event.title}</h3>
-                    <p className="event-description">{event.description}</p>
+                    <p className={styles.eventDescription}>{event.description}</p>
                     {primaryButton ? (
                       <a
                         href={primaryButton.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="event-button"
+                        className={styles.eventButton}
                         onClick={() =>
                           trackClick('event_cta_click', {
                             eventTitle: event.title,
@@ -175,7 +117,7 @@ export default function LinktreePage({
                         href={PENN_CBC_LINKS.website}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="event-button event-button-secondary"
+                        className={`${styles.eventButton} ${styles.eventButtonSecondary}`}
                         onClick={() =>
                           trackClick('event_card_click', {
                             eventTitle: event.title,
@@ -193,14 +135,14 @@ export default function LinktreePage({
           )}
         </section>
 
-        <section className="social-row" aria-label="Social links">
-          {socialLinks.map((link) => (
+        <section className={styles.socialRow} aria-label="Social links">
+          {PENN_CBC_SOCIAL_LINKS.map((link) => (
             <a
               key={link.label}
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="social-icon-button"
+              className={styles.socialIconButton}
               aria-label={link.label}
               title={link.label}
               onClick={() => trackClick(link.eventName)}
@@ -227,7 +169,7 @@ export default function LinktreePage({
           ))}
         </section>
 
-        <footer className="page-footer">
+        <footer className={styles.pageFooter}>
           Made with Claude © 2026 Claude Builder Club at Penn
         </footer>
       </div>

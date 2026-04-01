@@ -32,7 +32,9 @@ export default function RootLayout({
       <body
         className={`${plusJakarta.variable} ${crimsonText.variable} antialiased`}
       >
-        <LayoutChrome />
+        <div className="site-chrome">
+          <LayoutChrome />
+        </div>
         {children}
         <Analytics />
       </body>

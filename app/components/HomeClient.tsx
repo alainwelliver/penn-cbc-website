@@ -6,30 +6,21 @@ import { useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import DarkModeToggle from "./DarkModeToggle";
 import LoadingAnimation from "./LoadingAnimation";
-import { getUpcomingEvents, type Event } from "@/lib/events";
+import { PENN_CBC_LINKS } from "@/lib/linktree-data";
+import useUpcomingEvents from "./useUpcomingEvents";
 
 type Photo = { src: string; alt: string };
 
 export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }) {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [highlightIndex, setHighlightIndex] = useState(0);
-  /** Client clock + interval so upcoming list matches /events after hydration and over time */
-  const [upcomingPreview, setUpcomingPreview] = useState<Event[]>(() => getUpcomingEvents());
+  /** Keep homepage and /links synced to the same event source over time. */
+  const upcomingPreview = useUpcomingEvents();
   const { scrollYProgress } = useScroll();
   const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0.3]);
 
   // Use first 14 photos for carousel (need duplicates for infinite scroll)
   const carouselPhotos = initialPhotos.slice(0, 7);
-
-  // Keep upcoming list in sync with the Events page (same lib, browser time)
-  useEffect(() => {
-    const refreshUpcoming = () => {
-      setUpcomingPreview(getUpcomingEvents(new Date()));
-    };
-    refreshUpcoming();
-    const id = setInterval(refreshUpcoming, 60_000);
-    return () => clearInterval(id);
-  }, []);
 
   // Cycle through words to highlight
   useEffect(() => {
@@ -200,7 +191,7 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
                   transition={{ duration: 0.6, delay: 1.8 }}
                 >
                   <motion.a
-                    href="https://www.jotform.com/253555944387168"
+                    href={PENN_CBC_LINKS.signUp}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-8 py-4 rounded-xl font-semibold transition-all duration-300 ease-out"
@@ -222,7 +213,7 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
                   </motion.a>
 
                   <motion.a
-                    href="https://join.slack.com/t/penncbc/shared_invite/zt-3t1xgaghv-ajvfnvf_~mtqufP_4Ri2FQ"
+                    href={PENN_CBC_LINKS.joinSlack}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-8 py-4 rounded-xl font-semibold transition-all duration-300 ease-out border-2"
@@ -603,7 +594,7 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
               </h3>
               <div className="flex gap-4">
                 <a
-                  href="https://www.linkedin.com/company/cbcatpenn"
+                  href={PENN_CBC_LINKS.linkedIn}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-11 h-11 rounded-xl flex items-center justify-center transition-all duration-300"
@@ -624,7 +615,7 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
                 </a>
 
                 <a
-                  href="https://join.slack.com/t/penncbc/shared_invite/zt-3t1xgaghv-ajvfnvf_~mtqufP_4Ri2FQ"
+                  href={PENN_CBC_LINKS.joinSlack}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-11 h-11 rounded-xl flex items-center justify-center transition-all duration-300"
@@ -645,7 +636,7 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
                 </a>
 
                 <a
-                  href="https://www.instagram.com/penncbc/"
+                  href={PENN_CBC_LINKS.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-11 h-11 rounded-xl flex items-center justify-center transition-all duration-300"
@@ -668,7 +659,7 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
                 </a>
 
                 <a
-                  href="mailto:penncbc@gmail.com"
+                  href={PENN_CBC_LINKS.email}
                   className="w-11 h-11 rounded-xl flex items-center justify-center transition-all duration-300"
                   style={{ background: 'var(--bg-secondary)' }}
                   onMouseEnter={(e) => {
@@ -702,7 +693,7 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
                 Stay Updated
               </h3>
               <a
-                href="https://magic.beehiiv.com/v1/38c57aa9-08ce-4517-9e3b-0e043bee3279?email=%7B%7Bemail%7D%7D"
+                href={PENN_CBC_LINKS.newsletter}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-10 py-3.5 rounded-xl font-semibold transition-all duration-300"
