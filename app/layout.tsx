@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Crimson_Text } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
-import Navigation from "./components/Navigation";
-import CursorParticles from "./components/CursorParticles";
+import LayoutChrome from "./components/LayoutChrome";
 
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-sans",
@@ -33,8 +32,7 @@ export default function RootLayout({
       <body
         className={`${plusJakarta.variable} ${crimsonText.variable} antialiased`}
       >
-        <CursorParticles />
-        <Navigation />
+        <LayoutChrome />
         {children}
         <Analytics />
       </body>

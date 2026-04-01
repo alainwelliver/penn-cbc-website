@@ -1,0 +1,37 @@
+---
+description: 
+globs: lib/events.{ts, test.ts}
+alwaysApply: false
+---
+
+# Event Creation Rule
+
+- Use `lib/events.ts` as the single source of truth for the home page event section, the events page, and the `/links` page
+- Add new upcoming events to `UPCOMING_EVENTS_SOURCE`
+- Match the existing `Event` object structure, field order, style, and tone already used in `lib/events.ts`
+- Keep events ordered chronologically by `sortKey`
+- Do not create duplicate events
+- Do not invent missing details, links, photos, or metadata
+- Ask a focused follow-up question if required publishing information is missing
+
+## Field Conventions
+
+- `title`: use the provided event name with only minor cleanup if clearly needed
+- `date`: format like existing upcoming events, for example `Mar 27, 2026`
+- `time`: keep concise display formatting like `5:00 PM` or `4:30–5:30 PM`
+- `location`: include only if provided and not `TBD` or `None`
+- `description`: rewrite the provided description into polished site copy matching nearby event entries
+- `buttons`: only include buttons when the user provides a real URL; never fabricate links
+- `sortKey`: generate a valid sortable datetime string matching the existing format, for example `2026-03-27T17:00:00-04:00`
+- `semester`: infer from the event date and use the existing semester naming exactly
+
+## Optional Input Handling
+
+- Omit fields when the request says `TBD`, `None`, or leaves them blank
+- Only mention collaborators, food, or photo information when it naturally fits the existing event style
+- Do not add placeholder text for missing optional fields
+
+## Tests
+
+- Update `lib/events.test.ts` only if needed for event counts, ordering, or exact titles
+- Keep test changes minimal and preserve existing upcoming and past event behavior
