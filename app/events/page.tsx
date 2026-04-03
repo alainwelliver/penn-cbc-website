@@ -1,11 +1,21 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 import { getUpcomingEvents, getPastEvents, buttonsForPastEventDisplay } from '@/lib/events';
 
+export const dynamic = 'force-dynamic';
+
 export default function Events() {
-  const upcomingEvents = getUpcomingEvents();
-  const pastEvents = getPastEvents();
+  const [asOf, setAsOf] = useState(() => new Date());
+
+  useEffect(() => {
+    const intervalId = window.setInterval(() => setAsOf(new Date()), 60_000);
+    return () => window.clearInterval(intervalId);
+  }, []);
+
+  const upcomingEvents = getUpcomingEvents(asOf);
+  const pastEvents = getPastEvents(asOf);
 
   return (
     <div

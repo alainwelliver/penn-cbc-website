@@ -11,10 +11,52 @@ export type Event = {
   description: string;
   buttons: EventButton[];
   sortKey: string;
+  /** Optional explicit end timestamp (ISO string, typically in ET). */
+  endSortKey?: string;
   time?: string;
   location?: string;
   semester: 'Spring 2026' | 'Fall 2025';
 };
+
+/**
+ * Compute the instant when an event should stop being considered "current" / "upcoming".
+ *
+ * Rules:
+ * - If endSortKey is provided and valid, use that.
+ * - Otherwise, default to the start of the next calendar day in ET (America/New_York),
+ *   based on the date and offset encoded in sortKey.
+ */
+function getEventEndInstant(event: Event): Date | null {
+  const start = new Date(event.sortKey);
+  if (Number.isNaN(start.getTime())) return null;
+
+  if (event.endSortKey) {
+    const explicitEnd = new Date(event.endSortKey);
+    if (!Number.isNaN(explicitEnd.getTime())) {
+      return explicitEnd;
+    }
+  }
+
+  // Derive ET offset from sortKey if present, e.g. 2026-03-18T20:00:00-04:00
+  const match = event.sortKey.match(/([+-]\d{2}):?(\d{2})$/);
+  // Fallback to -05:00 (standard ET) if no offset is encoded.
+  const offsetMinutes = match
+    ? Number(match[1]) * 60 + Number(match[2])
+    : -5 * 60;
+
+  const etMillis = start.getTime() + offsetMinutes * 60_000;
+  const etDate = new Date(etMillis);
+
+  const year = etDate.getUTCFullYear();
+  const month = etDate.getUTCMonth();
+  const day = etDate.getUTCDate();
+
+  // Start of next ET day, converted back to UTC.
+  const nextDayStartEtUtcMillis =
+    Date.UTC(year, month, day + 1, 0, 0, 0) - offsetMinutes * 60_000;
+
+  return new Date(nextDayStartEtUtcMillis);
+}
 
 /** Events that can become past (have sortKey). Filter by current date to get "upcoming". */
 export const UPCOMING_EVENTS_SOURCE: Event[] = [
@@ -125,8 +167,10 @@ export const STATIC_PAST_EVENTS: Event[] = [
 ];
 
 function isUpcoming(event: Event, asOf: Date): boolean {
-  const eventDate = new Date(event.sortKey);
-  return !Number.isNaN(eventDate.getTime()) && eventDate >= asOf;
+  const endInstant = getEventEndInstant(event);
+  // Treat the event as "still upcoming" only until (but not including) its end instant.
+  // This ensures events are removed when the "next day starts in ET" instant is reached.
+  return !!endInstant && endInstant > asOf;
 }
 
 /** Returns upcoming events (sortKey >= asOf), sorted by sortKey. Default asOf = now. */
@@ -138,8 +182,9 @@ export function getUpcomingEvents(asOf: Date = new Date()): Event[] {
 /** Events from UPCOMING_EVENTS_SOURCE that are now past (sortKey < asOf). */
 export function getNewlyPastFromUpcoming(asOf: Date = new Date()): Event[] {
   return UPCOMING_EVENTS_SOURCE.filter((e) => {
-    const eventDate = new Date(e.sortKey);
-    return !Number.isNaN(eventDate.getTime()) && eventDate < asOf;
+    const endInstant = getEventEndInstant(e);
+    // Once endInstant is reached, the event should move into "past".
+    return !!endInstant && endInstant <= asOf;
   });
 }
 
