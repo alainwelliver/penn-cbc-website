@@ -18,28 +18,54 @@ export type Event = {
   semester: 'Spring 2026' | 'Fall 2025';
 };
 
+/** Parse "9:30 PM" / "9 PM" into 24h hour and minute. */
+function parse12hTimeEnd(s: string): { hour: number; minute: number } | null {
+  const t = s.trim();
+  const m = t.match(/^(\d{1,2})(?::(\d{2}))?\s*(AM|PM)$/i);
+  if (!m) return null;
+  let hour = Number(m[1]);
+  const minute = m[2] ? Number(m[2]) : 0;
+  const ap = m[3].toUpperCase();
+  if (ap === 'PM' && hour !== 12) hour += 12;
+  if (ap === 'AM' && hour === 12) hour = 0;
+  return { hour, minute };
+}
+
 /**
- * Compute the instant when an event should stop being considered "current" / "upcoming".
- *
- * Rules:
- * - If endSortKey is provided and valid, use that.
- * - Otherwise, default to the start of the next calendar day in ET (America/New_York),
- *   based on the date and offset encoded in sortKey.
+ * If `time` looks like a range ("4:30–5:30 PM", "8–9:30 PM"), return the end wall-clock
+ * on the same day as `sortKey` using the same UTC offset suffix as `sortKey`.
  */
-function getEventEndInstant(event: Event): Date | null {
+function endInstantFromTimeRange(event: Event): Date | null {
+  if (!event.time) return null;
+  const normalized = event.time.replace(/\u2013/g, '-').replace(/\s+/g, ' ');
+  const segments = normalized.split(/\s*-\s*/).map((x) => x.trim());
+  if (segments.length < 2) return null;
+
+  const endSegment = segments[segments.length - 1]!;
+  const parsed = parse12hTimeEnd(endSegment);
+  if (!parsed) return null;
+
+  const iso = event.sortKey.match(
+    /^(\d{4}-\d{2}-\d{2})T\d{2}:\d{2}:\d{2}([+-]\d{2}:\d{2})$/
+  );
+  if (!iso) return null;
+
+  const datePart = iso[1];
+  const offset = iso[2];
+  const hh = String(parsed.hour).padStart(2, '0');
+  const mm = String(parsed.minute).padStart(2, '0');
+  const end = new Date(`${datePart}T${hh}:${mm}:00${offset}`);
+  return Number.isNaN(end.getTime()) ? null : end;
+}
+
+/**
+ * Start of the next calendar day in the offset encoded on `sortKey` (ET when data uses ET offsets).
+ */
+function nextMidnightAfterSortKeyStart(event: Event): Date | null {
   const start = new Date(event.sortKey);
   if (Number.isNaN(start.getTime())) return null;
 
-  if (event.endSortKey) {
-    const explicitEnd = new Date(event.endSortKey);
-    if (!Number.isNaN(explicitEnd.getTime())) {
-      return explicitEnd;
-    }
-  }
-
-  // Derive ET offset from sortKey if present, e.g. 2026-03-18T20:00:00-04:00
   const match = event.sortKey.match(/([+-]\d{2}):?(\d{2})$/);
-  // Fallback to -05:00 (standard ET) if no offset is encoded.
   const offsetMinutes = match
     ? Number(match[1]) * 60 + Number(match[2])
     : -5 * 60;
@@ -51,11 +77,36 @@ function getEventEndInstant(event: Event): Date | null {
   const month = etDate.getUTCMonth();
   const day = etDate.getUTCDate();
 
-  // Start of next ET day, converted back to UTC.
   const nextDayStartEtUtcMillis =
     Date.UTC(year, month, day + 1, 0, 0, 0) - offsetMinutes * 60_000;
 
   return new Date(nextDayStartEtUtcMillis);
+}
+
+/**
+ * Compute the instant when an event should stop being considered "current" / "upcoming".
+ *
+ * Rules:
+ * - If endSortKey is provided and valid, use that.
+ * - Else if time has a range (e.g. "4:30–5:30 PM"), use the end of that range on the sortKey day.
+ * - Else default to the start of the next calendar day in the offset used on sortKey (ET in practice).
+ */
+/** Exposed for tests and debugging; prefer getUpcomingEvents / getPastEvents in app code. */
+export function getEventEndInstant(event: Event): Date | null {
+  const start = new Date(event.sortKey);
+  if (Number.isNaN(start.getTime())) return null;
+
+  if (event.endSortKey) {
+    const explicitEnd = new Date(event.endSortKey);
+    if (!Number.isNaN(explicitEnd.getTime())) {
+      return explicitEnd;
+    }
+  }
+
+  const fromRange = endInstantFromTimeRange(event);
+  if (fromRange) return fromRange;
+
+  return nextMidnightAfterSortKeyStart(event);
 }
 
 /** Events that can become past (have sortKey). Filter by current date to get "upcoming". */
@@ -68,6 +119,7 @@ export const UPCOMING_EVENTS_SOURCE: Event[] = [
     description: 'Our Hackathon is on April 12th (more info soon). Meet other builders, find teammates, share ideas, and kick things off. Snacks provided.',
     buttons: [{ label: 'RSVP on Luma', url: 'https://luma.com/dq4wu2zr?tk=Fvvgtm' }],
     sortKey: '2026-03-18T20:00:00-04:00',
+    endSortKey: '2026-03-18T21:30:00-04:00',
     semester: 'Spring 2026',
   },
   {
@@ -84,6 +136,7 @@ export const UPCOMING_EVENTS_SOURCE: Event[] = [
       },
     ],
     sortKey: '2026-03-19T17:30:00-04:00',
+    endSortKey: '2026-03-19T18:30:00-04:00',
     semester: 'Spring 2026',
   },
   {
@@ -95,15 +148,17 @@ export const UPCOMING_EVENTS_SOURCE: Event[] = [
       'Join us for an interactive workshop / fireside with Shanel Fields, CEO of MD Ally — a Wharton alum who cold-outreached her way to her first EMS customer while still in school. We’ll dig into the real questions: how do you build a business model, price your product, and land your first paying customers? Bring your startup idea — you’ll leave with a concrete GTM plan and direct feedback from a founder who’s lived it.',
     buttons: [{ label: 'Register on Luma', url: 'https://luma.com/oaqhj52e' }],
     sortKey: '2026-03-20T16:30:00-04:00',
+    endSortKey: '2026-03-20T17:30:00-04:00',
     semester: 'Spring 2026',
   },
   {
     title: 'Build the Future of Learning',
     date: 'Mar 23, 2026',
-    time: '2:00 PM',
+    time: '2:00–3:00 PM',
     description: 'Curious about AI in education? Join us to explore essential AI fundamentals, discuss the latest trends shaping equitable learning, and put those ideas into practice by building a real education tool together in minutes using Claude Code. Co-hosted with AIED @ Penn.',
     buttons: [{ label: 'Register on Luma', url: 'https://luma.com/t1d6o1hv' }],
     sortKey: '2026-03-23T14:00:00-04:00',
+    endSortKey: '2026-03-23T15:00:00-04:00',
     semester: 'Spring 2026',
   },
   {
@@ -115,6 +170,7 @@ export const UPCOMING_EVENTS_SOURCE: Event[] = [
       'Join us for a hands-on workshop on AI agents and how they are changing the way we build and interact with technology. We will cover core concepts, explore real-world applications, and give you the tools to start building your own. The workshop is Friday, April 3 from 4:30 to 5:30 PM in Towne 225 Raisler Lounge.',
     buttons: [{ label: 'Register on Luma', url: 'https://luma.com/4kjw0rsa' }],
     sortKey: '2026-04-03T16:30:00-04:00',
+    endSortKey: '2026-04-03T17:30:00-04:00',
     semester: 'Spring 2026',
   },
   {
@@ -126,6 +182,7 @@ export const UPCOMING_EVENTS_SOURCE: Event[] = [
       "Join us for an evening with engineers and builders from Distyl, Pathway, and other companies. Learn about software, AI, and product roles, get a firsthand look at what it's like to build at fast-growing early-stage startups, and connect with teams working on real-world problems at the frontier of technology.",
     buttons: [{ label: 'Register on Luma', url: 'https://luma.com/0hrqf6ix' }],
     sortKey: '2026-04-09T18:45:00-04:00',
+    endSortKey: '2026-04-09T20:45:00-04:00',
     semester: 'Spring 2026',
   },
   {
@@ -137,6 +194,7 @@ export const UPCOMING_EVENTS_SOURCE: Event[] = [
       "CBC and Wharton AI & Analytics are partnering with Anthropic for our second annual hackathon, themed around Machines of Loving Grace: the idea that AI, built thoughtfully, can genuinely improve human life. This is not just another demo day. We are looking for impact-heavy projects that are ambitious, meaningful, and grounded in real problems people face.",
     buttons: [{ label: 'Register on Luma', url: 'https://luma.com/wz5u68yq?tk=kHnFWN' }],
     sortKey: '2026-04-12T12:00:00-04:00',
+    endSortKey: '2026-04-12T19:30:00-04:00',
     semester: 'Spring 2026',
   },
 ];
@@ -173,13 +231,13 @@ function isUpcoming(event: Event, asOf: Date): boolean {
   return !!endInstant && endInstant > asOf;
 }
 
-/** Returns upcoming events (sortKey >= asOf), sorted by sortKey. Default asOf = now. */
+/** Returns upcoming events (now is before event end), sorted by sortKey. Default asOf = now. */
 export function getUpcomingEvents(asOf: Date = new Date()): Event[] {
   return UPCOMING_EVENTS_SOURCE.filter((e) => isUpcoming(e, asOf))
     .sort((a, b) => (a.sortKey ?? '9999').localeCompare(b.sortKey ?? '9999'));
 }
 
-/** Events from UPCOMING_EVENTS_SOURCE that are now past (sortKey < asOf). */
+/** Events from UPCOMING_EVENTS_SOURCE whose end instant has passed. */
 export function getNewlyPastFromUpcoming(asOf: Date = new Date()): Event[] {
   return UPCOMING_EVENTS_SOURCE.filter((e) => {
     const endInstant = getEventEndInstant(e);

@@ -3,6 +3,7 @@ import {
   getUpcomingEvents,
   getPastEvents,
   getNewlyPastFromUpcoming,
+  getEventEndInstant,
   UPCOMING_EVENTS_SOURCE,
   STATIC_PAST_EVENTS,
   isRegistrationLikeButton,
@@ -16,6 +17,48 @@ describe('events', () => {
       expect(e.sortKey).toBeDefined();
       expect(new Date(e.sortKey).getTime()).not.toBeNaN();
     });
+  });
+
+  it('every upcoming event has endSortKey (explicit end instant)', () => {
+    for (const e of UPCOMING_EVENTS_SOURCE) {
+      expect(e.endSortKey).toBeDefined();
+      expect(Number.isNaN(new Date(e.endSortKey!).getTime())).toBe(false);
+    }
+  });
+
+  it('endSortKey is after sortKey and getEventEndInstant matches endSortKey', () => {
+    for (const e of UPCOMING_EVENTS_SOURCE) {
+      const startMs = new Date(e.sortKey).getTime();
+      const endMs = new Date(e.endSortKey!).getTime();
+      expect(endMs).toBeGreaterThan(startMs);
+      const computed = getEventEndInstant(e);
+      expect(computed).not.toBeNull();
+      expect(computed!.getTime()).toBe(endMs);
+    }
+  });
+
+  it('endSortKey shares the same calendar date as sortKey (all events are single-day)', () => {
+    for (const e of UPCOMING_EVENTS_SOURCE) {
+      expect(e.endSortKey!.slice(0, 10)).toBe(e.sortKey.slice(0, 10));
+    }
+  });
+
+  it('take-down: event is upcoming until endSortKey, then not', () => {
+    for (const e of UPCOMING_EVENTS_SOURCE) {
+      const endMs = new Date(e.endSortKey!).getTime();
+      const justBefore = new Date(endMs - 1000);
+      const atEnd = new Date(endMs);
+      expect(getUpcomingEvents(justBefore).some((x) => x.title === e.title)).toBe(true);
+      expect(getUpcomingEvents(atEnd).some((x) => x.title === e.title)).toBe(false);
+    }
+  });
+
+  it('take-down: getNewlyPastFromUpcoming includes event exactly at endSortKey', () => {
+    for (const e of UPCOMING_EVENTS_SOURCE) {
+      const asOf = new Date(e.endSortKey!);
+      const newlyPast = getNewlyPastFromUpcoming(asOf);
+      expect(newlyPast.some((x) => x.title === e.title)).toBe(true);
+    }
   });
 
   it('getUpcomingEvents(asOf before all events) returns all 7 upcoming', () => {
@@ -45,6 +88,14 @@ describe('events', () => {
     expect(upcoming[3].title).toBe('Technical Workshop 3: AI Agents');
     expect(upcoming[4].title).toBe('Penn X Khosla Ventures');
     expect(upcoming[5].title).toBe('Anthropic x Penn AI Hackathon');
+  });
+
+  it('Technical Workshop 3 uses end of time range (5:30 PM ET), not next midnight', () => {
+    const title = 'Technical Workshop 3: AI Agents';
+    const during = new Date('2026-04-03T17:00:00-04:00');
+    const afterEnd = new Date('2026-04-03T18:00:00-04:00');
+    expect(getUpcomingEvents(during).some((e) => e.title === title)).toBe(true);
+    expect(getUpcomingEvents(afterEnd).some((e) => e.title === title)).toBe(false);
   });
 
   it('getUpcomingEvents(asOf after all events) returns 0 upcoming', () => {
