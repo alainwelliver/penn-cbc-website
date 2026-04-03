@@ -113,7 +113,7 @@ export const UPCOMING_EVENTS_SOURCE: Event[] = [
     location: 'Towne 225 Raisler Lounge',
     description:
       'Join us for a hands-on workshop on AI agents and how they are changing the way we build and interact with technology. We will cover core concepts, explore real-world applications, and give you the tools to start building your own. The workshop is Friday, April 3 from 4:30 to 5:30 PM in Towne 225 Raisler Lounge.',
-    buttons: [],
+    buttons: [{ label: 'Register on Luma', url: 'https://luma.com/4kjw0rsa' }],
     sortKey: '2026-04-03T16:30:00-04:00',
     semester: 'Spring 2026',
   },
