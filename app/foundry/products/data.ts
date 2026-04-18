@@ -316,6 +316,17 @@ export const products: Product[] = [
     isBoardProject: true
   },
   {
+    id: 'bound',
+    name: 'Andrea Gualandris',
+    email: 'Guala@seas.upenn.edu',
+    title: 'Bound',
+    shortDescription: 'Mutual-connection iOS social platform where nothing happens unless both people say yes.',
+    description: "Social media was supposed to bring us closer. Instead, it created a world of unanswered follow requests, one-sided interactions, and the quiet anxiety of putting yourself out there with no guarantee anyone will meet you halfway. Bound is an iOS social platform built on a simple idea: connection should be mutual. On Bound, nothing happens unless both people say yes. No asymmetric follows, no public rejection, no guessing where you stand. If the feeling is mutual, you're connected. If not, nobody ever knows. We designed Bound for a generation that grew up online but learned to hold back — Gen Z users who want authentic relationships without the psychological weight of traditional social media. By making reciprocity the foundation rather than an afterthought, we've removed the single biggest barrier to genuine digital connection: the fear of not being reciprocated. Bound isn't just another social app. It's a fundamentally different model for how people connect online — one where every relationship starts on equal ground.",
+    teamMembers: [],
+    stage: 'MVP',
+    repoLink: ''
+  },
+  {
     id: 'anchor-dating-first',
     name: 'Kyle Zhang',
     email: 'kyle100@wharton.upenn.edu',
