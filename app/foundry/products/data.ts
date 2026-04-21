@@ -24,17 +24,6 @@ export const products: Product[] = [
     repoLink: 'https://delia-hr.vercel.app/'
   },
   {
-    id: 'student-calendar',
-    name: 'Kushal Garg',
-    email: 'kushalx@seas.upenn.edu',
-    title: 'Student Calendar',
-    shortDescription: 'One stop shop for all deadlines',
-    description: 'Student life consists of lots of aspects - assignments, exams, clubs, projects, events etc. It becomes very difficult to keep track of everything. The project would automatically read emails, pick up events and deadlines and put it on calendar + connect with canvas and ed to pull any deadlines and put on calendar so students are always upto date about what\'s happening and do not miss anything.',
-    teamMembers: [],
-    stage: 'Ideation',
-    repoLink: ''
-  },
-  {
     id: 'panopticon',
     name: 'Intel Chen',
     email: 'yihechen@seas.upenn.edu',
@@ -54,29 +43,7 @@ export const products: Product[] = [
     description: 'Clarify is an AI-driven detection and authentication platform designed to restore trust in digital media. As synthetic images, videos, and voices become increasingly indistinguishable from reality, individuals and institutions lack reliable tools to verify what they see and hear online. Clarify addresses this by scanning content across social platforms and the web to detect visual and audio deepfakes in real time. In addition, Clarify provides an invisible authenticity stamp that creators, journalists, and organizations can embed in legitimate media, allowing downstream viewers to confirm its origin and integrity. The platform is designed for both consumers and enterprises, offering a mobile app, browser extension, and enterprise verification tools. By combining detection with cryptographic-style verification, Clarify creates a shared infrastructure for digital trust, helping users, media organizations, and brands navigate the AI era with confidence.',
     teamMembers: [],
     stage: 'MVP',
-    repoLink: 'https://www.clarifytechnologies.org/'
-  },
-  {
-    id: 'avdah',
-    name: 'Eyal Lubin',
-    email: 'eyalylub@sas.upenn.edu',
-    title: 'Avdah',
-    shortDescription: 'AI-Hiring Platform Interview Service',
-    description: 'We are an AI Interviewing Service for first-round applicant screening.',
-    teamMembers: [{ name: 'Sam Koffler', email: 'skoffler@sas.upenn.edu' }],
-    stage: 'Live',
-    repoLink: 'https://avdah.com'
-  },
-  {
-    id: 'writing-feedback',
-    name: 'Mai Vuong',
-    email: 'maivuong@upenn.edu',
-    title: 'Personalized Writing Feedback System',
-    shortDescription: 'Personalized Writing Feedback System',
-    description: 'The project targets formative feedback for grammar and writing practice, where timing and clarity are most critical for learning. The goal is to support teachers in delivering actionable, task specific feedback at scale without increasing workload, while helping students develop stronger writing habits and confidence.',
-    teamMembers: [],
-    stage: 'MVP',
-    repoLink: 'https://github.com/quemaivuong/writing_feedback.git'
+    repoLink: ''
   },
   {
     id: 'social-connect',
@@ -90,54 +57,10 @@ export const products: Product[] = [
     repoLink: ''
   },
   {
-    id: 'perennial',
-    name: 'Sabine Mejia',
-    email: 'smejia@seas.upenn.edu',
-    title: 'Perennial',
-    shortDescription: 'An online marketplace for college students to buy and sell items they no longer need. The goal of this app is to reduce waste and facilitate a circular economy.',
-    description: 'An online marketplace for college students to buy and sell.',
-    teamMembers: [],
-    stage: 'Ideation',
-    repoLink: 'https://www.figma.com/proto/MWqCpFVfyksvQ00N5diKA2/Perennial-UI--Copy-?node-id=82-251&starting-point-node-id=82%3A251&t=OwZFOCVMN0kWUnoN-1'
-  },
-  {
-    id: 'aeo',
-    name: 'Zachary',
-    email: 'xxinzhao@upenn.edu',
-    title: 'AEO',
-    shortDescription: 'Agentic engine optimization',
-    description: 'Agentic engine optimization',
-    teamMembers: [],
-    stage: 'MVP',
-    repoLink: 'https://www.linkedin.com/company/aeofront'
-  },
-  {
-    id: 'grouper',
-    name: 'Shane Murphy',
-    email: 'boom1263@seas.upenn.edu',
-    title: 'Grouper',
-    shortDescription: 'Group project breakdown app',
-    description: 'Grouper is an app that uses AI to help users break up group projects into equal portions and makes it easy to check off tasks and track each others progress.',
-    teamMembers: [],
-    stage: 'MVP',
-    repoLink: 'https://github.com/shanemurphster/grouper.git'
-  },
-  {
-    id: 'pigeon-ai',
-    name: 'Toni Lobaccaro',
-    email: 'toniloba@seas.upenn.edu',
-    title: 'Pigeon AI',
-    shortDescription: 'AI and Fintech for NGOs',
-    description: 'Pigeon AI is an all-in-one financial companion designed to help nonprofits scale via grant funding. Its AI-native search matches organizations with government and private opportunities while predicting future leads. To increase win rates, a generative writing agent drafts tailored proposals based on specific rubrics and flags budget errors. Post-award, the automated compliance tool syncs with accounting software to verify expenses and streamline reporting. Additionally, Pigeon AI offers bridge loans to provide early capital for organizations facing government payment delays, streamlining discovery, writing, compliance, and cash flow management.',
-    teamMembers: [{ name: 'Leo Lobaccaro', email: 'leoloba@wharton.upenn.edu' }],
-    stage: 'MVP',
-    repoLink: ''
-  },
-  {
     id: 'healthinsights',
     name: 'Leo Lawrence',
     email: 'leozlaw@seas.upenn.edu',
-    title: 'HealthInsights',
+    title: 'HealthInsights (name TBD)',
     shortDescription: 'Wearable data transformed into actionable insights',
     description: 'HealthInsights takes wearable data (Apple Watch) combined with research papers on relevant metrics (HRV, Sleep Cycles) to provide the user with actionable insights.',
     teamMembers: [],
@@ -167,17 +90,6 @@ export const products: Product[] = [
     repoLink: 'https://www.canva.com/design/DAG64M6DOjI/zYdJAfyWW72s1D7vvhtwEg/edit'
   },
   {
-    id: 'viaride',
-    name: 'Suosi He',
-    email: 'suosihe@seas.upenn.edu',
-    title: 'ViaRide',
-    shortDescription: 'Ridesharing app',
-    description: 'Ridesharing App connecting drivers (car owners) and passengers',
-    teamMembers: [],
-    stage: 'Ideation',
-    repoLink: ''
-  },
-  {
     id: 'maii',
     name: 'Jimwell Huang',
     email: 'huang44@seas.upenn.edu',
@@ -195,31 +107,9 @@ export const products: Product[] = [
     title: 'VerityAI - AI Visibility Infrastructure Platform',
     shortDescription: 'AI Visibility for Ecommerce Brands',
     description: 'VerityAI is a platform-agnostic infrastructure layer that standardizes brand and product representation on AI platforms and provides necessary infrastructure to enable agentic commerce for ecommerce brands.',
-    teamMembers: [{ name: 'Tolu Alamu', email: 'toalamu@wharton.upenn.edu' }],
+    teamMembers: [],
     stage: 'Ideation',
     repoLink: 'https://drive.google.com/drive/folders/12Tu63ynNjqdMTa7DBZkkN0EsTErzPKDq?usp=drive_link'
-  },
-  {
-    id: 'civitas-ai',
-    name: 'Mohammed Alkindi',
-    email: 'alkindi@sas.ueppn.edu',
-    title: 'Civitas AI',
-    shortDescription: 'Compliance intelligence for international students',
-    description: 'Civitas AI is a structured compliance intelligence platform for international students in the United States. It converts fragmented visa, university, and sponsor policies into a deterministic decision engine with official and community modes. Users input their academic status and sponsor details. The system routes them through rule-based logic augmented by AI to generate compliant next steps for CPT, OPT, enrollment, and reporting requirements. Civitas AI reduces regulatory risk and replaces misinformation with accountable, structured guidance.',
-    teamMembers: [],
-    stage: 'MVP',
-    repoLink: 'https://github.com/Mohammed-coder-dev/OmanX'
-  },
-  {
-    id: 'hali',
-    name: 'Lamar',
-    email: 'lamarj1@wharton.upenn.edu',
-    title: 'hali',
-    shortDescription: 'Reach your health goals',
-    description: 'An AI powered app for the middle eastern region primarily geared towards helping people track their calories, workouts, keeping them on schedule to reach their health goals',
-    teamMembers: [],
-    stage: 'Ideation',
-    repoLink: ''
   },
   {
     id: 'recallos',
@@ -242,17 +132,6 @@ export const products: Product[] = [
     teamMembers: [],
     stage: 'MVP',
     repoLink: ''
-  },
-  {
-    id: 'articulaite',
-    name: 'Tony Sui',
-    email: 'tonysui@seas.upenn.edu',
-    title: 'articulAIte',
-    shortDescription: 'Real-time AI coaching for clear, confident speech.',
-    description: 'articulAIte is an AI-powered communication coach designed to help users speak more articulately and confidently. Unlike existing tools that only provide post-meeting analytics, articulAIte aims to deliver real-time, unobtrusive feedback on pacing, filler words, and clarity during live conversations. By leveraging low-latency audio processing and lightweight LLMs, the application helps users, from professionals navigating high-stakes technical interviews to public speakers, translate complex thoughts into concise, impactful language.',
-    teamMembers: [],
-    stage: 'Ideation',
-    repoLink: 'https://github.com/tonysui88/articulAIte'
   },
   {
     id: 'ping',
@@ -299,9 +178,170 @@ export const products: Product[] = [
     title: 'Monk',
     shortDescription: 'Tracks your progress on general well being',
     description: 'Monk is an app that tracks progress on mental and physical health along with other goals. The home page is a live progress report presented as a monk avatar whose stance changes as the user does better. It supports multiple channels of information collection for tracking.',
-    teamMembers: [],
+    teamMembers: [{ name: 'Marco Oppertti', email: '' }],
     stage: 'Ideation',
     repoLink: ''
+  },
+  {
+    id: 'bound',
+    name: 'Andrea Gualandris',
+    email: 'guala@seas.upenn.edu',
+    title: 'Bound',
+    shortDescription: 'Anonymous social connections through shared moments',
+    description: 'Founded and developed a social media iOS application enabling anonymous connections through shared life moments. Backend & Database: Built a serverless architecture with Firebase, utilizing Firestore NoSQL for real-time data sync and Cloud Functions for server-side logic and push notifications. Implemented Firebase Authentication for secure anonymous onboarding and Cloud Storage for efficient media handling. iOS Development: Developed a native Swift application following MVVM architecture. Integrated analytics and crash reporting SDKs to support App Store optimization and user behavior insights. Results & Scale: 1,000+ downloads in launch week; 20,000+ App Store impressions in Milan; Data model optimized for high-frequency social media read/write operations',
+    teamMembers: [],
+    stage: 'MVP',
+    repoLink: 'https://stackoverflow.com/users/14220454/stackgu'
+  },
+  {
+    id: 'flashreps',
+    name: 'Amogh Channashetti',
+    email: 'amoghc@seas.upenn.edu',
+    title: 'FlashReps',
+    shortDescription: 'Specialized exam prep platform',
+    description: 'FlashReps is a spaced-repetition learning platform built for high-stakes exams where mainstream study tools lack tailored content. It uses adaptive review algorithms and structured study workflows to help students retain complex material efficiently and perform better on specialized tests.',
+    teamMembers: [],
+    stage: 'Live',
+    repoLink: 'https://flashdec.org/'
+  },
+  {
+    id: 'clarity',
+    name: 'Jen Shi',
+    email: 'jenzshi@seas.upenn.edu',
+    title: 'Clarity',
+    shortDescription: 'AI native investment research platform',
+    description: 'An investment research platform that mines and monitors signals for your thesis and never sleeps. Explore, research and monitor all of your ideas in one place. A force multiplier for all of your ideas, starting with equity investments. Seamless workflow designed for humans and agents alike.',
+    teamMembers: [],
+    stage: 'MVP',
+    repoLink: 'https://fredexplorer.streamlit.app'
+  },
+  {
+    id: 'thesio',
+    name: 'Derek Ike',
+    email: 'derekike@seas.upenn.edu',
+    title: 'Thesio',
+    shortDescription: 'AI-Powered Professional Networking Platform',
+    description: 'Thesio is an AI-powered platform designed to help students and career professionals form meaningful, goal-aligned connections through the intuitive UI.',
+    teamMembers: [],
+    stage: 'MVP',
+    repoLink: ''
+  },
+  {
+    id: 'krepo',
+    name: 'Mayank Roy',
+    email: 'roy1@seas.upenn.edu',
+    title: 'KRepo',
+    shortDescription: 'Cross-referential corporate knowledge repository to improve propagation & onboarding',
+    description: 'Address the knowledge propagation and decay problems associated with rapid growth in employee numbers (typically between series A and beyond) in highly technical industries. Ideally also improve onboarding mechanisms using the knowledge repository.',
+    teamMembers: [],
+    stage: 'MVP',
+    repoLink: 'https://github.com/roy-mayank/KRepo'
+  },
+  {
+    id: 'kora',
+    name: 'Gayatri Sriram',
+    email: 'gayatri1@wharton.upenn.edu',
+    title: 'Kora',
+    shortDescription: 'Personal AI wellness coaching team',
+    description: 'The best athletes in the world don\'t figure out their health alone. They have a coach, nutritionist, and recovery specialist all working together to keep them on track. Kora brings that same coordinated wellness guidance to busy, ambitious people who don\'t have time for friction, starting with fitness.',
+    teamMembers: [],
+    stage: 'MVP',
+    repoLink: 'https://github.com/gayatrisriram1-maker/fitness-app/invitations'
+  },
+  {
+    id: 'lecture-to-anki',
+    name: 'Eric Deng',
+    email: 'ericdeng@seas.upenn.edu',
+    title: 'Lecture to Anki',
+    shortDescription: 'AI flashcard generator from lecture notes',
+    description: 'AI flashcard generator from lecture notes',
+    teamMembers: [],
+    stage: 'Ideation',
+    repoLink: 'https://github.com/EricJDeng/lecture-to-anki'
+  },
+  {
+    id: 'innoflow',
+    name: 'Jiawen Lu',
+    email: 'jiawlu@upenn.edu',
+    title: 'InnoFlow',
+    shortDescription: 'Daily AI briefings & Mkt Platform for Early Startups',
+    description: 'Innoflow',
+    teamMembers: [
+      { name: 'Aaron Guo', email: 'aarongzy@seas.UPenn.edu' },
+      { name: 'Will Chen', email: 'hongyuc5@illinois.edu' }
+    ],
+    stage: 'Beta',
+    repoLink: 'https://github.com/InnoFlows'
+  },
+  {
+    id: 'cortex',
+    name: 'Casey Talbot',
+    email: 'ctalbot1@wharton.upenn.edu',
+    title: 'Cortex',
+    shortDescription: 'Agent Based Ecosystem to Enhance Thought',
+    description: 'Cortex is a local-first knowledge environment where every idea you capture becomes a typed, connected node in a living graph you can see, navigate, and reshape. Its job isn\'t storing notes; it\'s surfacing the relationships between them, treating connections, clusters, and tensions as first-class objects you think with, not metadata you ignore. With an AI agent and terminal built into the workspace, it closes the loop between having an idea and acting on it, all without your thinking ever leaving your machine.',
+    teamMembers: [],
+    stage: 'MVP',
+    repoLink: 'https://github.com/caseyrtalbot/thought-engine'
+  },
+  {
+    id: 'signals-ai',
+    name: 'Prem Rajesh',
+    email: 'Prem.Durai.Rajesh.wg25@wharton.upenn.edu',
+    title: 'Signals AI',
+    shortDescription: 'An Agentic Intelligence System for Modern Software Engineering',
+    description: 'An AI Teammate for the Software Engineering Ecosystem. Signals AI act as a digital teammate - an AI executive assistant supporting software engineers, managers, and senior leaders such as VPs of Engineering, CTOs, and CIOs - automating hidden work, improving delivery health, and giving leadership clear visibility into efficiency, risks, and optimization opportunities. Teams using Signals AI are seeing approximately 8 hours saved per engineer per week, a 10%+ reduction in engineering spend, and more predictable delivery with faster execution.',
+    teamMembers: [
+      { name: 'Premsun Durai Rajesh', email: 'Prem@orgsignals.com' },
+      { name: 'Gokul Palanisamy', email: 'gokul@orgsignals.com' },
+      { name: 'Ashok Saravanan', email: 'ashok@orgsignals.com' }
+    ],
+    stage: 'Live',
+    repoLink: 'https://orgsignals.com'
+  },
+  {
+    id: 'echo-care-connect',
+    name: 'Dren',
+    email: 'dzabeli@sas.upenn.edu',
+    title: 'Echo care connect',
+    shortDescription: 'Care and connection made easy',
+    description: 'An AI companion easing loneliness for Elderly individuals living with diabetes encouraging Familal interaction',
+    teamMembers: [],
+    stage: 'Ideation',
+    repoLink: 'https://github.com/ZaDrMeister/Echod1'
+  },
+  {
+    id: 'mirrorknow',
+    name: 'Beiqianyi Li',
+    email: 'li50@upenn.edu',
+    title: 'MirrorKnow',
+    shortDescription: 'Digital Soul; Magic Fitting; Closet Muse',
+    description: 'Struggling with what to wear? Feel like fashion bloggers don\'t really match your vibes? Or maybe you buy clothes but don\'t know how to style them? Finding your style shouldn\'t be this hard. MirrorKnow is here for you. It doesn\'t just know fashion; it knows \'you\'. Create your digital self: Build a virtual version of you that looks just like you. Smart Picks: It recommends the perfect outfit based on the weather and your plans for the day. Virtual Try-on: Every recommendation is shown directly on your avatar, so you can see exactly how it looks before you try it on. Join me! I\'m looking for people to help me build this—no matter your role. If you\'re interested, let\'s collaborate! Or, if you just want to chat and share your thoughts, I\'m always happy to talk.',
+    teamMembers: [],
+    stage: 'MVP',
+    repoLink: ''
+  },
+  {
+    id: 'restoc',
+    name: 'Temitayo Andrew',
+    email: 'andrewte@upenn.edu',
+    title: 'Restoc',
+    shortDescription: 'Dental/Healthcare decision intelligence infrastructure',
+    description: 'Restoc is an AI-powered decision intelligence platform designed to transform how dental practices allocate capital and make operational decisions. It captures previously unstructured data across procurement, laboratory usage, and clinical workflows, and converts it into measurable signals for benchmarking, forecasting, and optimization. By combining structured data systems with LLM-driven analysis, Restoc moves practices beyond cost-based decision-making toward return-driven, evidence-based capital allocation. The platform introduces proprietary frameworks (OVI, DSMS) to quantify decision quality and operational maturity, positioning AI not as an assistant, but as core infrastructure for clinical and business decision systems.',
+    teamMembers: [],
+    stage: 'MVP',
+    repoLink: 'https://restoc.com'
+  },
+  {
+    id: 'dental-avoidance-intelligence',
+    name: 'Karam Alfaisal',
+    email: 'Kalfai@upenn.edu',
+    title: 'Dental avoidance intelligence',
+    shortDescription: 'AI-powered behavioral system for dental practices',
+    description: 'Dental Avoidance Intelligence is a proposed AI-powered behavioral system for dental practices designed to identify patients who are delaying or avoiding care, understand the likely reason behind that delay, and guide the practice on the best next step to bring the patient back into treatment. The core idea is that many patients do not fail to return because they simply "forgot." They often delay for hidden reasons such as fear, shame, overwhelm, distrust, financial stress, trauma, or executive dysfunction. Most dental offices treat all overdue patients the same way, with generic reminders or follow-up calls. Dental Avoidance Intelligence would try to solve that by adding a behavioral layer on top of the practice\'s normal workflow.',
+    teamMembers: [],
+    stage: 'Ideation',
+    repoLink: 'https://github.com/karam200014/dental-avoidance-intelligence'
   },
   {
     id: 'attendance-location-for-groups',
@@ -313,29 +353,6 @@ export const products: Product[] = [
     teamMembers: [],
     stage: 'Live',
     repoLink: 'https://attendance-location-for-groups.vercel.app/',
-    isBoardProject: true
-  },
-  {
-    id: 'bound',
-    name: 'Andrea Gualandris',
-    email: 'Guala@seas.upenn.edu',
-    title: 'Bound',
-    shortDescription: 'Mutual-connection iOS social platform where nothing happens unless both people say yes.',
-    description: "Social media was supposed to bring us closer. Instead, it created a world of unanswered follow requests, one-sided interactions, and the quiet anxiety of putting yourself out there with no guarantee anyone will meet you halfway. Bound is an iOS social platform built on a simple idea: connection should be mutual. On Bound, nothing happens unless both people say yes. No asymmetric follows, no public rejection, no guessing where you stand. If the feeling is mutual, you're connected. If not, nobody ever knows. We designed Bound for a generation that grew up online but learned to hold back — Gen Z users who want authentic relationships without the psychological weight of traditional social media. By making reciprocity the foundation rather than an afterthought, we've removed the single biggest barrier to genuine digital connection: the fear of not being reciprocated. Bound isn't just another social app. It's a fundamentally different model for how people connect online — one where every relationship starts on equal ground.",
-    teamMembers: [],
-    stage: 'MVP',
-    repoLink: ''
-  },
-  {
-    id: 'anchor-dating-first',
-    name: 'Kyle Zhang',
-    email: 'kyle100@wharton.upenn.edu',
-    title: 'Anchor - Dating First',
-    shortDescription: 'Curate the perfect date first, then match with someone who wants the same experience.',
-    description: 'In real life, you do not meet people by staring at their profile. The context creates the connection. Anchor flips the script by letting you curate the date first, then match with someone who wants the same experience. Anchor AI recommends venues and events it predicts you will enjoy and matches you with another attendee based on an AI-determined compatibility fit.',
-    teamMembers: [{ name: 'Antony Tran', email: 'antonyltran@gmail.com' }],
-    stage: 'Beta',
-    repoLink: 'https://anchor.dating',
     isBoardProject: true
   }
 ];
