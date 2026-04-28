@@ -197,6 +197,18 @@ export const UPCOMING_EVENTS_SOURCE: Event[] = [
     endSortKey: '2026-04-12T19:30:00-04:00',
     semester: 'Spring 2026',
   },
+  {
+    title: 'CBC Foundry Pitch Night',
+    date: 'Apr 28, 2026',
+    time: '7:30–8:30 PM',
+    location: 'AGH 105',
+    description:
+      'Our last event of the semester — free food, Claude merch (including hats), and a relaxed night of quick two- to three-minute elevator pitches for ideas at any stage. Come to watch, pitch, or hang out; it is intentionally low stakes and a great place to practice speaking or get inspired.',
+    buttons: [{ label: 'RSVP on Luma', url: 'https://luma.com/qwlbfiez' }],
+    sortKey: '2026-04-28T19:30:00-04:00',
+    endSortKey: '2026-04-28T20:30:00-04:00',
+    semester: 'Spring 2026',
+  },
 ];
 
 /** Past events (manually curated). Events that pass from UPCOMING_EVENTS_SOURCE are merged in at runtime. */

@@ -11,8 +11,8 @@ import {
 } from './events';
 
 describe('events', () => {
-  it('UPCOMING_EVENTS_SOURCE has 7 events with sortKeys', () => {
-    expect(UPCOMING_EVENTS_SOURCE).toHaveLength(7);
+  it('UPCOMING_EVENTS_SOURCE has 8 events with sortKeys', () => {
+    expect(UPCOMING_EVENTS_SOURCE).toHaveLength(8);
     UPCOMING_EVENTS_SOURCE.forEach((e) => {
       expect(e.sortKey).toBeDefined();
       expect(new Date(e.sortKey).getTime()).not.toBeNaN();
@@ -61,10 +61,10 @@ describe('events', () => {
     }
   });
 
-  it('getUpcomingEvents(asOf before all events) returns all 7 upcoming', () => {
+  it('getUpcomingEvents(asOf before all events) returns all 8 upcoming', () => {
     const asOf = new Date('2026-03-01T00:00:00-04:00');
     const upcoming = getUpcomingEvents(asOf);
-    expect(upcoming).toHaveLength(7);
+    expect(upcoming).toHaveLength(8);
     expect(upcoming[0].title).toBe('Anthropic × Penn Hackathon Mixer');
     expect(upcoming[1].title).toBe('Meet Slow Ventures');
     expect(upcoming[2].title).toBe(
@@ -74,12 +74,13 @@ describe('events', () => {
     expect(upcoming[4].title).toBe('Technical Workshop 3: AI Agents');
     expect(upcoming[5].title).toBe('Penn X Khosla Ventures');
     expect(upcoming[6].title).toBe('Anthropic x Penn AI Hackathon');
+    expect(upcoming[7].title).toBe('CBC Foundry Pitch Night');
   });
 
-  it('getUpcomingEvents(asOf after first event, before second) returns 6 upcoming', () => {
+  it('getUpcomingEvents(asOf after first event, before second) returns 7 upcoming', () => {
     const asOf = new Date('2026-03-19T12:00:00-04:00'); // after Mixer (Mar 18 8pm), before Slow Ventures (Mar 19 5:30pm)
     const upcoming = getUpcomingEvents(asOf);
-    expect(upcoming).toHaveLength(6);
+    expect(upcoming).toHaveLength(7);
     expect(upcoming[0].title).toBe('Meet Slow Ventures');
     expect(upcoming[1].title).toBe(
       'CBC Business Model & Go-to-Market 101 with Shanel Fields (CEO, MD Ally)'
@@ -88,6 +89,7 @@ describe('events', () => {
     expect(upcoming[3].title).toBe('Technical Workshop 3: AI Agents');
     expect(upcoming[4].title).toBe('Penn X Khosla Ventures');
     expect(upcoming[5].title).toBe('Anthropic x Penn AI Hackathon');
+    expect(upcoming[6].title).toBe('CBC Foundry Pitch Night');
   });
 
   it('Technical Workshop 3 uses end of time range (5:30 PM ET), not next midnight', () => {
@@ -99,7 +101,7 @@ describe('events', () => {
   });
 
   it('getUpcomingEvents(asOf after all events) returns 0 upcoming', () => {
-    const asOf = new Date('2026-04-13T00:00:00-04:00');
+    const asOf = new Date('2026-04-29T00:00:00-04:00');
     const upcoming = getUpcomingEvents(asOf);
     expect(upcoming).toHaveLength(0);
   });
@@ -111,17 +113,18 @@ describe('events', () => {
     expect(newlyPast[0].title).toBe('Anthropic × Penn Hackathon Mixer');
   });
 
-  it('getNewlyPastFromUpcoming(asOf after all seven) returns 7 newly past', () => {
-    const asOf = new Date('2026-04-13T00:00:00-04:00');
+  it('getNewlyPastFromUpcoming(asOf after all eight) returns 8 newly past', () => {
+    const asOf = new Date('2026-04-29T00:00:00-04:00');
     const newlyPast = getNewlyPastFromUpcoming(asOf);
-    expect(newlyPast).toHaveLength(7);
+    expect(newlyPast).toHaveLength(8);
   });
 
   it('getPastEvents(asOf after all upcoming) includes newly past and static past', () => {
-    const asOf = new Date('2026-04-13T00:00:00-04:00');
+    const asOf = new Date('2026-04-29T00:00:00-04:00');
     const past = getPastEvents(asOf);
     const spring2026 = past.filter((e) => e.semester === 'Spring 2026');
     const newlyPastTitles = [
+      'CBC Foundry Pitch Night',
       'Anthropic x Penn AI Hackathon',
       'Penn X Khosla Ventures',
       'Technical Workshop 3: AI Agents',
@@ -133,7 +136,7 @@ describe('events', () => {
     newlyPastTitles.forEach((title) => {
       expect(past.some((e) => e.title === title)).toBe(true);
     });
-    expect(past.length).toBe(STATIC_PAST_EVENTS.length + 7);
+    expect(past.length).toBe(STATIC_PAST_EVENTS.length + 8);
     expect(spring2026.length).toBeGreaterThan(0);
   });
 
