@@ -117,7 +117,10 @@ export const UPCOMING_EVENTS_SOURCE: Event[] = [
     time: '8–9:30 PM',
     location: 'G60 Jon M. Huntsman Hall',
     description: 'Our Hackathon is on April 12th (more info soon). Meet other builders, find teammates, share ideas, and kick things off. Snacks provided.',
-    buttons: [{ label: 'RSVP on Luma', url: 'https://luma.com/dq4wu2zr?tk=Fvvgtm' }],
+    buttons: [
+      { label: 'RSVP on Luma', url: 'https://luma.com/dq4wu2zr?tk=Fvvgtm' },
+      { label: 'View Slides', url: 'https://docs.google.com/presentation/d/1B15wbp13ixb8cAPLOLin-l8JmXCHpmZbDz7RgphIPoc/edit?usp=sharing' },
+    ],
     sortKey: '2026-03-18T20:00:00-04:00',
     endSortKey: '2026-03-18T21:30:00-04:00',
     semester: 'Spring 2026',
@@ -158,8 +161,8 @@ export const UPCOMING_EVENTS_SOURCE: Event[] = [
     description: 'Curious about AI in education? Join us to explore essential AI fundamentals, discuss the latest trends shaping equitable learning, and put those ideas into practice by building a real education tool together in minutes using Claude Code. Co-hosted with AIED @ Penn.',
     buttons: [
       { label: 'Register on Luma', url: 'https://luma.com/t1d6o1hv' },
-      { label: 'Slides', url: 'https://docs.google.com/presentation/d/1n4GzgD88STfvBavLmOhOeSblGazY0zthbEaRBKJzxbU/edit?usp=sharing' },
-      { label: 'Photos', url: 'https://drive.google.com/drive/folders/1MjPJTiCsyXlYqg6Kh1v07-wqtmWe-kJa?usp=sharing' },
+      { label: 'View Slides', url: 'https://docs.google.com/presentation/d/1n4GzgD88STfvBavLmOhOeSblGazY0zthbEaRBKJzxbU/edit?usp=sharing' },
+      { label: 'View Photos', url: 'https://drive.google.com/drive/folders/1MjPJTiCsyXlYqg6Kh1v07-wqtmWe-kJa?usp=sharing' },
     ],
     sortKey: '2026-03-23T14:00:00-04:00',
     endSortKey: '2026-03-23T15:00:00-04:00',
@@ -174,8 +177,8 @@ export const UPCOMING_EVENTS_SOURCE: Event[] = [
       'Join us for a hands-on workshop on AI agents and how they are changing the way we build and interact with technology. We will cover core concepts, explore real-world applications, and give you the tools to start building your own. The workshop is Friday, April 3 from 4:30 to 5:30 PM in Towne 225 Raisler Lounge.',
     buttons: [
       { label: 'Register on Luma', url: 'https://luma.com/4kjw0rsa' },
-      { label: 'Slides', url: 'https://docs.google.com/presentation/d/1HzTwY1LMxR3TJ9DClZpA4ZJ5j9rzNGZ3JvXCCR3_Jp4/edit?usp=sharing' },
-      { label: 'Photos', url: 'https://drive.google.com/drive/folders/10WO3vDR_Nc_htSRSliT78jBaUPYMahYe?usp=sharing' },
+      { label: 'View Slides', url: 'https://docs.google.com/presentation/d/1HzTwY1LMxR3TJ9DClZpA4ZJ5j9rzNGZ3JvXCCR3_Jp4/edit?usp=sharing' },
+      { label: 'View Photos', url: 'https://drive.google.com/drive/folders/10WO3vDR_Nc_htSRSliT78jBaUPYMahYe?usp=sharing' },
     ],
     sortKey: '2026-04-03T16:30:00-04:00',
     endSortKey: '2026-04-03T17:30:00-04:00',
@@ -190,7 +193,7 @@ export const UPCOMING_EVENTS_SOURCE: Event[] = [
       "Join us for an evening with engineers and builders from Distyl, Pathway, and other companies. Learn about software, AI, and product roles, get a firsthand look at what it's like to build at fast-growing early-stage startups, and connect with teams working on real-world problems at the frontier of technology.",
     buttons: [
       { label: 'Register on Luma', url: 'https://luma.com/0hrqf6ix' },
-      { label: 'Photos', url: 'https://drive.google.com/drive/folders/1RVHp2os3jdoU8o-hDZd5qw6AN-39Qvy1?usp=drive_link' },
+      { label: 'View Photos', url: 'https://drive.google.com/drive/folders/1RVHp2os3jdoU8o-hDZd5qw6AN-39Qvy1?usp=drive_link' },
     ],
     sortKey: '2026-04-09T18:45:00-04:00',
     endSortKey: '2026-04-09T20:45:00-04:00',
@@ -205,8 +208,8 @@ export const UPCOMING_EVENTS_SOURCE: Event[] = [
       "CBC and Wharton AI & Analytics are partnering with Anthropic for our second annual hackathon, themed around Machines of Loving Grace: the idea that AI, built thoughtfully, can genuinely improve human life. This is not just another demo day. We are looking for impact-heavy projects that are ambitious, meaningful, and grounded in real problems people face.",
     buttons: [
       { label: 'Register on Luma', url: 'https://luma.com/wz5u68yq?tk=kHnFWN' },
-      { label: 'Slides', url: 'https://docs.google.com/presentation/d/12s8PGVr_K_Sf4PQ6r7jzfC1CuuwLmfttIW3At7Vc4Vk/edit?usp=sharing' },
-      { label: 'Photos', url: 'https://drive.google.com/drive/folders/1lOQ1_lC1KGreo0Hf6hY18ACMYS8DXwLq?usp=drive_link' },
+      { label: 'View Slides', url: 'https://docs.google.com/presentation/d/12s8PGVr_K_Sf4PQ6r7jzfC1CuuwLmfttIW3At7Vc4Vk/edit?usp=sharing' },
+      { label: 'View Photos', url: 'https://drive.google.com/drive/folders/1lOQ1_lC1KGreo0Hf6hY18ACMYS8DXwLq?usp=drive_link' },
     ],
     sortKey: '2026-04-12T12:00:00-04:00',
     endSortKey: '2026-04-12T19:30:00-04:00',
@@ -219,7 +222,10 @@ export const UPCOMING_EVENTS_SOURCE: Event[] = [
     location: 'AGH 105',
     description:
       'Our last event of the semester — free food, Claude merch (including hats), and a relaxed night of quick two- to three-minute elevator pitches for ideas at any stage. Come to watch, pitch, or hang out; it is intentionally low stakes and a great place to practice speaking or get inspired.',
-    buttons: [{ label: 'RSVP on Luma', url: 'https://luma.com/qwlbfiez' }],
+    buttons: [
+      { label: 'RSVP on Luma', url: 'https://luma.com/qwlbfiez' },
+      { label: 'View Photos', url: 'https://drive.google.com/drive/folders/1qZUoNgvSKGqmfa5hKHIuPy2QIZhV5zUE?usp=sharing' },
+    ],
     sortKey: '2026-04-28T19:30:00-04:00',
     endSortKey: '2026-04-28T20:30:00-04:00',
     semester: 'Spring 2026',
