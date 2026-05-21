@@ -156,7 +156,11 @@ export const UPCOMING_EVENTS_SOURCE: Event[] = [
     date: 'Mar 23, 2026',
     time: '2:00–3:00 PM',
     description: 'Curious about AI in education? Join us to explore essential AI fundamentals, discuss the latest trends shaping equitable learning, and put those ideas into practice by building a real education tool together in minutes using Claude Code. Co-hosted with AIED @ Penn.',
-    buttons: [{ label: 'Register on Luma', url: 'https://luma.com/t1d6o1hv' }],
+    buttons: [
+      { label: 'Register on Luma', url: 'https://luma.com/t1d6o1hv' },
+      { label: 'Slides', url: 'https://docs.google.com/presentation/d/1n4GzgD88STfvBavLmOhOeSblGazY0zthbEaRBKJzxbU/edit?usp=sharing' },
+      { label: 'Photos', url: 'https://drive.google.com/drive/folders/1MjPJTiCsyXlYqg6Kh1v07-wqtmWe-kJa?usp=sharing' },
+    ],
     sortKey: '2026-03-23T14:00:00-04:00',
     endSortKey: '2026-03-23T15:00:00-04:00',
     semester: 'Spring 2026',
@@ -168,7 +172,11 @@ export const UPCOMING_EVENTS_SOURCE: Event[] = [
     location: 'Towne 225 Raisler Lounge',
     description:
       'Join us for a hands-on workshop on AI agents and how they are changing the way we build and interact with technology. We will cover core concepts, explore real-world applications, and give you the tools to start building your own. The workshop is Friday, April 3 from 4:30 to 5:30 PM in Towne 225 Raisler Lounge.',
-    buttons: [{ label: 'Register on Luma', url: 'https://luma.com/4kjw0rsa' }],
+    buttons: [
+      { label: 'Register on Luma', url: 'https://luma.com/4kjw0rsa' },
+      { label: 'Slides', url: 'https://docs.google.com/presentation/d/1HzTwY1LMxR3TJ9DClZpA4ZJ5j9rzNGZ3JvXCCR3_Jp4/edit?usp=sharing' },
+      { label: 'Photos', url: 'https://drive.google.com/drive/folders/10WO3vDR_Nc_htSRSliT78jBaUPYMahYe?usp=sharing' },
+    ],
     sortKey: '2026-04-03T16:30:00-04:00',
     endSortKey: '2026-04-03T17:30:00-04:00',
     semester: 'Spring 2026',
@@ -180,7 +188,10 @@ export const UPCOMING_EVENTS_SOURCE: Event[] = [
     location: 'AGH First Floor Auditorium',
     description:
       "Join us for an evening with engineers and builders from Distyl, Pathway, and other companies. Learn about software, AI, and product roles, get a firsthand look at what it's like to build at fast-growing early-stage startups, and connect with teams working on real-world problems at the frontier of technology.",
-    buttons: [{ label: 'Register on Luma', url: 'https://luma.com/0hrqf6ix' }],
+    buttons: [
+      { label: 'Register on Luma', url: 'https://luma.com/0hrqf6ix' },
+      { label: 'Photos', url: 'https://drive.google.com/drive/folders/1RVHp2os3jdoU8o-hDZd5qw6AN-39Qvy1?usp=drive_link' },
+    ],
     sortKey: '2026-04-09T18:45:00-04:00',
     endSortKey: '2026-04-09T20:45:00-04:00',
     semester: 'Spring 2026',
@@ -192,7 +203,11 @@ export const UPCOMING_EVENTS_SOURCE: Event[] = [
     location: 'Amy Gutmann Hall',
     description:
       "CBC and Wharton AI & Analytics are partnering with Anthropic for our second annual hackathon, themed around Machines of Loving Grace: the idea that AI, built thoughtfully, can genuinely improve human life. This is not just another demo day. We are looking for impact-heavy projects that are ambitious, meaningful, and grounded in real problems people face.",
-    buttons: [{ label: 'Register on Luma', url: 'https://luma.com/wz5u68yq?tk=kHnFWN' }],
+    buttons: [
+      { label: 'Register on Luma', url: 'https://luma.com/wz5u68yq?tk=kHnFWN' },
+      { label: 'Slides', url: 'https://docs.google.com/presentation/d/12s8PGVr_K_Sf4PQ6r7jzfC1CuuwLmfttIW3At7Vc4Vk/edit?usp=sharing' },
+      { label: 'Photos', url: 'https://drive.google.com/drive/folders/1lOQ1_lC1KGreo0Hf6hY18ACMYS8DXwLq?usp=drive_link' },
+    ],
     sortKey: '2026-04-12T12:00:00-04:00',
     endSortKey: '2026-04-12T19:30:00-04:00',
     semester: 'Spring 2026',
