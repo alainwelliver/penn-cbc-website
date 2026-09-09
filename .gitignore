@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# gallery image staging (optimized copies for Blob upload)
+/gallery-optimized/
+
+# original full-resolution gallery photos (served from Vercel Blob, not the deployment)
+/gallery-originals/
