@@ -3,11 +3,13 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { toGalleryPhoto } from '@/lib/gallery';
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  // 32 diverse photos from different events
+  // 32 diverse photos from different events. Paths are the original public/ paths,
+  // resolved to Vercel Blob URLs via lib/gallery-manifest.json.
   const photos = [
     { src: '/gallery-photos/photo1.jpg', alt: 'CBC Meeting' },
     { src: '/gallery-photos/photo2.jpg', alt: 'Workshop Session' },
@@ -41,7 +43,7 @@ export default function Gallery() {
     { src: '/gallery-photos/photo30.jpg', alt: 'Masterclass Dashboard Demo' },
     { src: '/gallery-photos/photo31.jpg', alt: 'Interpretability Token Analysis' },
     { src: '/gallery-photos/photo32.jpg', alt: 'CIS 5300 Office Hours' }
-  ];
+  ].map(({ src, alt }) => toGalleryPhoto(src, alt));
 
   return (
     <div
@@ -78,16 +80,17 @@ export default function Gallery() {
               style={{
                 boxShadow: 'var(--shadow-md)'
               }}
-              onClick={() => setSelectedImage(photo.src)}
+              onClick={() => setSelectedImage(photo.full)}
               initial={{ opacity: 0, scale: 0.8, rotateY: 90 }}
               whileInView={{ opacity: 1, scale: 1, rotateY: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.05 }}
             >
               <Image
-                src={photo.src}
+                src={photo.thumb}
                 alt={photo.alt}
                 fill
+                sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
                 className="object-cover transition-transform duration-300"
               />
             </motion.div>

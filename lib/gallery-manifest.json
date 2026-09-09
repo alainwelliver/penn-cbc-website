@@ -1,0 +1,980 @@
+{
+  "/gallery-photos/photo1.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo1.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo1.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery-photos/photo10.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo10.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo10.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery-photos/photo11.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo11.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo11.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery-photos/photo12.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo12.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo12.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery-photos/photo13.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo13.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo13.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery-photos/photo14.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo14.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo14.jpg",
+    "width": 1500,
+    "height": 2000
+  },
+  "/gallery-photos/photo15.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo15.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo15.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery-photos/photo16.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo16.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo16.jpg",
+    "width": 1500,
+    "height": 2000
+  },
+  "/gallery-photos/photo17.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo17.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo17.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery-photos/photo18.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo18.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo18.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery-photos/photo19.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo19.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo19.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery-photos/photo2.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo2.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo2.jpg",
+    "width": 1500,
+    "height": 2000
+  },
+  "/gallery-photos/photo20.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo20.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo20.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery-photos/photo21.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo21.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo21.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery-photos/photo22.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo22.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo22.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery-photos/photo23.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo23.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo23.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery-photos/photo24.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo24.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo24.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery-photos/photo25.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo25.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo25.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery-photos/photo26.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo26.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo26.jpg",
+    "width": 768,
+    "height": 1024
+  },
+  "/gallery-photos/photo27.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo27.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo27.jpg",
+    "width": 480,
+    "height": 360
+  },
+  "/gallery-photos/photo28.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo28.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo28.jpg",
+    "width": 480,
+    "height": 360
+  },
+  "/gallery-photos/photo29.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo29.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo29.jpg",
+    "width": 2000,
+    "height": 1130
+  },
+  "/gallery-photos/photo3.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo3.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo3.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery-photos/photo30.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo30.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo30.jpg",
+    "width": 2000,
+    "height": 1103
+  },
+  "/gallery-photos/photo31.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo31.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo31.jpg",
+    "width": 2000,
+    "height": 1114
+  },
+  "/gallery-photos/photo32.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo32.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo32.jpg",
+    "width": 2000,
+    "height": 1169
+  },
+  "/gallery-photos/photo4.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo4.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo4.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery-photos/photo5.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo5.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo5.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery-photos/photo6.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo6.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo6.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery-photos/photo7.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo7.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo7.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery-photos/photo8.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo8.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo8.jpg",
+    "width": 1500,
+    "height": 2000
+  },
+  "/gallery-photos/photo9.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery-photos/photo9.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery-photos/photo9.jpg",
+    "width": 1333,
+    "height": 2000
+  },
+  "/gallery/Builder Hours/IMG_6176.HEIC": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/Builder%20Hours/IMG_6176-heic.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/Builder%20Hours/IMG_6176-heic.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery/Builder Hours/IMG_6177.HEIC": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/Builder%20Hours/IMG_6177-heic.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/Builder%20Hours/IMG_6177-heic.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery/Fireside Chat/fireside_chat.jpeg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/Fireside%20Chat/fireside_chat.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/Fireside%20Chat/fireside_chat.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5810.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5810.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5810.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5811.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5811.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5811.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5812.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5812.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5812.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5813.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5813.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5813.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5814.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5814.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5814.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5815.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5815.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5815.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5816.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5816.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5816.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5817.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5817.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5817.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5818.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5818.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5818.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5819.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5819.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5819.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5820.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5820.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5820.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5821.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5821.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5821.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5822.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5822.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5822.jpg",
+    "width": 1333,
+    "height": 2000
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5823.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5823.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5823.jpg",
+    "width": 1333,
+    "height": 2000
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5824.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5824.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5824.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5825.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5825.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5825.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5826.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5826.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5826.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5827.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5827.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5827.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5828.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5828.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5828.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5829.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5829.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5829.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5830.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5830.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5830.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5831.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5831.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5831.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5832.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5832.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5832.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5833.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5833.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5833.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5834.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5834.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5834.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5835.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5835.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5835.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5836.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5836.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5836.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5837.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5837.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5837.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5838.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5838.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5838.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5839.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5839.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5839.jpg",
+    "width": 1333,
+    "height": 2000
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5840.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5840.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5840.jpg",
+    "width": 1333,
+    "height": 2000
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5841.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5841.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5841.jpg",
+    "width": 1333,
+    "height": 2000
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5842.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5842.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5842.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5843.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5843.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5843.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5844.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5844.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5844.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5845.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5845.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5845.jpg",
+    "width": 1333,
+    "height": 2000
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5846.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5846.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5846.jpg",
+    "width": 1333,
+    "height": 2000
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5847.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5847.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5847.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5848.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5848.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5848.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5849.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5849.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5849.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5850.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5850.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5850.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5851.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5851.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5851.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5852.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5852.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5852.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5853.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5853.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5853.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5854.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5854.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5854.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5855.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5855.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5855.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5856.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5856.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5856.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5857.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5857.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5857.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5858.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5858.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5858.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5859.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5859.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5859.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5860.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5860.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5860.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5861.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5861.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5861.jpg",
+    "width": 1333,
+    "height": 2000
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5862.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5862.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5862.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5863.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5863.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5863.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5864.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5864.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5864.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5865.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5865.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5865.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5866.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5866.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5866.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5867.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5867.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5867.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5868.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5868.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5868.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5869.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5869.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5869.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5870.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5870.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5870.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5871.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5871.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5871.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5872.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5872.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5872.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5873.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5873.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5873.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5874.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5874.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5874.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5875.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5875.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5875.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5876.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5876.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5876.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5877.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5877.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5877.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5879.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5879.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5879.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5880.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5880.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5880.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5881.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5881.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5881.jpg",
+    "width": 1333,
+    "height": 2000
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5882.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5882.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5882.jpg",
+    "width": 1333,
+    "height": 2000
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5883.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5883.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5883.jpg",
+    "width": 1333,
+    "height": 2000
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5884.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5884.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5884.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5885.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5885.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5885.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5886.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5886.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5886.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5887.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5887.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5887.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5888.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5888.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5888.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5889.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5889.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5889.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5890.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5890.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5890.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5891.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5891.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5891.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5892.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5892.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5892.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5893.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5893.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5893.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5894.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5894.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5894.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5895.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5895.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5895.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5896.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5896.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5896.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5897.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5897.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5897.jpg",
+    "width": 1333,
+    "height": 2000
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5898.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5898.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5898.jpg",
+    "width": 1333,
+    "height": 2000
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5899.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5899.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5899.jpg",
+    "width": 1333,
+    "height": 2000
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5900.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5900.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5900.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5901.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5901.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5901.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5902.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5902.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5902.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5903.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5903.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5903.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5904.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5904.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5904.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5905.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5905.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5905.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5906.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5906.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5906.jpg",
+    "width": 1333,
+    "height": 2000
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5907.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5907.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5907.jpg",
+    "width": 1333,
+    "height": 2000
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5908.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5908.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5908.jpg",
+    "width": 1333,
+    "height": 2000
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5909.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5909.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5909.jpg",
+    "width": 1333,
+    "height": 2000
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5910.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5910.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5910.jpg",
+    "width": 1333,
+    "height": 2000
+  },
+  "/gallery/First Meeting Fall 2025/DSCF5911.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/First%20Meeting%20Fall%202025/DSCF5911.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/First%20Meeting%20Fall%202025/DSCF5911.jpg",
+    "width": 1333,
+    "height": 2000
+  },
+  "/gallery/Hackathon/hackathon_0323.jpeg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/Hackathon/hackathon_0323.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/Hackathon/hackathon_0323.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery/Hackathon/hackathon_2260.jpeg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/Hackathon/hackathon_2260.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/Hackathon/hackathon_2260.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery/Hackathon/hackathon_2262.jpeg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/Hackathon/hackathon_2262.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/Hackathon/hackathon_2262.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery/Hackathon/hackathon_2266.jpeg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/Hackathon/hackathon_2266.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/Hackathon/hackathon_2266.jpg",
+    "width": 1500,
+    "height": 2000
+  },
+  "/gallery/Hackathon/hackathon_2271.jpeg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/Hackathon/hackathon_2271.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/Hackathon/hackathon_2271.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery/Hackathon/hackathon_2291.jpeg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/Hackathon/hackathon_2291.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/Hackathon/hackathon_2291.jpg",
+    "width": 1500,
+    "height": 2000
+  },
+  "/gallery/Hackathon/hackathon_2301.jpeg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/Hackathon/hackathon_2301.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/Hackathon/hackathon_2301.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery/Hackathon/hackathon_2311.jpeg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/Hackathon/hackathon_2311.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/Hackathon/hackathon_2311.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery/Hackathon/hackathon_6233(1).jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/Hackathon/hackathon_6233%281%29.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/Hackathon/hackathon_6233%281%29.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery/Hackathon/hackathon_6234(2).HEIC": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/Hackathon/hackathon_6234%282%29-heic.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/Hackathon/hackathon_6234%282%29-heic.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery/Hackathon/hackathon_6234(2).jpeg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/Hackathon/hackathon_6234%282%29.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/Hackathon/hackathon_6234%282%29.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery/Hackathon/hackathon_6235(1).jpeg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/Hackathon/hackathon_6235%281%29.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/Hackathon/hackathon_6235%281%29.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery/Hackathon/hackathon_6236(1).jpeg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/Hackathon/hackathon_6236%281%29.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/Hackathon/hackathon_6236%281%29.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery/Hackathon/hackathon_6238(2).jpeg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/Hackathon/hackathon_6238%282%29.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/Hackathon/hackathon_6238%282%29.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery/Hackathon/hackathon_6239(1).jpeg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/Hackathon/hackathon_6239%281%29.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/Hackathon/hackathon_6239%281%29.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery/Masterclasses-Workshops/73DE753F-AD8D-42EB-9AA7-0D9E91E93140.JPG": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/Masterclasses-Workshops/73DE753F-AD8D-42EB-9AA7-0D9E91E93140.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/Masterclasses-Workshops/73DE753F-AD8D-42EB-9AA7-0D9E91E93140.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery/Masterclasses-Workshops/IMG_1766-min-min.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/Masterclasses-Workshops/IMG_1766-min-min.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/Masterclasses-Workshops/IMG_1766-min-min.jpg",
+    "width": 1500,
+    "height": 2000
+  },
+  "/gallery/Masterclasses-Workshops/IMG_1767-min-min.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/Masterclasses-Workshops/IMG_1767-min-min.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/Masterclasses-Workshops/IMG_1767-min-min.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery/Masterclasses-Workshops/IMG_2157.jpeg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/Masterclasses-Workshops/IMG_2157.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/Masterclasses-Workshops/IMG_2157.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery/Masterclasses-Workshops/IMG_2372.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/Masterclasses-Workshops/IMG_2372.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/Masterclasses-Workshops/IMG_2372.jpg",
+    "width": 1500,
+    "height": 2000
+  },
+  "/gallery/Masterclasses-Workshops/IMG_2373.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/Masterclasses-Workshops/IMG_2373.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/Masterclasses-Workshops/IMG_2373.jpg",
+    "width": 1500,
+    "height": 2000
+  },
+  "/gallery/Masterclasses-Workshops/IMG_2532.jpeg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/Masterclasses-Workshops/IMG_2532.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/Masterclasses-Workshops/IMG_2532.jpg",
+    "width": 1500,
+    "height": 2000
+  },
+  "/gallery/Masterclasses-Workshops/IMG_2564.jpeg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/Masterclasses-Workshops/IMG_2564.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/Masterclasses-Workshops/IMG_2564.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery/Masterclasses-Workshops/IMG_2575.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/Masterclasses-Workshops/IMG_2575.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/Masterclasses-Workshops/IMG_2575.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery/Masterclasses-Workshops/IMG_2576.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/Masterclasses-Workshops/IMG_2576.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/Masterclasses-Workshops/IMG_2576.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery/Masterclasses-Workshops/IMG_3005.jpeg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/Masterclasses-Workshops/IMG_3005.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/Masterclasses-Workshops/IMG_3005.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  "/gallery/Masterclasses-Workshops/Micro-Agent Mini Hackathon Winners.jpg": {
+    "full": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/gallery/Masterclasses-Workshops/Micro-Agent%20Mini%20Hackathon%20Winners.jpg",
+    "thumb": "https://4bjodpc7y8tlrnpl.public.blob.vercel-storage.com/thumbs/gallery/Masterclasses-Workshops/Micro-Agent%20Mini%20Hackathon%20Winners.jpg",
+    "width": 2000,
+    "height": 1500
+  }
+}

@@ -8,8 +8,7 @@ import DarkModeToggle from "./DarkModeToggle";
 import LoadingAnimation from "./LoadingAnimation";
 import { PENN_CBC_LINKS } from "@/lib/linktree-data";
 import useUpcomingEvents from "./useUpcomingEvents";
-
-type Photo = { src: string; alt: string };
+import type { GalleryPhoto as Photo } from "@/lib/gallery";
 
 export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }) {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -528,7 +527,7 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
                     key={`first-${index}`}
                     className="min-w-[300px] h-[300px] rounded-2xl overflow-hidden cursor-pointer"
                     style={{ boxShadow: 'var(--shadow-sm)' }}
-                    onClick={() => setSelectedImage(photo.src)}
+                    onClick={() => setSelectedImage(photo.full)}
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
@@ -536,7 +535,7 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
                     whileHover={{ scale: 1.05 }}
                   >
                     <Image
-                      src={photo.src}
+                      src={photo.thumb}
                       alt={photo.alt}
                       width={300}
                       height={300}
@@ -550,7 +549,7 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
                     key={`second-${index}`}
                     className="min-w-[300px] h-[300px] rounded-2xl overflow-hidden cursor-pointer"
                     style={{ boxShadow: 'var(--shadow-sm)' }}
-                    onClick={() => setSelectedImage(photo.src)}
+                    onClick={() => setSelectedImage(photo.full)}
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
@@ -558,7 +557,7 @@ export default function HomeClient({ initialPhotos }: { initialPhotos: Photo[] }
                     whileHover={{ scale: 1.05 }}
                   >
                     <Image
-                      src={photo.src}
+                      src={photo.thumb}
                       alt={photo.alt}
                       width={300}
                       height={300}
