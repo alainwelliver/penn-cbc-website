@@ -14,6 +14,7 @@ export default function Team() {
     imagePosition: string;
     imageScale?: number;
     imageTranslateX?: string;
+    website?: string;
     linkedin?: string;
     github?: string;
   };
@@ -39,6 +40,7 @@ export default function Team() {
       image: '/team/alain.jpg',
       bio: 'Reimagining the way we learn new things, get around, and interact safely with AI.',
       imagePosition: '50% 45%',
+      website: 'https://alainwelliver.com',
       linkedin: 'https://www.linkedin.com/in/alain-welliver/',
       github: 'https://github.com/alainwelliver'
     }
@@ -197,6 +199,17 @@ export default function Team() {
                     {member.role}
                   </p>
                   <div className="flex gap-4 mt-3">
+                    {member.website && (
+                      <a
+                        href={member.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm font-semibold font-sans transition-all duration-300 hover:opacity-80 hover:scale-105"
+                        style={{ color: '#D97757' }}
+                      >
+                        Website
+                      </a>
+                    )}
                     {member.linkedin && (
                       <a
                         href={member.linkedin}
@@ -296,6 +309,17 @@ export default function Team() {
                       {member.bio}
                     </p>
                     <div className="flex gap-4 mt-3">
+                      {member.website && (
+                        <a
+                          href={member.website}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm font-semibold font-sans transition-all duration-300 hover:opacity-80 hover:scale-105"
+                          style={{ color: '#D97757' }}
+                        >
+                          Website
+                        </a>
+                      )}
                       {member.linkedin && (
                         <a
                           href={member.linkedin}
