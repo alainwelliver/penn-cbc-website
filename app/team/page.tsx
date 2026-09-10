@@ -40,7 +40,7 @@ export default function Team() {
       image: '/team/alain.jpg',
       bio: 'Reimagining the way we learn new things, get around, and interact safely with AI.',
       imagePosition: '50% 45%',
-      website: 'https://alainwelliver.com',
+      website: 'https://www.alainwelliver.com',
       linkedin: 'https://www.linkedin.com/in/alain-welliver/',
       github: 'https://github.com/alainwelliver'
     }
